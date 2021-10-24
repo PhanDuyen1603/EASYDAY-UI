@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import "duyen";
+@import "tu";
+@import "an";
+@import "sinh";
+@import "quang";
+
+@import "style";
+@import 'node_modules/slick-carousel/slick/slick.css';
+@import 'node_modules/slick-carousel/slick/slick-theme.css';
+#__layout,
+#__nuxt,
+.wrap__body,
+html,
+body {}
+
+.wrap__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
