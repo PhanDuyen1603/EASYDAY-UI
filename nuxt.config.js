@@ -3,7 +3,7 @@ const webpack = require('webpack')
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: '%s - Foodmood',
+        titleTemplate: '%s - EasyDay',
         htmlAttrs: {
             lang: 'vi'
         },
