@@ -7,7 +7,7 @@
           <NuxtLink to="/" class="navbar-brand"
             ><img
               class="logo-foodmood"
-              src="~/assets/images/logo2.png"
+              src="~/assets/images/logo.svg"
               alt="logo-foodmood"
           /></NuxtLink>
           <div class="search-header">
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="header-main">
-        <div class="d-flex">
+        <div class="d-flex center height-header">
           <div class="all-menu">
             <div class="vertical-navigation-header">
               <svg

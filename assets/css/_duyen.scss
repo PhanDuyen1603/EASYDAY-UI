@@ -338,8 +338,8 @@
 
 .container {
   max-width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .icon-header {
@@ -360,7 +360,7 @@ li {
 }
 .header-main {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 6px 30px 6px 30px;
+  padding: 6px 75px 6px 75px;
   background-color: #3d6642;
   .all-menu {
     background-color: #5c9963;
@@ -375,7 +375,7 @@ li {
   color: #fff;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 50px;
   cursor: pointer;
   width: 300px;
 }
@@ -389,6 +389,8 @@ li {
 .dropdown2 span,
 .dropdown3 span {
   color: white;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .dropdown,
@@ -476,3 +478,12 @@ li {
 .header-item-all{
   width: 100%;
 }
+
+.center{
+  align-items: center;
+}
+
+.height-header{
+  height: 50px;
+}
+

@@ -7,17 +7,17 @@
     >
       <div class="item">
         <div class="image">
-          <img class="img-response" src="~/assets/images/slider-2.png" />
+          <img class="img-response" src="~/assets/images/rev_home1_1.jpeg" />
         </div>
       </div>
       <div class="item">
         <div class="image">
-          <img class="img-response" src="~/assets/images/slider-2.png" />
+          <img class="img-response" src="~/assets/images/rev_home1_1.jpeg" />
         </div>
       </div>
       <div class="item">
         <div class="image">
-          <img class="img-response" src="~/assets/images/slider-2.png" />
+          <img class="img-response" src="~/assets/images/rev_home1_1.jpeg" />
         </div>
       </div>
     </slick>
@@ -31,12 +31,12 @@ export default {
       slickOptions: {
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
       },
     }
   },
