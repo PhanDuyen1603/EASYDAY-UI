@@ -1,5 +1,5 @@
 <template>
-  <section class="banner-home">
+  <section class="banner-home" style="height: 600px">
     <slick
       ref="slickone"
       :options="slickOptions"
@@ -12,7 +12,7 @@
       </div>
       <div class="item">
         <div class="image">
-          <img class="img-response" src="~/assets/images/rev_home1_1.jpeg" />
+          <img class="img-response" src="~/assets/images/rev_home8_2.jpeg" />
         </div>
       </div>
       <div class="item">

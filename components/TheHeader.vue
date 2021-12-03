@@ -1,7 +1,125 @@
 <template>
-  <header class="header-top">
+  <header class="">
+    <div class="header-info d-flex">
+      <div class="d-flex">
+        <div class="header-info-item">
+          <div>Welcome to our online store!</div>
+        </div>
+        <div class="language-switcher">
+          <ul class="menu-language">
+            <li class="item">
+              <div class="language-switcher-head">
+                <img
+                  src="https://demothemedh.b-cdn.net/organey/wp-content/themes/organey/assets/images/language-switcher/en.png"
+                  alt="WPML"
+                />
+                <span class="title"
+                  >English
+                  <span
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="chevron-down"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="svg-inline--fa icon-header-menu"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        class=""
+                      ></path></svg></span
+                ></span>
+                <i class="organey-icon-chevron-down"></i>
+              </div>
+              <ul class="sub-item-header-info">
+                <li>
+                  <a href="#">
+                    <img
+                      width="18"
+                      height="12"
+                      src="~/assets/images/VN.svg"
+                      alt="WPML"
+                    />
+                    <span>Tiếng Việt</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      width="18"
+                      height="12"
+                      src="https://demothemedh.b-cdn.net/organey/wp-content/themes/organey/assets/images/language-switcher/de.png"
+                      alt="WPML"
+                    />
+                    <span>German</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="elementor-icon-list-item">
+          <a href="mailto:contact@example">
+            <span class="elementor-icon-list-icon">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="envelope"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="svg-inline--fa fa-envelope fa-w-16 fa-2x"
+                style="width: 17px; color: #5c9963"
+              >
+                <path
+                  fill="currentColor"
+                  d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+                  class=""
+                ></path>
+              </svg>
+            </span>
+            <span class="elementor-icon-list-text">contact@example</span>
+          </a>
+        </div>
+        <div class="elementor-widget-container">
+          <div class="site-header-account">
+            <a
+              data-toggle="button-side"
+              data-target=".site-account-side"
+              href="#"
+            >
+              <span class="account-user">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="user"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="svg-inline--fa fa-user fa-w-14 fa-2x " style="width: 17px; color: #5c9963"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+                    class=""
+                  ></path>
+                </svg>
+              </span>
+              <span class="account-content"> Login </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- NAVBAR -->
-    <nav class="">
+    <nav class="header-top">
       <div class="container">
         <div class="d-flex justify-content-between" style="margin-bottom: 30px">
           <NuxtLink to="/" class="navbar-brand"
@@ -51,7 +169,7 @@
                   src="~/assets/images/shopping-bag.svg"
                   alt="logo-foodmood"
               /></NuxtLink>
-              <span class="count">0</span>
+              <span class="count">6</span>
               <bdi
                 ><span class="woocommerce-Price-currencySymbol">£</span
                 >0.00</bdi
@@ -113,7 +231,8 @@
                       <li href="#">Link 3</li>
                     </ul>
                   </li>
-                  <li class="dropdown3 menu-link"><span>Category</span>
+                  <li class="dropdown3 menu-link">
+                    <span>Category</span>
                     <span class="ml-2"
                       ><svg
                         aria-hidden="true"

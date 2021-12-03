@@ -274,9 +274,9 @@
     }
     section.banner-home {
         overflow: hidden;
-        .slick-dots li button:before {
-            display: none;
-        }
+        // .slick-dots li button:before {
+        //     display: none;
+        // }
         .slick-dots li {
             width: auto;
             padding: 0px 10px;
@@ -295,63 +295,6 @@
             margin-right: 2px;
         }
     }
-    // .slider-slick-home-top {
-    //     .item:nth-child(1),
-    //     .item:nth-child(3) {
-    //         width: calc(25% - 20px);
-    //     }
-    //     .item:nth-child(2) {
-    //         width: calc(50% - 20px);
-    //     }
-    //     .item:nth-child(2) {
-    //         .image {
-    //             border-radius: 40px;
-    //         }
-    //     }
-    //     .image {
-    //         height: 383px;
-    //         box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.05);
-    //         overflow: hidden;
-    //         border-radius: 40px;
-    //     }
-    //     .item:nth-child(1) {
-    //         .image {
-    //             border-top-right-radius: 40px;
-    //             border-bottom-right-radius: 40px;
-    //         }
-    //     }
-    //     .item:nth-child(3) {
-    //         .image {
-    //             border-top-left-radius: 40px;
-    //             border-bottom-left-radius: 40px;
-    //         }
-    //     }
-    // }
-    // .slick-dots {
-    //     text-align: center;
-    //     margin: 0 auto;
-    //     display: block;
-    //     margin-top: 30px;
-    //     li {
-    //         display: inline-block;
-    //         padding: 0px 10px;
-    //     }
-    //     li.slick-active button {
-    //         width: 62px;
-    //         height: 17px;
-    //         opacity: 1;
-    //         background: #E5625C;
-    //         border-radius: 10px;
-    //     }
-    //     li button {
-    //         width: 17px;
-    //         height: 17px;
-    //         background-color: #E5625C;
-    //         border-radius: 50%;
-    //         opacity: 0.5;
-    //         border: none;
-    //     }
-    // }
     .textstroke {
         .title-member-top {
             // -webkit-text-stroke-width: 1px;
