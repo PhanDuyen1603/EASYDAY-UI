@@ -599,7 +599,7 @@ li {
     font-size: 14px;
     font-weight: 500;
   }
-  .elementor-icon-list-text:hover{
+  .elementor-icon-list-text:hover {
     color: #5c9963;
   }
 }
@@ -625,8 +625,75 @@ li {
       font-size: 14px;
       font-weight: 500;
     }
-    .account-content:hover{
+    .account-content:hover {
       text-decoration: underline;
     }
   }
+}
+
+.margin-page {
+  margin-left: 75px;
+  margin-right: 75px;
+  .sub-banner {
+    justify-content: space-between;
+    margin-top: 50px;
+    .sub-banner-img, .sub-banner-img-2, .sub-banner-img-3, .sub-banner-img-4 {
+      background-color: #e5edbe;
+      background-image: url(/_nuxt/assets/images/h1-bg-1.jpeg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 300px;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s,
+        box-shadow 0.3s;
+      padding: 30px;
+      border-radius: 8px 8px 8px 8px;
+      .elementor-widget-container {
+        display: inline;
+        .elementor-heading-title {
+          color: #141514;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .elementor-widget-container {
+          .elementor-icon-list-items {
+            padding-left: 0px;
+            .elementor-icon-list-item {
+              padding-bottom: 5px;
+              .icon-list-icon {
+                padding: 0 0 8px;
+                line-height: 1;
+                .icon-circle {
+                  width: 5px;
+                  color: #5c9963;
+                  height: 4px;
+                }
+                
+              }
+              .elementor-icon-list-text {
+                color: #141514;
+                padding-left: 10px;
+              }
+              .elementor-icon-list-text:hover {
+                color: #5c9963;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub-banner-img-2{
+  background-image: url(/_nuxt/assets/images/h1-bg-2.jpeg) !important;
+}
+
+.sub-banner-img-3{
+background-image: url(/_nuxt/assets/images/h1-bg-3.jpeg) !important;
+}
+
+.sub-banner-img-4{
+  background-image: url(/_nuxt/assets/images/h1-bg-4.jpeg) !important;
 }
