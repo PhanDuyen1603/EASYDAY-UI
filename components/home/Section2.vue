@@ -1,6 +1,6 @@
 <template>
   <section class="join-now section-2">
-    <div>component demo</div>
+    <div></div>
   </section>
 </template>
 <script>

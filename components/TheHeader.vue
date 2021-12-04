@@ -212,7 +212,7 @@
                 </svg>
               </span>
               <span class="count">6</span>
-              <bdi
+              <bdi class="ic-fix"
                 ><span class="woocommerce-Price-currencySymbol">£</span
                 >0.00</bdi
               >
@@ -338,7 +338,6 @@
           </div>
         </div>
       </div>
-      <!-- /container -->
     </nav>
     <!-- <Login v-if="showLoginModal" @close-modal="showLoginModal = false" @switch-modal="switchModal"/>
     <Signup v-if="showSignupModal" @close-modal="showSignupModal = false" @switch-modal="switchModal"/> -->

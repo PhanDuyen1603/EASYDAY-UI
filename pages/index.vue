@@ -3,6 +3,7 @@
     <Banner></Banner>
     <Section1></Section1>
     <Section2></Section2>
+    <Section7></Section7>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Banner from "~/components/home/Banner.vue";
 import Section1 from "~/components/home/Section1.vue";
 import Section2 from "~/components/home/Section2.vue";
+import Section7 from "~/components/home/Section7.vue";
 export default {
   data() {
     return {
@@ -36,6 +38,7 @@ export default {
     Banner,
     Section1,
     Section2,
+    Section7,
   }
 }
 </script>
