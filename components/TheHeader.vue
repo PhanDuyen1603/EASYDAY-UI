@@ -103,7 +103,8 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  class="svg-inline--fa fa-user fa-w-14 fa-2x " style="width: 17px; color: #5c9963"
+                  class="svg-inline--fa fa-user fa-w-14 fa-2x"
+                  style="width: 17px; color: #5c9963"
                 >
                   <path
                     fill="currentColor"
@@ -163,12 +164,53 @@
               <span class="count">8</span>
             </div>
             <div class="shopping-list">
-              <NuxtLink to="/" class="navbar-brand"
-                ><img
-                  class="icon-size"
-                  src="~/assets/images/shopping-bag.svg"
-                  alt="logo-foodmood"
-              /></NuxtLink>
+              <span class="qodef-m-icon">
+                <svg
+                  class="qodef-svg"
+                  style="width: 27px"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 500 500"
+                  enable-background="new 0 0 500 500"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M448.2,292.3c-5.6-0.6-10.9,3.3-11.6,9l-21.8,168.6c-0.6,5.3-5,9.3-10.3,9.3h-310c-5.3,0-9.8-4-10.4-9.6
+		L62.3,302.1c-0.7-5.7-6-9.7-11.6-9c-5.7,0.7-9.7,5.9-9,11.6l21.7,167.3c1.7,15.9,15,27.9,31,27.9h310c16,0,29.3-12,31-27.7
+		L457.2,304C457.9,298.3,453.9,293.1,448.2,292.3z"
+                    ></path>
+                    <path
+                      d="M166.3,447.8V323.4c0-5.7-4.6-10.4-10.4-10.4c-5.7,0-10.4,4.6-10.4,10.4v124.4c0,5.7,4.6,10.4,10.4,10.4
+		C161.6,458.2,166.3,453.6,166.3,447.8z"
+                    ></path>
+                    <path
+                      d="M353.3,447.8V323.4c0-5.7-4.6-10.4-10.4-10.4c-5.7,0-10.4,4.6-10.4,10.4v124.4c0,5.7,4.6,10.4,10.4,10.4
+		C348.6,458.2,353.3,453.6,353.3,447.8z"
+                    ></path>
+                    <path
+                      d="M290.9,447.8V323.4c0-5.7-4.6-10.4-10.4-10.4s-10.4,4.6-10.4,10.4v124.4c0,5.7,4.6,10.4,10.4,10.4
+		S290.9,453.6,290.9,447.8z"
+                    ></path>
+                    <path
+                      d="M228.6,447.8V323.4c0-5.7-4.6-10.4-10.4-10.4c-5.7,0-10.4,4.6-10.4,10.4v124.4c0,5.7,4.6,10.4,10.4,10.4
+		C224,458.2,228.6,453.6,228.6,447.8z"
+                    ></path>
+                    <path
+                      d="M468.4,188.4h-43.6L278.7,46.1c1.8-3.9,2.8-8.1,2.8-12.7c0-16.8-13.8-30.5-30.7-30.5s-30.7,13.7-30.7,30.5
+		c0,4.5,1,8.8,2.8,12.7L76.9,188.4H32.1C15,188.4,1,202.4,1,219.5v20.8c0,17.2,14,31.2,31.2,31.2h436.3c17.2,0,31.2-14,31.2-31.2
+		v-20.8C499.6,202.4,485.6,188.4,468.4,188.4z M250.9,23.7c5.5,0,9.9,4.4,9.9,9.8c0,2.6-1.1,5-2.8,6.8c0,0,0,0-0.1,0.1
+		c0,0,0,0.1-0.1,0.1c-1.8,1.8-4.2,2.8-7,2.8c-2.7,0-5.2-1.1-7-2.8c0,0,0-0.1-0.1-0.1c0,0,0,0-0.1-0.1c-1.7-1.8-2.8-4.1-2.8-6.8
+		C241,28,245.4,23.7,250.9,23.7z M237.5,60.9c4,1.9,8.5,3.1,13.3,3.1c4.8,0,9.3-1.1,13.3-3.1L395,188.4H106.7L237.5,60.9z
+		 M478.8,240.3c0,5.7-4.7,10.4-10.4,10.4H32.1c-5.7,0-10.4-4.7-10.4-10.4v-20.8c0-5.7,4.7-10.4,10.4-10.4h436.3
+		c5.7,0,10.4,4.7,10.4,10.4V240.3z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
               <span class="count">6</span>
               <bdi
                 ><span class="woocommerce-Price-currencySymbol">£</span
@@ -205,7 +247,11 @@
             <div class="primary-navigation d-flex">
               <ul class="mb-0">
                 <div class="d-flex">
-                  <li class="dropdown menu-link"><span>Home</span></li>
+                  <li class="dropdown menu-link">
+                    <a href="/">
+                    <span>Home</span>
+                    </a>
+                  </li>
                   <li class="dropdown2 menu-link">
                     <span>Product</span>
                     <span
@@ -261,26 +307,32 @@
                 </div>
               </ul>
               <div class="contact d-flex">
-                <span class="icon-contact"
-                  ><svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="headphones"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    class="svg-inline--fa icon-header"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M256 32C114.52 32 0 146.496 0 288v48a32 32 0 0 0 17.689 28.622l14.383 7.191C34.083 431.903 83.421 480 144 480h24c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-24c-31.342 0-59.671 12.879-80 33.627V288c0-105.869 86.131-192 192-192s192 86.131 192 192v1.627C427.671 268.879 399.342 256 368 256h-24c-13.255 0-24 10.745-24 24v176c0 13.255 10.745 24 24 24h24c60.579 0 109.917-48.098 111.928-108.187l14.382-7.191A32 32 0 0 0 512 336v-48c0-141.479-114.496-256-256-256z"
-                      class=""
-                    ></path></svg
-                ></span>
-                <h3 class="elementor-icon-box-title">
-                  <a href="tel:1-800-234-5678"> 1-800-234-5678 </a>
-                </h3>
+                <div class="elementor-icon-list-item">
+                  <a class="d-flex fix-ic">
+                    <span class="elementor-icon-list-icon fix-ic-item">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="headset"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-inline--fa fa-headset fa-w-16 fa-2x"
+                        style="width: 17px; color: #5c9963"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"
+                          class=""
+                        ></path>
+                      </svg>
+                    </span>
+                    <h3 class="elementor-icon-box-title">
+                      <a href="tel:1-800-234-5678"> 1-800-234-5678 </a>
+                    </h3>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

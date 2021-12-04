@@ -329,8 +329,8 @@
     border-radius: 50%;
     display: inline-block;
     position: absolute;
-    bottom: 19px;
-    left: 10px;
+    bottom: 18px;
+    left: 17px;
     color: #fff;
     background-color: #5c9963;
   }
@@ -637,7 +637,10 @@ li {
   .sub-banner {
     justify-content: space-between;
     margin-top: 50px;
-    .sub-banner-img, .sub-banner-img-2, .sub-banner-img-3, .sub-banner-img-4 {
+    .sub-banner-img,
+    .sub-banner-img-2,
+    .sub-banner-img-3,
+    .sub-banner-img-4 {
       background-color: #e5edbe;
       background-image: url(/_nuxt/assets/images/h1-bg-1.jpeg);
       background-position: top left;
@@ -660,7 +663,7 @@ li {
           .elementor-icon-list-items {
             padding-left: 0px;
             .elementor-icon-list-item {
-              padding-bottom: 5px;
+              padding-bottom: 8px;
               .icon-list-icon {
                 padding: 0 0 8px;
                 line-height: 1;
@@ -669,7 +672,6 @@ li {
                   color: #5c9963;
                   height: 4px;
                 }
-                
               }
               .elementor-icon-list-text {
                 color: #141514;
@@ -686,14 +688,116 @@ li {
   }
 }
 
-.sub-banner-img-2{
+.sub-banner-img-2 {
   background-image: url(/_nuxt/assets/images/h1-bg-2.jpeg) !important;
 }
 
-.sub-banner-img-3{
-background-image: url(/_nuxt/assets/images/h1-bg-3.jpeg) !important;
+.sub-banner-img-3 {
+  background-image: url(/_nuxt/assets/images/h1-bg-3.jpeg) !important;
 }
 
-.sub-banner-img-4{
+.sub-banner-img-4 {
   background-image: url(/_nuxt/assets/images/h1-bg-4.jpeg) !important;
+}
+
+.fix-ic {
+  height: 30px;
+  align-items: center;
+}
+
+.fix-ic-item {
+  padding: 5px 8px !important;
+  margin-right: 10px;
+}
+
+//The Footer
+.footer {
+  .footer-main {
+    padding-left: 75px;
+    padding-right: 75px;
+    background-color: #3d6642;
+    background-image: url(https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/07/footer_bg.png);
+    background-position: top center;
+    height: 350px;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s;
+    margin-top: 80px;
+    margin-bottom: 0;
+    .footer-main-list {
+      .footer-main-list-item {
+        border-style: solid;
+        border-width: 0 1px 0 0;
+        border-color: #bfd9c21c;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+          box-shadow 0.3s;
+        padding: 60px 41px 44px 0;
+        width: 25%;
+        .elementor-widget-container {
+          margin: 0 0 18px;
+          .elementor-heading-title {
+            color: #ffa900;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 20px;
+          }
+        }
+      }
+      .footer-main-list-item:not(first-child) {
+        margin-left: 30px;
+      }
+      .footer-main-list-item:last-child {
+        border-right: 0px;
+      }
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.elementor-list-item {
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  .elementor-widget-container {
+    margin: 0 0 20px;
+  }
+}
+
+.elementor-widget-container {
+  .elementor-icon-list-items {
+    padding: 0px;
+    .elementor-icon-list-item {
+      padding-bottom: 15px;
+      .elementor-icon-list-text {
+        color: #fff;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.last-footer{
+  background-color: #315234;
+  height: 65px;
+  padding-left: 75px;
+  padding-right: 75px;
+  .last-footer-item{
+    color: #e1e1e1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .elementor-widget-container{
+      a{
+      color: #5C9963;
+      margin-left: 3px;
+      }
+    }
+  }
 }
