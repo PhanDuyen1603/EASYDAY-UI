@@ -839,8 +839,8 @@ a {
         width: 400px;
       }
       a:hover {
-        color: #5C9963;
-    }
+        color: #5c9963;
+      }
     }
   }
 }
@@ -870,26 +870,101 @@ a {
   margin-right: 10px;
 }
 
-.content-items{
+.content-items {
   margin-top: 43px;
 }
 
-.elementor-posts{
+.elementor-posts {
   margin: 0 0 10px;
-  border-bottom: 1px solid #E4E4E4;
+  border-bottom: 1px solid #e4e4e4;
   margin-top: 30px;
-  .title-posts{
-    color: #2F3E30;
+  .title-posts {
+    color: #2f3e30;
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
     text-align: center;
     width: 100%;
   }
-  .bottom-title{
+  .bottom-title {
     width: 40px;
     height: 3px;
     background: #5c9963;
     margin: 0 auto;
+  }
+}
+
+.banner-brand-main {
+  .banner-brand {
+    background-image: url(/_nuxt/assets/images/h1-bg.jpeg);
+    height: 292px;
+    margin-left: 75px;
+    margin-right: 75px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding: 60px 0;
+    .banner-brand-title-all {
+      .banner-brand-title {
+        text-align: center;
+        color: #5c9963;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 2;
+        font-weight: 600;
+        .titles {
+          margin: 0 0 5px;
+        }
+      }
+      .banner-brand-title {
+        .elementor-container {
+          margin: 0 0 30px;
+          .brand-title-main {
+            color: #141514;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .banner-brand-title {
+        .elementor-button-wrapper {
+          height: 46px;
+          width: 147px;
+          font-weight: 500;
+          line-height: 22px;
+          background-color: #5c9963;
+          border-radius: 50px 50px 50px 50px;
+          color: white;
+          padding-left: 20px;
+          padding-top: 12px;
+          text-transform: none;
+          font-size: 15px;
+          text-align: center;
+          margin: 0 auto;
+          .elementor-button-link {
+            font-weight: 500;
+            line-height: 22px;
+            background-color: #5c9963;
+            border-radius: 50px 50px 50px 50px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.elementor-brand-wrapper {
+  margin-bottom: 30px;
+  .brand-item {
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
   }
 }
