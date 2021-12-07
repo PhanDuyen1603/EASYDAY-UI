@@ -41,6 +41,8 @@ export default {
         'bootstrap-vue/nuxt'
     ],
 
+
+
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {},
     server: {
@@ -76,5 +78,6 @@ export default {
     },
     plugins: [
         { src: '~/plugins/jquery.min.js', ssr: false },
+        { src: '~/plugins/vue-izitoast', ssr: false  },
     ],
 }
