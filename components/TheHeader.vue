@@ -167,7 +167,7 @@
               <span class="qodef-m-icon">
                 <svg
                   class="qodef-svg"
-                  style="width: 27px"
+                  style="width: 27px; fill: black"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
