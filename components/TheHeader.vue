@@ -113,7 +113,7 @@
                   ></path>
                 </svg>
               </span>
-              <span class="account-content"> Login </span>
+               <b-button class="account-content" id="show-btn" @click="$bvModal.show('bv-modal-example')">Login</b-button>
             </a>
           </div>
         </div>
