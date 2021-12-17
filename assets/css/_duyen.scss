@@ -33,6 +33,11 @@
   z-index: 5;
 }
 
+.align-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
 .login-form {
   position: absolute;
   z-index: 99;
@@ -515,7 +520,6 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #656766;
 }
 
 .dropdown-content li:hover {

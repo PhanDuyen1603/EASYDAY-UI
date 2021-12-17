@@ -123,12 +123,15 @@
     <nav class="header-top">
       <div class="container">
         <div class="d-flex justify-content-between" style="margin-bottom: 30px">
-          <NuxtLink to="/" class="navbar-brand"
-            ><img
+          <NuxtLink to="/" class="navbar-brand">
+            <img
               class="logo-foodmood"
               src="~/assets/images/logo.svg"
               alt="logo-foodmood"
-          /></NuxtLink>
+            />
+            <div class="logo-name">Easyday</div>
+          </NuxtLink>
+
           <div class="search-header">
             <form action="" class="form-search">
               <input
@@ -214,7 +217,7 @@
               <span class="count">6</span>
               <bdi class="ic-fix"
                 ><span class="woocommerce-Price-currencySymbol">£</span
-                >0.00</bdi
+                >670.3</bdi
               >
             </div>
           </div>
@@ -223,7 +226,7 @@
       <div class="header-main">
         <div class="d-flex center height-header">
           <div class="all-menu">
-            <div class="vertical-navigation-header">
+            <div class="vertical-navigation-header dropdown2">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -240,7 +243,113 @@
                   class=""
                 ></path>
               </svg>
-              <span class="vertical-navigation-title">All Departments</span>
+              <div class="vertical-navigation-title">
+                <span>All Departments</span>
+                <ul class="dropdown-content menu-all">
+                  <li href="#" class="menu-li-main">
+                    <div class="align-menu">
+                      <div>
+                        <img src="~/assets/images/veget2.png" />
+                        Organic Produce
+                      </div>
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="chevron-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"
+                        style="width: 5px"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                          class=""
+                        ></path>
+                      </svg>
+                    </div>
+                    <ul class="sub-menu-all" style="width: 880px">
+                      <li class="mega-menu-item">
+                        <div class="sub-menu-wrap">
+                          <div class="sub-menu-all-item">
+                            <img src="~/assets/images/menu-all1.jpeg" alt="">
+                          </div>
+                          <div>link 1</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li href="#">
+                    <div class="align-menu">
+                      <div>
+                        <img src="~/assets/images/carrot.png" />
+                        Fresh Vegetables
+                      </div>
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="chevron-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"
+                        style="width: 5px"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                          class=""
+                        ></path>
+                      </svg>
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/banana.png" />
+                      Fresh Fruits
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/kale.png" />
+                      Fresh Packaged Salads
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/branch.png" />
+                      Fresh Herbs
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/lunch-box.png" />
+                      Plant Based Protein & Tofu
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/coca.png" />
+                      Canned & Jarred Vegetables
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/dry.png" />
+                      Dried Fruits
+                    </div>
+                  </li>
+                  <li href="#">
+                    <div>
+                      <img src="~/assets/images/fish.png" />
+                      Dried Vegetables
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="header-item-all">
@@ -249,7 +358,7 @@
                 <div class="d-flex">
                   <li class="dropdown menu-link">
                     <a href="/">
-                    <span>Home</span>
+                      <span>Home</span>
                     </a>
                   </li>
                   <li class="dropdown2 menu-link">
@@ -377,3 +486,81 @@ export default {
   },
 }
 </script>
+
+<style>
+.logo-name {
+  position: absolute;
+  right: 7px;
+  color: rgb(58 57 57);
+  top: 1px;
+  font-weight: 700;
+  font-size: 27px;
+  font-family: 'Vesper Libre', serif;
+}
+
+.menu-all {
+  left: 0px;
+  min-width: 300px !important;
+}
+
+.menu-all li:hover {
+  border-left: none !important;
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+
+.all-menu:hover {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.sub-menu-all > li {
+  padding: 8px 20px 8px 25px;
+}
+
+.menu-all li {
+  font-weight: 500 !important;
+  color: #2f3e30;
+  position: relative;
+  font-weight: 400;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0 12px 0 !important;
+  margin: 10px 25px !important;
+}
+
+.sub-menu-all {
+  position: absolute;
+  padding: 13px 0;
+  left: 100%;
+  top: 0;
+  display: none;
+  opacity: 0;
+  list-style: none;
+  margin: 0;
+  background: #fff;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 7%);
+}
+
+.menu-li-main:hover .sub-menu-all {
+  display: block;
+}
+
+.menu-all li:last-child {
+  border: none !important;
+}
+
+.menu-all {
+  padding: 5px 0 !important;
+}
+
+.menu-all li div img {
+  font-weight: 500 !important;
+  color: #2f3e30;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.menu-title {
+  font-weight: 500 !important;
+  color: #2f3e30 !important;
+}
+</style>
