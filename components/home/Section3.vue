@@ -28,7 +28,7 @@
             >
               <a
                 class="button-shopping-banner"
-                href="http://demo.leebrosus.com/organey/product-category/vegetables/"
+                href="/shop"
                 target="_blank"
               >
                 <span>
@@ -69,7 +69,7 @@
             >
               <a
                 class="button-shopping-banner"
-                href="https://demo.leebrosus.com/organey/shop/"
+                href="/shop"
                 target="_blank"
               >
                 <span>
@@ -110,7 +110,7 @@
             >
               <a
                 class="button-shopping-banner"
-                href="https://demo.leebrosus.com/organey/shop/"
+                href="/shop"
                 target="_blank"
               >
                 <span>

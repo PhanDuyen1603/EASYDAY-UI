@@ -73,7 +73,7 @@
           <BaseFilterCard>
             <template #card-title>Product tags</template>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">
+              <li class="list-group-item no-padding">
                 <CardSmall></CardSmall>
                 <CardSmall></CardSmall>
                 <CardSmall></CardSmall>
@@ -85,32 +85,35 @@
         <div class="col-9">
           <div class="organey-sorting section-header justify-content-between">
             <div class="d-flex align-items-center">
-              <button type="button" class="btn btn-light btn-circle active">
-                <i class="fas fa-list"></i>
+              <button type="button" class="btn btn-light btn-circle  ic-shop">
+                <i class="fas fa-list "  style="font-size: 13px"></i>
               </button>
-              <button type="button" class="btn btn-light btn-circle">
-                <i class="fas fa-th-large"></i>
+              <button type="button" class="btn btn-light btn-circle active ic-shop">
+                <i class="fas fa-th-large" style="font-size: 13px"></i>
               </button>
               <b-dropdown
                 toggle-class="rounded-lg "
-                text="Outline Danger"
+                text="Default sorting"
                 variant="ligth"
                 class="m-2 btn-sort"
               >
-                <b-dropdown-item href="#">Action</b-dropdown-item>
-                <b-dropdown-item href="#">Another action</b-dropdown-item>
-                <b-dropdown-item href="#">Something else here</b-dropdown-item>
+                <b-dropdown-item href="#">Sort by popularity</b-dropdown-item>
+                <b-dropdown-item href="#"
+                  >Sort by average rating</b-dropdown-item
+                >
+                <b-dropdown-item href="#">Sort by latest</b-dropdown-item>
               </b-dropdown>
             </div>
-            <div class="">
+            <div class="" style="font-size: 14px">
               <span>Showing 1–16 of 40 results</span>
             </div>
           </div>
-          <div class="mt-5 row">
+          <div class="mt-4 row" style="margin: 0 auto">
             <div
               v-for="(product, index) in products"
               :key="index"
               class="col-3"
+              style="padding-left: 0px; padding-right: 0px"
             >
               <CardMain :product="product"></CardMain>
             </div>
@@ -134,6 +137,7 @@
 export default {
   data() {
     return {
+      title: 'Product',
       rangeValue: 20,
       categories: [
         {
@@ -353,6 +357,10 @@ export default {
   }
 }
 
+.no-padding{
+  padding: 0px !important;
+}
+
 .btn-circle {
   border-radius: 50%;
   width: 40px;
@@ -366,6 +374,12 @@ export default {
       color: #fff;
     }
   }
+}
+
+.ic-shop{
+  width: 30px;
+  height: 30px;
+  padding: 2px 8px;
 }
 
 .card-product {
@@ -398,7 +412,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0.75rem 2rem;
+  padding: 5px 15px;
   border-radius: 12px;
   background: #f5f5f5;
 }
@@ -439,5 +453,27 @@ export default {
 
 .list-group-item > div:not(:last-child) {
   border-bottom: 1px solid #e4e4e4;
+}
+
+.btn-sort {
+  color: #656766 !important;
+  border: 0;
+  padding: 3px 15px !important;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 14p !important;
+  font-weight: 500;
+  text-align: left;
+}
+
+.rounded-lg {
+    color: #656766 !important;
+    border: 0;
+    padding: 3px 15px !important;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px !important;
+    font-weight: 500;
+    text-align: left;
 }
 </style>

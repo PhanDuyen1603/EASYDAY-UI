@@ -23,7 +23,7 @@ import Section7 from '~/components/home/Section7.vue'
 export default {
   data() {
     return {
-      title: 'Trang Chủ',
+      title: 'HomePage',
     }
   },
   mounted() {},

@@ -1,10 +1,10 @@
 <template>
   <div class="card card-horizontal mb-3" style="max-width: 540px">
     <div class="row g-0 align-items-center">
-      <div class="card-horizontal-img col-md-4">
-        <img src="/images/product/product-1.jpg" class="img-fluid rounded-start" alt="..." />
+      <div class="col-3 card-horizontal-img" style="width: 89px">
+        <img height="100" width="100" src="~/assets/images/small1.jpeg" alt="">
       </div>
-      <div class="col-md-8">
+      <div class="col-8">
         <div class="card-body">
           <b-link>
             <h5 class="card-title">Thinly Sliced Beef Brisket</h5>
@@ -43,6 +43,8 @@
   .price {
     font-size: 14px;
     font-weight: 700;
+    color: #5c9963;
+    margin-top: 10px;
   }
  .card-body {
    padding-left: 1.5rem;

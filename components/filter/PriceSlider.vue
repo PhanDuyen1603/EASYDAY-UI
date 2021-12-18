@@ -8,8 +8,8 @@
       data-step="10"
     >
       <div class="price_label" style="">
-        Price: <span class="from">£{{ min }}</span> 
-        —- <span class="to">£{{ max }}</span>
+        Price: <span class="from">£{{ min }}</span> —-
+        <span class="to">£{{ max }}</span>
       </div>
       <b-link class="price_slider_filter" @click="applyFilters">Filter</b-link>
     </div>
@@ -41,14 +41,14 @@ export default {
     return {
       rangePrice: [0, 100],
       min: this.minPrice,
-      max: this.maxPrice
+      max: this.maxPrice,
     }
   },
   watch: {
     rangePrice(value) {
-      this.min = (this.maxPrice - this.minPrice) * value[0] / 100
-      this.max = (this.maxPrice - this.minPrice) * value[1] / 100
-    }
+      this.min = ((this.maxPrice - this.minPrice) * value[0]) / 100
+      this.max = ((this.maxPrice - this.minPrice) * value[1]) / 100
+    },
   },
   methods: {
     applyFilters() {
@@ -60,7 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 .price_slider > div {
-  margin: .75rem auto;
+  margin: 0.75rem auto;
 }
 
 .price_label {
@@ -73,11 +73,17 @@ export default {
   }
 }
 .price_slider_filter {
-  font-size: $text-base;
-  color: #000;
+  font-size: 14px;
   font-weight: 700;
+  background-color: transparent;
+  padding: 0;
+  order: 3;
+  margin-left: auto;
+  border-bottom: 1px solid;
+  line-height: 1;
+  color: #2f3e30;
   text-transform: uppercase;
-  border-bottom: 1px solid #000;
+  border-radius: 0;
 }
 </style>
 <style lang="scss">
