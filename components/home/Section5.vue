@@ -8,7 +8,7 @@
       </div>
       <div>
         <div class="tab-prods">
-          <b-tabs content-class="mt-3 tab-prod" align="center">
+          <b-tabs content-class="mt-2 tab-prod" align="center">
             <b-tab class="tab-prod-item" title="All" active>
               <b-container class="bv-example-row d-flex list-prod">
                 <b-col class="product-item">
@@ -873,8 +873,7 @@
                     <div class="woocommerce-loop-product__title">
                       <a href="/">White Mushrooms Sliced 250g</a>
                     </div>
-                    <span class="price"
-                      >
+                    <span class="price">
                       <ins style="text-decoration: none"
                         ><span class="woocommerce-Price-amount amount"
                           ><bdi
@@ -1702,7 +1701,7 @@
                 </b-col>
               </b-container>
             </b-tab>
-            <b-tab class="tab-prod-item" title="Fruits"> 
+            <b-tab class="tab-prod-item" title="Fruits">
               <b-container class="bv-example-row d-flex list-prod">
                 <b-col class="product-item">
                   <a class="img-prod" href="/">
@@ -1720,8 +1719,7 @@
                     <div class="woocommerce-loop-product__title">
                       <a href="/">Kiwi Fruit Single</a>
                     </div>
-                    <span class="price"
-                      >
+                    <span class="price">
                       <ins style="text-decoration: none"
                         ><span class="woocommerce-Price-amount amount"
                           ><bdi
@@ -2051,8 +2049,7 @@
                     <div class="woocommerce-loop-product__title">
                       <a href="/">Packham’s Triumph Pears Bag</a>
                     </div>
-                    <span class="price"
-                      >
+                    <span class="price">
                       <ins style="text-decoration: none"
                         ><span class="woocommerce-Price-amount amount"
                           ><bdi
@@ -3398,3 +3395,10 @@ export default {
   },
 }
 </script>
+
+<style>
+.tab-prod-item {
+  padding: 9px 20px;
+  font-weight: 600;
+}
+</style>
