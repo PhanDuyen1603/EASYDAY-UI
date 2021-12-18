@@ -1,3 +1,4 @@
+// eslint-disable-next-line nuxt/no-cjs-in-config
 const webpack = require('webpack')
 
 export default {
@@ -14,7 +15,8 @@ export default {
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' }
         ]
     },
 
@@ -23,7 +25,11 @@ export default {
         '@/assets/css/_bootstrap.css',
         '@/assets/css/_app.scss'
     ],
-
+    styleResources: {
+        scss: [
+            '~/assets/css/variables.scss',
+        ]
+    },
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -38,10 +44,9 @@ export default {
     modules: [
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
-        'bootstrap-vue/nuxt'
+        'bootstrap-vue/nuxt',
+        '@nuxtjs/style-resources'
     ],
-
-
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {},
@@ -74,7 +79,7 @@ export default {
         },
         filenames: {
             chunk: ({ isDev }) => (isDev ? '[name].js' : '[id].[contenthash].js')
-        }
+        },
     },
     plugins: [
         { src: '~/plugins/jquery.min.js', ssr: false },
