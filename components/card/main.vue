@@ -2,7 +2,7 @@
   <b-col class="product-item">
     <div class="product-item-bg"></div>
     <a class="img-prod">
-      <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ sale }}</span>
+      <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
         width="234"
         height="234"
