@@ -122,9 +122,10 @@
             class="organey-sorting mt-4 d-flex justify-content-center"
             style="width: 100%"
           >
-            <nuxt-link to="" class="page-numbers current">1</nuxt-link>
-            <nuxt-link to="" class="page-numbers">2</nuxt-link>
-            <nuxt-link to="" class="page-numbers">3</nuxt-link>
+            <a v-for="p in totalPage" :key="p" 
+              class="page-numbers" :class="{current : page === p}"
+              @click="changePage(p)"
+            >{{ p }}</a>
             <nuxt-link to="" class="page-numbers next-page">></nuxt-link>
           </div>
         </div>
@@ -134,46 +135,13 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
+      page: 1,
+      offset: 16,
       rangeValue: 20,
-      categories: [
-        {
-          name: 'Bread',
-          count: 2,
-          subCategories: [],
-        },
-        {
-          name: 'Fruits',
-          count: 10,
-          subCategories: [
-            {
-              name: 'Fresh Nuts',
-              count: 1,
-            },
-            {
-              name: 'Millk Cream',
-              count: 0,
-            },
-          ],
-        },
-        {
-          name: 'Meat',
-          count: 16,
-          subCategories: [],
-        },
-        {
-          name: 'Uncategorized',
-          count: 37,
-          subCategories: [],
-        },
-        {
-          name: 'Vegetables',
-          count: 14,
-          subCategories: [],
-        },
-      ],
       brands: [
         {
           name: 'Biona',
@@ -204,120 +172,6 @@ export default {
           count: 2,
         },
       ],
-      products: [
-        {
-          name: 'Wrapped Cabbage',
-          id: 0,
-          price: '782.92',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Sweetcorn 4 Pack',
-          id: 1,
-          price: '220.20',
-          rating: 4,
-          sale: '',
-        },
-        {
-          name: 'Mixed Chillies150g',
-          id: 2,
-          price: '546.04',
-          rating: 4,
-          sale: '-25%',
-        },
-        {
-          name: 'Beef Potjiekos Per kg',
-          id: 3,
-          price: '535.40',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Wrapped Red Cabbage',
-          id: 4,
-          price: '500.91',
-          rating: 4,
-          sale: '',
-        },
-        {
-          name: 'Farmer’s Choice',
-          id: 5,
-          price: '725.47',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Packham’s Triumph',
-          id: 6,
-          price: '323.00',
-          rating: 4,
-          sale: '-27%',
-        },
-        {
-          name: 'Frozen Angelfish Per kg',
-          id: 7,
-          price: '647.32',
-          rating: 4,
-          sale: '',
-        },
-        {
-          name: 'Steers Tomato 75ml',
-          id: 8,
-          price: '91.38',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Large Queen Pineapple',
-          id: 9,
-          price: '78.09',
-          rating: 3,
-          sale: '-48%',
-        },
-        {
-          name: 'Peppered 200g',
-          id: 10,
-          price: '14.84',
-          rating: 4,
-          sale: '',
-        },
-        {
-          name: 'Cut Queen kg',
-          id: 11,
-          price: '910.53',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Smokies Vienna’s Per kg',
-          id: 12,
-          price: '101.64',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Papaya Single',
-          id: 13,
-          price: '546.04',
-          rating: 4,
-          sale: '-27%',
-        },
-        {
-          name: 'White 250g',
-          id: 14,
-          price: '161.44',
-          rating: 4,
-          sale: '',
-        },
-        {
-          name: 'Beef Club Per kg',
-          id: 15,
-          price: '814.96',
-          rating: 4,
-          sale: '',
-        },
-      ],
       tags: [
         'bread',
         'fruits',
@@ -329,6 +183,23 @@ export default {
       ],
     }
     
+  },
+  computed: {
+    ...mapGetters({products: 'modules/products/products'}),
+    ...mapGetters({categories: 'modules/products/categories'}),
+    ...mapGetters({productsCount: 'modules/products/productsCount'}),
+    totalPage() {
+      return Math.ceil(+this.productsCount / +this.offset)
+    }
+  },
+  mounted() {
+    this.$store.dispatch('modules/products/getProducts', {page: this.page, offset: this.offset})
+  },
+  methods: {
+    changePage(p) {
+      this.page = p
+      this.$store.dispatch('modules/products/getProducts', {page: this.page, offset: this.offset})
+    }
   },
 }
 </script>
