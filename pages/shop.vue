@@ -137,7 +137,6 @@
 export default {
   data() {
     return {
-      title: 'Product',
       rangeValue: 20,
       categories: [
         {
@@ -221,7 +220,7 @@ export default {
           sale: '',
         },
         {
-          name: 'Mixed Chillies Pack 150g',
+          name: 'Mixed Chillies150g',
           id: 2,
           price: '546.04',
           rating: 4,
@@ -242,14 +241,14 @@ export default {
           sale: '',
         },
         {
-          name: 'Farmer’s Choice Chicken Wings',
+          name: 'Farmer’s Choice',
           id: 5,
           price: '725.47',
           rating: 3,
           sale: '',
         },
         {
-          name: 'Packham’s Triumph Pears Bag',
+          name: 'Packham’s Triumph',
           id: 6,
           price: '323.00',
           rating: 4,
@@ -263,7 +262,7 @@ export default {
           sale: '',
         },
         {
-          name: 'Steers Tomato Sauce 375ml',
+          name: 'Steers Tomato 75ml',
           id: 8,
           price: '91.38',
           rating: 3,
@@ -277,14 +276,14 @@ export default {
           sale: '-48%',
         },
         {
-          name: 'Peppered Mackerel Fillets 200g',
+          name: 'Peppered 200g',
           id: 10,
           price: '14.84',
           rating: 4,
           sale: '',
         },
         {
-          name: 'Cut Queen Pumpkin Per kg',
+          name: 'Cut Queen kg',
           id: 11,
           price: '910.53',
           rating: 3,
@@ -305,14 +304,14 @@ export default {
           sale: '-27%',
         },
         {
-          name: 'White Mushrooms Sliced 250g',
+          name: 'White 250g',
           id: 14,
           price: '161.44',
           rating: 4,
           sale: '',
         },
         {
-          name: 'Beef Club & T-Bone Per kg',
+          name: 'Beef Club Per kg',
           id: 15,
           price: '814.96',
           rating: 4,
@@ -329,6 +328,7 @@ export default {
         'vegetables',
       ],
     }
+    
   },
 }
 </script>

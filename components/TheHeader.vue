@@ -376,7 +376,7 @@
                       <li href="#">Link 3</li>
                     </ul>
                   </li>
-                  <li class="dropdown menu-link"><span>Detail</span></li>
+                  <li class="dropdown menu-link"><span>Recommend Food</span></li>
                   <li class="dropdown menu-link"><span>Contact</span></li>
                 </div>
               </ul>

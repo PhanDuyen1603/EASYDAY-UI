@@ -647,8 +647,8 @@ li {
 }
 
 .margin-page {
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 75px !important;
+  margin-right: 75px !important;
   .sub-banner {
     justify-content: space-between;
     margin-top: 50px;
@@ -1278,6 +1278,7 @@ a {
 .img-radius {
   transition: all ease-in-out 0.3s;
   border-radius: 12px;
+  cursor: pointer;
 }
 .product-item {
   padding: 15px 15px;
