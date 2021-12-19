@@ -50,7 +50,7 @@
             </ul>
           </BaseFilterCard>
           <BaseFilterCard>
-            <template #card-title>FEATURED PRODUCTS</template>
+            <template #card-title>Product tags</template>
             <div class="d-flex flex-wrap">
               <span
                 v-for="(tag, index) in tags"
@@ -71,7 +71,7 @@
             </div>
           </BaseFilterCard>
           <BaseFilterCard>
-            <template #card-title>Product tags</template>
+            <template #card-title>FEATURED PRODUCTS </template>
             <ul class="list-group list-group-flush">
               <li class="list-group-item no-padding">
                 <CardSmall></CardSmall>
@@ -300,7 +300,7 @@ export default {
   font-size: 12px;
   font-weight: 600;
   border-radius: 12px;
-
+  cursor: pointer;
   &.current {
     background: $primary-hover;
     color: #fff;

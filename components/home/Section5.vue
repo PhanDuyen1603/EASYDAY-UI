@@ -13,7 +13,7 @@
               <b-container class="bv-example-row d-flex list-prod no-pad">
                 <div class="mt-3 row" style="margin: 0 auto">
                   <div
-                    v-for="(product, index) in products"
+                    v-for="(product, index) in products_all"
                     :key="index"
                     class="col-2 mb-3 card-home"
                     style="padding-left: 0px; padding-right: 0px"
@@ -27,7 +27,7 @@
               <b-container class="bv-example-row d-flex list-prod no-pad">
                 <div class="mt-3 row" style="margin: 0 auto">
                   <div
-                    v-for="(product, index) in products"
+                    v-for="(product, index) in products_veget"
                     :key="index"
                     class="col-2 mb-3 card-home"
                     style="padding-left: 0px; padding-right: 0px"
@@ -41,7 +41,7 @@
               <b-container class="bv-example-row d-flex list-prod no-pad">
                 <div class="mt-3 row" style="margin: 0 auto">
                   <div
-                    v-for="(product, index) in products"
+                    v-for="(product, index) in products_fruits"
                     :key="index"
                     class="col-2 mb-3 card-home"
                     style="padding-left: 0px; padding-right: 0px"
@@ -55,7 +55,7 @@
               <b-container class="bv-example-row d-flex list-prod no-pad">
                 <div class="mt-3 row" style="margin: 0 auto">
                   <div
-                    v-for="(product, index) in products"
+                    v-for="(product, index) in products_bread"
                     :key="index"
                     class="col-2 mb-3 card-home"
                     style="padding-left: 0px; padding-right: 0px"
@@ -69,7 +69,7 @@
               <b-container class="bv-example-row d-flex list-prod no-pad">
                 <div class="mt-3 row" style="margin: 0 auto">
                   <div
-                    v-for="(product, index) in products"
+                    v-for="(product, index) in products_meat"
                     :key="index"
                     class="col-2 mb-3 card-home"
                     style="padding-left: 0px; padding-right: 0px"
@@ -172,10 +172,10 @@ export default {
           count: 2,
         },
       ],
-      products: [
+      products_all: [
         {
-          name: 'Wrapped Cabbage',
-          id: 0,
+          name: 'Kale Brunch',
+          id: 18,
           price: '782.92',
           rating: 3,
           sale: '',
@@ -210,7 +210,7 @@ export default {
         },
         {
           name: 'Farmer’s Choice',
-          id: 5,
+          id: 17,
           price: '725.47',
           rating: 3,
           sale: '',
@@ -243,40 +243,286 @@ export default {
           rating: 3,
           sale: '-48%',
         },
+      ],
+      products_veget: [
         {
-          name: 'Peppered 200g',
-          id: 10,
-          price: '14.84',
+          name: 'Cut Queen Pumpkin',
+          id: 11,
+          price: '722.92',
+          rating: 3,
+          sale: '-12%',
+        },
+        {
+          name: 'Kale Bunch',
+          id: 18,
+          price: '24.20',
           rating: 4,
           sale: '',
         },
         {
-          name: 'Cut Queen kg',
-          id: 11,
-          price: '910.53',
-          rating: 3,
-          sale: '',
-        },
-        {
-          name: 'Smokies Vienna’s Per kg',
-          id: 12,
-          price: '101.64',
-          rating: 3,
-          sale: '',
+          name: 'Kiwi 150g',
+          id: 17,
+          price: '946.04',
+          rating: 4,
+          sale: '-25%',
         },
         {
           name: 'Papaya Single',
           id: 13,
-          price: '546.04',
+          price: '535.40',
+          rating: 3,
+          sale: '-23%',
+        },
+        {
+          name: 'Wrapped Red Cabbage',
+          id: 4,
+          price: '500.91',
+          rating: 4,
+          sale: '',
+        },
+        {
+          name: 'Farmer’s Choice',
+          id: 10,
+          price: '725.47',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Packham’s Triumph',
+          id: 6,
+          price: '323.00',
           rating: 4,
           sale: '-27%',
         },
         {
-          name: 'White 250g',
+          name: 'Loose Medium 150g',
           id: 14,
-          price: '161.44',
+          price: '647.32',
           rating: 4,
           sale: '',
+        },
+        {
+          name: 'Steers Tomato 75ml',
+          id: 26,
+          price: '91.38',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Large Queen Pineapple',
+          id: 9,
+          price: '78.09',
+          rating: 3,
+          sale: '-48%',
+        },
+      ],
+      products_fruits: [
+        {
+          name: 'Kiwi 150g',
+          id: 17,
+          price: '946.04',
+          rating: 4,
+          sale: '-25%',
+        },
+        {
+          name: 'Papaya Single',
+          id: 13,
+          price: '535.40',
+          rating: 3,
+          sale: '-23%',
+        },
+        {
+          name: 'Packham’s Triumph',
+          id: 6,
+          price: '323.00',
+          rating: 4,
+          sale: '-27%',
+        },
+        {
+          name: 'Large Queen Pineapple',
+          id: 9,
+          price: '78.09',
+          rating: 3,
+          sale: '-48%',
+        },
+        {
+          name: 'Cut Queen Pumpkin',
+          id: 11,
+          price: '722.92',
+          rating: 3,
+          sale: '-12%',
+        },
+        {
+          name: 'Kale Bunch',
+          id: 19,
+          price: '24.20',
+          rating: 4,
+          sale: '',
+        },
+        
+        {
+          name: 'Wrapped Red Cabbage',
+          id: 4,
+          price: '500.91',
+          rating: 4,
+          sale: '',
+        },
+        {
+          name: 'Farmer’s Choice',
+          id: 10,
+          price: '725.47',
+          rating: 3,
+          sale: '',
+        },
+        
+      ],
+      products_bread: [
+        {
+          name: 'Cut Queen Pumpkin',
+          id: 11,
+          price: '722.92',
+          rating: 3,
+          sale: '-12%',
+        },
+        {
+          name: 'Packham’s Triumph',
+          id: 6,
+          price: '323.00',
+          rating: 4,
+          sale: '-27%',
+        },
+        {
+          name: 'Kiwi 150g',
+          id: 17,
+          price: '946.04',
+          rating: 4,
+          sale: '-25%',
+        },
+        {
+          name: 'Papaya Single',
+          id: 13,
+          price: '535.40',
+          rating: 3,
+          sale: '-23%',
+        },
+        
+        {
+          name: 'Large Queen Pineapple',
+          id: 9,
+          price: '78.09',
+          rating: 3,
+          sale: '-48%',
+        },
+        
+      ],
+      products_meat: [
+        {
+          name: 'Beef Potjiekos Per kg',
+          id: 3,
+          price: '535.40',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Frozen Angelfish Per kg',
+          id: 7,
+          price: '647.32',
+          rating: 4,
+          sale: '',
+        },
+        {
+          name: 'Steers Tomato 75ml',
+          id: 8,
+          price: '91.38',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Beef Potjiekos Per kg',
+          id: 3,
+          price: '535.40',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Frozen Angelfish Per kg',
+          id: 7,
+          price: '647.32',
+          rating: 4,
+          sale: '',
+        },
+        
+      ],
+      products_flash_sale: [
+        {
+          name: 'Kale Brunch',
+          id: 18,
+          price: '782.92',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Sweetcorn 4 Pack',
+          id: 1,
+          price: '220.20',
+          rating: 4,
+          sale: '',
+        },
+        {
+          name: 'Mixed Chillies150g',
+          id: 2,
+          price: '546.04',
+          rating: 4,
+          sale: '-25%',
+        },
+        {
+          name: 'Beef Potjiekos Per kg',
+          id: 3,
+          price: '535.40',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Wrapped Red Cabbage',
+          id: 4,
+          price: '500.91',
+          rating: 4,
+          sale: '',
+        },
+        {
+          name: 'Farmer’s Choice',
+          id: 17,
+          price: '725.47',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Packham’s Triumph',
+          id: 6,
+          price: '323.00',
+          rating: 4,
+          sale: '-27%',
+        },
+        {
+          name: 'Frozen Angelfish Per kg',
+          id: 7,
+          price: '647.32',
+          rating: 4,
+          sale: '',
+        },
+        {
+          name: 'Steers Tomato 75ml',
+          id: 8,
+          price: '91.38',
+          rating: 3,
+          sale: '',
+        },
+        {
+          name: 'Large Queen Pineapple',
+          id: 9,
+          price: '78.09',
+          rating: 3,
+          sale: '-48%',
         },
       ],
     }

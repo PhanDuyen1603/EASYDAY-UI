@@ -50,7 +50,7 @@ export const shopProducts = [{
     categories: ['Vegetables'],
   },
   {
-    name: 'Mixed Chillies Pack 150g',
+    name: 'Mixed Chillies',
     id: 2,
     price: '546.04',
     rating: 4,
@@ -58,7 +58,7 @@ export const shopProducts = [{
     categories: ['Vegetables', 'Fruits'],
   },
   {
-    name: 'Beef Potjiekos Per kg',
+    name: 'Beef Potjiekos',
     id: 3,
     price: '535.40',
     rating: 3,
@@ -74,7 +74,7 @@ export const shopProducts = [{
     categories: ['Vegetables'],
   },
   {
-    name: 'Farmer’s Choice Chicken Wings',
+    name: 'Farmer’s Wings',
     id: 5,
     price: '725.47',
     rating: 3,
@@ -82,7 +82,7 @@ export const shopProducts = [{
     categories: ['Meat'],
   },
   {
-    name: 'Packham’s Triumph Pears Bag',
+    name: 'Packham’s Bag',
     id: 6,
     price: '323.00',
     rating: 4,
@@ -90,7 +90,7 @@ export const shopProducts = [{
     categories: ['Fruits'],
   },
   {
-    name: 'Frozen Angelfish Per kg',
+    name: 'Frozen kg',
     id: 7,
     price: '647.32',
     rating: 4,
@@ -98,7 +98,7 @@ export const shopProducts = [{
     categories: ['Meat'],
   },
   {
-    name: 'Steers Tomato Sauce 375ml',
+    name: 'Steers Tomato',
     id: 8,
     price: '91.38',
     rating: 3,
@@ -114,7 +114,7 @@ export const shopProducts = [{
     categories: ['Fruits'],
   },
   {
-    name: 'Peppered Mackerel Fillets 200g',
+    name: 'Peppered Mackerel',
     id: 10,
     price: '14.84',
     rating: 4,
@@ -122,7 +122,7 @@ export const shopProducts = [{
     categories: ['Meat'],
   },
   {
-    name: 'Cut Queen Pumpkin Per kg',
+    name: 'Cut Queen kg',
     id: 11,
     price: '910.53',
     rating: 3,
@@ -146,7 +146,7 @@ export const shopProducts = [{
     categories: ['Fruits'],
   },
   {
-    name: 'White Mushrooms Sliced 250g',
+    name: 'White Mushrooms ',
     id: 14,
     price: '161.44',
     rating: 4,
@@ -162,7 +162,7 @@ export const shopProducts = [{
     categories: ['Meat'],
   },
   {
-    name: 'East Coast Small Sole Fish',
+    name: 'East Coast Small',
     id: 16,
     price: '168.22',
     rating: 4,
@@ -184,7 +184,7 @@ export const shopProducts = [{
     sale: ''
   },
   {
-    name: 'Cara-Cara Oranges Pack 2kg',
+    name: 'Cara-Cara Oranges',
     id: 19,
     price: '925.36',
     rating: 4,
@@ -198,21 +198,21 @@ export const shopProducts = [{
     sale: '',
   },
   {
-    name: 'Thinly Sliced Beef Brisket',
+    name: 'Thinly Sliced Beef ',
     id: 21,
     price: '985.97',
     rating: 4,
     sale: '',
   },
   {
-    name: 'Soup & Stew Mix Pack 1.5kg',
+    name: 'Soup & Stew Mix',
     id: 22,
     price: '323.00',
     rating: 4,
     sale: '-40%',
   },
   {
-    name: 'Loose Medium Onions Per kg',
+    name: 'Loose Medium Onions',
     id: 23,
     price: '216.81',
     rating: 4,
@@ -240,7 +240,7 @@ export const shopProducts = [{
     sale: '',
   },
   {
-    name: 'Equatorial Banana Per kg',
+    name: 'Equatorial Banana',
     id: 27,
     price: '693.95',
     rating: 4,
@@ -254,21 +254,21 @@ export const shopProducts = [{
     sale: '',
   },
   {
-    name: 'Extra Large Eggs 6 Pack',
+    name: 'Extra Large Eggs',
     id: 29,
     price: '723.67',
     rating: 4,
     sale: '',
   },
   {
-    name: 'Gourmet Beef Sosaties Per kg',
+    name: 'Gourmet Beef Per',
     id: 30,
     price: '646.97',
     rating: 4,
     sale: '',
   },
   {
-    name: 'Frozen Jumbo Hake Fillets',
+    name: 'Frozen Jumbo Hake',
     id: 31,
     price: '224.76',
     rating: 4,

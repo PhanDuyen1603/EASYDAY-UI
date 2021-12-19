@@ -18,9 +18,9 @@
     background: $primary-color;
     color: #fff;
     border-radius: 12px 12px 0 0;
-    font-size: 1rem;
+    font-size: 14px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
   }
   .card-filter-body {
