@@ -2,7 +2,7 @@
   <div class="card card-horizontal mb-3" style="max-width: 540px">
     <div class="row g-0 align-items-center">
       <div class="card-horizontal-img col-md-4">
-        <img src="/images/product/product-1.jpg" class="img-fluid rounded-start" alt="..." />
+        <img src="/images/products/product-1.jpg" class="img-fluid rounded-start" alt="..." />
       </div>
       <div class="col-md-8">
         <div class="card-body">

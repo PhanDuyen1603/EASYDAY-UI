@@ -169,8 +169,8 @@ export default {
   .product-item-bg {
     &::before {
       content: '';
-      width: 200px;
-      height: 200px;
+      width: 0;
+      height: 0;
       position: absolute;
       top: 0;
       left: 0;
@@ -188,8 +188,10 @@ export default {
       height: 100%;
       background: rgba(255, 255, 255, 0.5);
       box-shadow: 0 0 24px rgb(0 0 0 / 10%);
+      z-index: 5;
     }
     .add-to-cart-wrap {
+      z-index: 7;
       a {
         background: $primary-hover;
         color: #fff;
@@ -198,6 +200,9 @@ export default {
         fill: #fff;
       }
     } 
+    .onsale {
+      z-index: 7;
+    }
   }
 }
 </style>
