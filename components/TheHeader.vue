@@ -113,7 +113,12 @@
                   ></path>
                 </svg>
               </span>
-               <b-button class="account-content" id="show-btn" @click="$bvModal.show('bv-modal-example')">Login</b-button>
+              <b-button
+                class="account-content"
+                id="show-btn"
+                @click="$bvModal.show('bv-modal-example')"
+                >Login</b-button
+              >
             </a>
           </div>
         </div>
@@ -148,7 +153,7 @@
           </div>
           <div class="d-flex">
             <div class="wishlist">
-              <img src="~/assets/images/heart9.png">
+              <img src="~/assets/images/heart9.png" />
               <span class="count">8</span>
             </div>
             <div class="shopping-list">
@@ -233,9 +238,9 @@
                 <ul class="dropdown-content menu-all">
                   <li href="#" class="menu-li-main">
                     <div class="align-menu">
-                      <div>
+                      <div class="nemu-all-li-sub">
                         <img src="~/assets/images/veget2.png" />
-                        Organic Produce
+                        <div>Organic Produce</div>
                       </div>
                       <svg
                         aria-hidden="true"
@@ -259,7 +264,7 @@
                       <li class="mega-menu-item">
                         <div class="sub-menu-wrap">
                           <div class="sub-menu-all-item">
-                            <img src="~/assets/images/menu-all1.jpeg" alt="">
+                            <img src="~/assets/images/menu-all1.jpeg" alt="" />
                           </div>
                           <div>link 1</div>
                         </div>
@@ -268,9 +273,9 @@
                   </li>
                   <li href="#">
                     <div class="align-menu">
-                      <div>
+                      <div class="nemu-all-li-sub">
                         <img src="~/assets/images/carrot.png" />
-                        Fresh Vegetables
+                        <div>Fresh Vegetables</div>
                       </div>
                       <svg
                         aria-hidden="true"
@@ -292,45 +297,45 @@
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/banana.png" />
-                      Fresh Fruits
+                      <div>Fresh Fruits</div>
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/kale.png" />
-                      Fresh Packaged Salads
+                      <div>Fresh Packaged Salads</div>
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/branch.png" />
-                      Fresh Herbs
+                      <div>Fresh Herbs</div>
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/lunch-box.png" />
-                      Plant Based Protein & Tofu
+                      <div>Plant Based Protein & Tofu</div>
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/coca.png" />
-                      Canned & Jarred Vegetables
+                      <div>Canned & Jarred Vegetables</div>
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/dry.png" />
-                      Dried Fruits
+                      <div>Dried Fruits</div>
                     </div>
                   </li>
                   <li href="#">
-                    <div>
+                    <div class="nemu-all-li-sub">
                       <img src="~/assets/images/fish.png" />
-                      Dried Vegetables
+                      <div>Dried Vegetables</div>
                     </div>
                   </li>
                 </ul>
@@ -376,7 +381,9 @@
                       <li href="#">Link 3</li>
                     </ul>
                   </li>
-                  <li class="dropdown menu-link"><span>Recommend Food</span></li>
+                  <li class="dropdown menu-link">
+                    <span>Recommend Food</span>
+                  </li>
                   <li class="dropdown menu-link"><span>Contact</span></li>
                 </div>
               </ul>
@@ -527,5 +534,10 @@ export default {
 .menu-title {
   font-weight: 500 !important;
   color: #2f3e30 !important;
+}
+
+.nemu-all-li-sub {
+  display: flex;
+  align-items: center;
 }
 </style>

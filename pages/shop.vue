@@ -85,13 +85,21 @@
         <div class="col-9">
           <div class="organey-sorting section-header justify-content-between">
             <div class="d-flex align-items-center">
-              <button type="button" class="btn btn-light btn-circle  ic-shop">
-                <i class="fas fa-list "  style="font-size: 13px"></i>
+              <button type="button" class="btn btn-light btn-circle ic-shop">
+                <i class="fas fa-list" style="font-size: 13px"></i>
               </button>
-              <button type="button" class="btn btn-light btn-circle active ic-shop">
+              <button
+                type="button"
+                class="btn btn-light btn-circle active ic-shop"
+              >
                 <i class="fas fa-th-large" style="font-size: 13px"></i>
               </button>
               <b-dropdown
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
                 toggle-class="rounded-lg "
                 text="Default sorting"
                 variant="ligth"
@@ -122,10 +130,14 @@
             class="organey-sorting mt-4 d-flex justify-content-center"
             style="width: 100%"
           >
-            <a v-for="p in totalPage" :key="p" 
-              class="page-numbers" :class="{current : page === p}"
+            <a
+              v-for="p in totalPage"
+              :key="p"
+              class="page-numbers"
+              :class="{ current: page === p }"
               @click="changePage(p)"
-            >{{ p }}</a>
+              >{{ p }}</a
+            >
             <nuxt-link to="" class="page-numbers next-page">></nuxt-link>
           </div>
         </div>
@@ -182,24 +194,29 @@ export default {
         'vegetables',
       ],
     }
-    
   },
   computed: {
-    ...mapGetters({products: 'modules/products/products'}),
-    ...mapGetters({categories: 'modules/products/categories'}),
-    ...mapGetters({productsCount: 'modules/products/productsCount'}),
+    ...mapGetters({ products: 'modules/products/products' }),
+    ...mapGetters({ categories: 'modules/products/categories' }),
+    ...mapGetters({ productsCount: 'modules/products/productsCount' }),
     totalPage() {
       return Math.ceil(+this.productsCount / +this.offset)
-    }
+    },
   },
   mounted() {
-    this.$store.dispatch('modules/products/getProducts', {page: this.page, offset: this.offset})
+    this.$store.dispatch('modules/products/getProducts', {
+      page: this.page,
+      offset: this.offset,
+    })
   },
   methods: {
     changePage(p) {
       this.page = p
-      this.$store.dispatch('modules/products/getProducts', {page: this.page, offset: this.offset})
-    }
+      this.$store.dispatch('modules/products/getProducts', {
+        page: this.page,
+        offset: this.offset,
+      })
+    },
   },
 }
 </script>
@@ -228,7 +245,7 @@ export default {
   }
 }
 
-.no-padding{
+.no-padding {
   padding: 0px !important;
 }
 
@@ -247,7 +264,7 @@ export default {
   }
 }
 
-.ic-shop{
+.ic-shop {
   width: 30px;
   height: 30px;
   padding: 2px 8px;
@@ -338,13 +355,13 @@ export default {
 }
 
 .rounded-lg {
-    color: #656766 !important;
-    border: 0;
-    padding: 3px 15px !important;
-    background-color: #fff;
-    border-radius: 30px;
-    font-size: 14px !important;
-    font-weight: 500;
-    text-align: left;
+  color: #656766 !important;
+  border: 0;
+  padding: 3px 15px !important;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 14px !important;
+  font-weight: 500;
+  text-align: left;
 }
 </style>

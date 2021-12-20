@@ -152,10 +152,10 @@ export default {
   cursor: pointer;
   .icon {
     position: absolute;
-    top: 11px;
-    left: 9px;
+    top: 13px;
+    left: 12px;
     i {
-      font-size: 1.25rem;
+      font-size: 14px;
       color: #fff;
     }
   }
