@@ -1,9 +1,7 @@
 <template>
   <div class="bread-crumb-wrapper">
     <b-container>
-      <h1 class="cur-page">
-        <slot></slot>
-      </h1>
+      <h1 class="cur-page">Shop</h1>
       <b-breadcrumb class="">
         <b-breadcrumb-item href="#home">
           Home

@@ -143,14 +143,12 @@
                 class="search-feild"
                 type="search"
                 name="search-feild"
-                v-model="searchString"
+                id=""
                 placeholder="Search products..."
               />
-              <NuxtLink :to="{ name: 'shop-slug', params: { slug: searchString }}">
-                <button class="btn-search" type="submit" value="Search">
-                  Search
-                </button>
-              </NuxtLink>
+              <button class="btn-search" type="submit" value="Search">
+                Search
+              </button>
             </form>
           </div>
           <div class="d-flex">
@@ -445,7 +443,6 @@ export default {
       age: '',
       language: '',
       state: '',
-      searchString: ''
     }
   },
   methods: {
