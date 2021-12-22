@@ -82,20 +82,21 @@
     text-transform: uppercase;
     border-bottom: 1px solid #000;
   }
-}
-.price_slider_filter {
-  font-size: 14px;
-  font-weight: 700;
-  background-color: transparent;
-  padding: 0;
-  order: 3;
-  margin-left: auto;
-  border-bottom: 1px solid;
-  line-height: 1;
-  color: #2f3e30;
-  text-transform: uppercase;
-  border-radius: 0;
-}
+
+  .price_slider_filter {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 0;
+    order: 3;
+    margin-left: auto;
+    border-bottom: 1px solid;
+    line-height: 1;
+    color: #2f3e30;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+
 </style>
 <style lang="scss">
   .vue-slider-process {
