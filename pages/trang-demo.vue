@@ -2,6 +2,9 @@
   <div>
     <h1>{{ title }}</h1>
     <NuxtLink to="/" no-prefetch>Trang chủ</NuxtLink>
+    <div>
+</div>
+
   </div>
 </template>
 
