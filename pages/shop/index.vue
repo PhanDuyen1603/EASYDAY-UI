@@ -7,14 +7,24 @@
           <BaseFilterCard>
             <template #card-title>PRODUCT CATEGORIES</template>
             <ul class="list-group list-group-flush">
-              <li v-for="(category, index) in categories" :key="index" class="list-group-item">
-                <b-link v-b-toggle="category.name" class="d-flex justify-content-between">
+              <li
+                v-for="(category, index) in categories"
+                :key="index"
+                class="list-group-item"
+              >
+                <b-link
+                  v-b-toggle="category.name"
+                  class="d-flex justify-content-between"
+                >
                   <span class="cat-name">{{ category.name }}</span>
                   <span class="cat-count">{{ category.count }}</span>
                 </b-link>
-                <b-collapse v-if="
+                <b-collapse
+                  v-if="
                     category.subCategories && category.subCategories.length > 0
-                  " :id="category.name">
+                  "
+                  :id="category.name"
+                >
                   <b-card>I should start open!</b-card>
                 </b-collapse>
               </li>
@@ -22,12 +32,19 @@
           </BaseFilterCard>
           <BaseFilterCard>
             <template #card-title>Filter by price</template>
-            <FilterPriceSlider :max-price="990" @apply-filter="priceFilter"></FilterPriceSlider>
+            <FilterPriceSlider
+              :max-price="990"
+              @apply-filter="priceFilter"
+            ></FilterPriceSlider>
           </BaseFilterCard>
           <BaseFilterCard>
             <template #card-title>PRODUCT CATEGORIES</template>
             <ul class="list-group list-group-flush">
-              <li v-for="(brand, index) in brands" :key="index" class="list-group-item">
+              <li
+                v-for="(brand, index) in brands"
+                :key="index"
+                class="list-group-item"
+              >
                 <b-link class="d-flex justify-content-between">
                   <span class="cat-name">{{ brand.name }}</span>
                   <span class="cat-count">{{ brand.count }}</span>
@@ -38,7 +55,10 @@
           <BaseFilterCard>
             <template #card-title>FEATURED PRODUCTS</template>
             <div class="d-flex flex-wrap">
-              <span v-for="(tag, index) in tags" :key="index" class="
+              <span
+                v-for="(tag, index) in tags"
+                :key="index"
+                class="
                   px-3
                   py-2
                   me-3
@@ -48,7 +68,9 @@
                   bg-light
                   text-dark
                   rounded-pill
-                ">{{ tag }}</span>
+                "
+                >{{ tag }}</span
+              >
             </div>
           </BaseFilterCard>
           <BaseFilterCard>
@@ -64,32 +86,68 @@
           </BaseFilterCard>
         </div>
         <div class="col-9">
-          <div class="organey-sorting section-header justify-content-between">
+          <div
+            class="
+              organey-sorting
+              fix-padding
+              section-header
+              justify-content-between
+            "
+          >
             <div class="d-flex align-items-center">
-              <button type="button" class="btn btn-light btn-circle active">
-                <i class="fas fa-list"></i>
+              <button type="button" class="btn fix-ic btn-light btn-circle">
+                <i class="fas fa-list ic-shop" style="font-size: 12px"></i>
               </button>
-              <button type="button" class="btn btn-light btn-circle">
-                <i class="fas fa-th-large"></i>
+              <button
+                type="button"
+                class="btn fix-ic btn-light btn-circle active"
+              >
+                <i class="fas fa-th-large ic-shop" style="font-size: 12px"></i>
               </button>
-              <b-dropdown toggle-class="rounded-lg " text="Outline Danger" variant="ligth" class="m-2 btn-sort">
+              <b-dropdown
+                toggle-class="rounded-lg "
+                text="
+Default sorting
+"
+                variant="ligth"
+                class="m-2 btn-sort"
+                style="font-size: 14px"
+              >
                 <b-dropdown-item href="#">Action</b-dropdown-item>
                 <b-dropdown-item href="#">Another action</b-dropdown-item>
                 <b-dropdown-item href="#">Something else here</b-dropdown-item>
               </b-dropdown>
             </div>
-            <div class="">
-              <span>Showing {{ page === 1 ? 1 : (page - 1) * offset + 1 }}–{{ offset * page }} of {{ productsCount }} results</span>
+            <div class="pagination-page-title">
+              <span
+                >Showing {{ page === 1 ? 1 : (page - 1) * offset + 1 }}–{{
+                  offset * page
+                }}
+                of {{ productsCount }} results</span
+              >
             </div>
           </div>
-          <div v-if="products" class="mt-5 row">
-            <div v-for="(product, index) in products" :key="index" class="col-3">
+          <div v-if="products" class="mt-4 row" style="margin: 0 auto;">
+            <div
+              v-for="(product, index) in products"
+              :key="index"
+              class="col-3" style="padding: 0px"
+            >
               <CardMain :product="product"></CardMain>
             </div>
           </div>
-          <div class="organey-sorting mt-4 d-flex justify-content-center" style="width: 100%">
-            <a v-for="p in totalPage" :key="p" class="page-numbers" :class="{current : page === p}"
-              @click="changePage(p)">{{ p }}</a>
+          <div
+            class="organey-sorting mt-4 d-flex justify-content-center"
+            style="width: 100%"
+          >
+            <a
+              v-for="p in totalPage"
+              :key="p"
+              class="page-numbers"
+              :class="{ current: page === p }"
+              @click="changePage(p)"
+              >{{ p }}</a
+            >
             <nuxt-link to="" class="page-numbers next-page">></nuxt-link>
           </div>
         </div>
@@ -99,210 +157,247 @@
 </template>
 
 <script>
-  import {
-    mapGetters
-  } from 'vuex'
-  export default {
-    data() {
-      return {
-        page: 1,
-        offset: 16,
-        rangeValue: 20,
-        brands: [{
-            name: 'Biona',
-            count: 2,
-          },
-          {
-            name: 'Borough Broth',
-            count: 1,
-          },
-          {
-            name: 'Clearspring',
-            count: 3,
-          },
-          {
-            name: 'Daylesford Organic',
-            count: 3,
-          },
-          {
-            name: 'Biona',
-            count: 2,
-          },
-          {
-            name: 'Biona',
-            count: 2,
-          },
-          {
-            name: 'Biona',
-            count: 2,
-          },
-        ],
-        tags: [
-          'bread',
-          'fruits',
-          'healthy',
-          'juices',
-          'meat',
-          'natural',
-          'vegetables',
-        ],
-        filters: {
-          category: '',
-          tags: '',
-          price: [],
-        }
-      }
+import { mapGetters } from 'vuex'
+export default {
+  data() {
+    return {
+      page: 1,
+      offset: 16,
+      rangeValue: 20,
+      brands: [
+        {
+          name: 'Biona',
+          count: 2,
+        },
+        {
+          name: 'Borough Broth',
+          count: 1,
+        },
+        {
+          name: 'Clearspring',
+          count: 3,
+        },
+        {
+          name: 'Daylesford Organic',
+          count: 3,
+        },
+        {
+          name: 'Biona',
+          count: 2,
+        },
+        {
+          name: 'Biona',
+          count: 2,
+        },
+        {
+          name: 'Biona',
+          count: 2,
+        },
+      ],
+      tags: [
+        'bread',
+        'fruits',
+        'healthy',
+        'juices',
+        'meat',
+        'natural',
+        'vegetables',
+      ],
+      filters: {
+        category: '',
+        tags: '',
+        price: [],
+      },
+    }
+  },
+  computed: {
+    ...mapGetters({
+      products: 'modules/products/products',
+    }),
+    ...mapGetters({
+      categories: 'modules/products/categories',
+    }),
+    ...mapGetters({
+      productsCount: 'modules/products/productsCount',
+    }),
+    totalPage() {
+      return Math.ceil(+this.productsCount / +this.offset)
     },
-    computed: {
-      ...mapGetters({
-        products: 'modules/products/products'
-      }),
-      ...mapGetters({
-        categories: 'modules/products/categories'
-      }),
-      ...mapGetters({
-        productsCount: 'modules/products/productsCount'
-      }),
-      totalPage() {
-        return Math.ceil(+this.productsCount / +this.offset)
-      }
-    },
-    mounted() {
+  },
+  mounted() {
+    this.$store.dispatch('modules/products/getProducts', {
+      page: this.page,
+      offset: this.offset,
+    })
+  },
+  methods: {
+    changePage(p) {
+      this.page = p
       this.$store.dispatch('modules/products/getProducts', {
         page: this.page,
-        offset: this.offset
+        offset: this.offset,
       })
     },
-    methods: {
-      changePage(p) {
-        this.page = p
-        this.$store.dispatch('modules/products/getProducts', {
-          page: this.page,
-          offset: this.offset
-        })
-      },
-      priceFilter($event) {
-        this.$store.dispatch('modules/products/getProductsByPrice', {
-          min: $event.min,
-          max: $event.max
-        })
-      }
+    priceFilter($event) {
+      this.$store.dispatch('modules/products/getProductsByPrice', {
+        min: $event.min,
+        max: $event.max,
+      })
     },
-  }
-
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  .tag-badge {
-    border: 1px solid var(--bs-gray-400);
+.tag-badge {
+  border: 1px solid var(--bs-gray-400);
 
-    &:hover {
-      background: $primary-color;
-      border: 1px solid $primary-color;
-    }
+  &:hover {
+    background: $primary-color;
+    border: 1px solid $primary-color;
   }
+}
 
+.fa-star {
+  color: #e4e4e4;
+}
+
+.ratings {
   .fa-star {
-    color: #e4e4e4;
-  }
-
-  .ratings {
-    .fa-star {
-      &.rating-color {
-        color: #f5b400;
-      }
-
-      font-size: 13px;
-    }
-  }
-
-  .btn-circle {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-
-    &.active,
-    &:hover {
-      background: $primary-color;
-
-      i {
-        color: #fff;
-      }
-    }
-  }
-
-  .card-product {
-    border: none;
-    border-radius: $border-xl;
-
-    .card-product-img {
-      border-radius: $border-xl;
-      overflow: hidden;
+    &.rating-color {
+      color: #f5b400;
     }
 
-    .btn-product {
-      padding: 0.6em;
-      transition: all ease-in-out 0.3s;
-      border: 1px solid;
-      border-color: #e4e4e4;
-      font-size: 1rem;
-      text-transform: uppercase;
-      border-radius: 24px;
-
-      .cart-icon {
-        width: 1.5rem;
-        margin-right: 1rem;
-      }
-    }
+    font-size: 13px;
   }
+}
 
-  .organey-sorting {
-    margin-bottom: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0.75rem 2rem;
-    border-radius: 12px;
-    background: #f5f5f5;
-  }
+.dropdown-toggle .btn-ligth .rounded-lg {
+  color: #656766 !important;
+  border: 0 !important;
+  padding: 3px 15px !important;
+  background-color: #fff !important;
+  border-radius: 30px !important;
+  font-size: 14px !important;
+}
 
-  .page-numbers {
-    display: inline-block;
-    margin: 0 2px;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    text-align: center;
-    background: #eee;
-    color: #000;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 12px;
+.btn-sort {
+  background-color: #fff;
+  border-radius: 30px;
+}
 
-    &.current {
-      background: $primary-hover;
+li.list-group-item a {
+  color: #656766 !important;
+  font-weight: 600;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  &.active,
+  &:hover {
+    background: $primary-color;
+
+    i {
       color: #fff;
     }
   }
+}
 
-</style>
-<style lang="scss">
-  .rounded-lg {
-    border-radius: 20px;
-    width: 180px;
+.pagination-page-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #656766;
+}
+
+.fix-ic {
+  height: 30px !important;
+  width: 30px !important;
+  position: relative;
+}
+
+.ic-shop {
+  font-size: 12px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+li.list-group-item a,
+.tagcloud a {
+  color: #656766;
+  font-weight: 600;
+}
+
+.card-product {
+  border: none;
+  border-radius: $border-xl;
+
+  .card-product-img {
+    border-radius: $border-xl;
+    overflow: hidden;
   }
 
-  .dropdown-toggle {
-    color: $primary-color;
-    border-color: $primary-color;
+  .btn-product {
+    padding: 0.6em;
+    transition: all ease-in-out 0.3s;
+    border: 1px solid;
+    border-color: #e4e4e4;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 24px;
 
-    &:hover {
-      color: $primary-color;
+    .cart-icon {
+      width: 1.5rem;
+      margin-right: 1rem;
     }
   }
+}
 
-  .list-group-item>div:not(:last-child) {
-    border-bottom: 1px solid #e4e4e4;
+.organey-sorting {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  background: #f5f5f5;
+}
+
+.fix-padding {
+  padding: 0 12px !important;
+  height: 60px;
+}
+
+.page-numbers {
+  display: inline-block;
+  margin: 0 2px;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #eee;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+
+  &.current {
+    background: $primary-hover;
+    color: #fff;
   }
+}
+</style>
+<style lang="scss">
+.rounded-lg {
+  border-radius: 20px;
+  width: 180px;
+}
 
+
+.list-group-item > div:not(:last-child) {
+  border-bottom: 1px solid #e4e4e4;
+}
 </style>
