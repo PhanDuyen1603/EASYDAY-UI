@@ -356,11 +356,6 @@ a {
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
     display: inline-block; }
-    .no-round-btn.black:hover {
-      background-color: transparent;
-      color: #000;
-      border: 2px solid #000;
-      text-decoration: none; }
     .no-round-btn.black:focus {
       outline: 0;
       box-shadow: 0; }
@@ -464,11 +459,6 @@ a {
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
     display: inline-block; }
-    .no-round-btn.black:hover {
-      background-color: transparent;
-      color: #000;
-      border: 2px solid #000;
-      text-decoration: none; }
     .no-round-btn.black:focus {
       outline: 0;
       box-shadow: 0; }
@@ -645,7 +635,7 @@ a {
 	Typography template
 *************************************/
 .title, .title-bb {
-  font-family: "Cera Pro Bold";
+   
   font-size: 44px;
   color: #252525;
   line-height: 50px;
@@ -692,7 +682,7 @@ a {
     display: block; }
 
 .color-type {
-  font-family: "Cera Pro Bold";
+   
   font-size: 12px;
   color: #88c74a;
   line-height: 1;
@@ -700,13 +690,13 @@ a {
   letter-spacing: 2.4px;
   text-transform: uppercase; }
   .color-type.pink {
-    font-family: "Cera Pro Bold";
+     
     font-size: 12px;
     color: #fd5f5c;
     line-height: 1;
     display: block; }
   .color-type.coffee {
-    font-family: "Cera Pro Bold";
+     
     font-size: 12px;
     color: #f79823;
     line-height: 1;
@@ -731,17 +721,7 @@ a {
 /************************************
     Input form template
 *************************************/
-.no-round-input {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border: 1px solid #ebebeb;
-  padding: 0 20px;
-  height: 50px;
-  width: 100%;
-  transition: border 0.3s ease; }
+
   .no-round-input:focus {
     outline: 0;
     box-shadow: none;
@@ -1103,7 +1083,7 @@ a {
     max-height: 26px;
     margin-bottom: 10px; }
   .benefit-block .our-benefits .benefit-title {
-    font-family: "Cera Pro Bold";
+     
     font-size: 16px;
     color: #252525;
     line-height: 1;
@@ -1225,7 +1205,7 @@ a {
       max-height: 100%;
       transition: 0.3s ease; }
   .product .product-type {
-    font-family: "Cera Pro Bold";
+     
     font-size: 12px;
     color: #88c74a;
     line-height: 1;
@@ -1677,7 +1657,7 @@ a {
         padding: 0 30px;
         margin-bottom: 30px; }
         #mobile-menu .mobile-menu_block #ogami-mobile-menu .mobile-login h2 {
-          font-family: "Cera Pro Bold";
+           
           font-size: 20px;
           color: #252525;
           line-height: 1;
@@ -1895,7 +1875,7 @@ a {
   display: inline-block; }
   #show-filter-sidebar h5 {
     cursor: pointer;
-    font-family: "Cera Pro Bold";
+     
     font-size: 18px;
     color: #252525;
     line-height: 1;
@@ -2113,7 +2093,7 @@ a {
   .blog-sidebar .blog-sidebar_recent-post .recent-post_bottom .mini-post_block .mini-post_text {
     flex-grow: 1; }
     .blog-sidebar .blog-sidebar_recent-post .recent-post_bottom .mini-post_block .mini-post_text a {
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 24px;
@@ -2207,7 +2187,7 @@ a {
         position: unset;
         z-index: 2; }
       .order-step .order-step_block .step-block .step span {
-        font-family: "Cera Pro Bold";
+         
         font-size: 48px;
         color: rgba(45, 44, 64, 0.1);
         line-height: 1;
@@ -2520,7 +2500,7 @@ header .navigation {
         opacity: 1;
         visibility: visible; }
       header .navigation .navgition-menu ul .toggleable .menu-item {
-        font-family: "Cera Pro Bold";
+         
         font-size: 16px;
         color: #252525;
         line-height: 1;
@@ -2577,7 +2557,7 @@ header .navigation {
           header .navigation .navgition-menu ul .toggleable .sub-menu.shop .nav-column {
             margin-right: 75px; }
             header .navigation .navgition-menu ul .toggleable .sub-menu.shop .nav-column h2 {
-              font-family: "Cera Pro Bold";
+               
               font-size: 18px;
               color: #252525;
               line-height: 1;
@@ -2599,7 +2579,7 @@ header .navigation {
       header .navigation .product-function .function-icon:last-child {
         margin-right: 0; }
       header .navigation .product-function .function-icon span {
-        font-family: "Cera Pro Bold";
+         
         font-size: 16px;
         color: #252525;
         line-height: 1;
@@ -2631,7 +2611,7 @@ header .navigation-filter .department-menu_block {
     display: flex;
     cursor: pointer;
     padding: 0 15px;
-    font-family: "Cera Pro Bold";
+     
     font-size: 18px;
     color: #fff;
     line-height: 1;
@@ -2784,7 +2764,7 @@ header.pink .header-block .header-right .login a {
     text-decoration: none; }
 
 header.pink .navigation .navgition-menu ul .toggleable .menu-item {
-  font-family: "Cera Pro Bold";
+   
   font-size: 16px;
   color: #252525;
   line-height: 1;
@@ -2831,7 +2811,7 @@ header.pink .navigation .product-function {
     header.pink .navigation .product-function .function-icon:last-child {
       margin-right: 0; }
     header.pink .navigation .product-function .function-icon span {
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 1;
@@ -2893,7 +2873,7 @@ header.coffee .navigation {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.72); }
   header.coffee .navigation .navgition-menu ul .toggleable .menu-item {
-    font-family: "Cera Pro Bold";
+     
     font-size: 16px;
     color: #fff;
     line-height: 1;
@@ -2975,7 +2955,7 @@ header.coffee-2 .header-block .header-right .login a {
     text-decoration: none; }
 
 header.coffee-2 .navigation .navgition-menu ul .toggleable .menu-item {
-  font-family: "Cera Pro Bold";
+   
   font-size: 16px;
   color: #252525;
   line-height: 1;
@@ -3022,7 +3002,7 @@ header.coffee-2 .navigation .product-function {
     header.coffee-2 .navigation .product-function .function-icon:last-child {
       margin-right: 0; }
     header.coffee-2 .navigation .product-function .function-icon span {
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 1;
@@ -3262,7 +3242,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
       top: 0;
       left: 0; }
       .slider .slider_wrapper .slider-block .slider-content .slider-text h5 {
-        font-family: "Cera Pro Bold";
+         
         font-size: 14px;
         color: #88c74a;
         line-height: 1;
@@ -3270,14 +3250,14 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
         letter-spacing: 2.8px;
         margin-bottom: 10px; }
       .slider .slider_wrapper .slider-block .slider-content .slider-text h1 {
-        font-family: "Cera Pro Bold";
+         
         font-size: 60px;
         color: #252525;
         line-height: 1;
         display: block;
         margin-bottom: 15px; }
       .slider .slider_wrapper .slider-block .slider-content .slider-text h3 {
-        font-family: "Cera Pro Bold";
+         
         font-size: 30px;
         color: #88c74a;
         line-height: 1;
@@ -3490,7 +3470,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
         max-height: 170px;
         max-width: 90%; }
     .items-category .product-item h2 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 24px;
       color: #252525;
       line-height: 1;
@@ -3511,7 +3491,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
       .items-category .product-item img {
         max-height: 150px; }
       .items-category .product-item h2 {
-        font-family: "Cera Pro Bold";
+         
         font-size: 20px;
         color: #252525;
         line-height: 1;
@@ -3667,7 +3647,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
       font-size: 60px;
       margin-bottom: 15px; }
     .banner_v3 .banner-block .banner-text h3 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 30px;
       color: #f79823;
       line-height: 26px;
@@ -3706,7 +3686,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
     .banner-group .large-banner .row {
       height: 100%; }
     .banner-group .large-banner .banner-text h3 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 30px;
       color: #252525;
       line-height: 1;
@@ -3778,7 +3758,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
     margin-bottom: 40px;
     align-items: center; }
     .deal-of-week .featured-use h5 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 18px;
       color: #252525;
       line-height: 24px;
@@ -3813,7 +3793,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
       line-height: 1;
       display: block; }
       .deal-of-week .week-product_img p span {
-        font-family: "Cera Pro Bold";
+         
         font-size: 18px;
         color: #88c74a;
         line-height: 1;
@@ -3852,7 +3832,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
       padding: 5px; }
       .deal-of-week #event-countdown .countdown-number span {
         display: block;
-        font-family: "Cera Pro Bold";
+         
         font-size: 30px;
         color: #88c74a;
         line-height: 0.8;
@@ -3901,7 +3881,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
         margin-right: 0; }
       .deal-of-week_v2 .dow-info #event-countdown .countdown-number span, .deal-of-week_v3 .dow-info #event-countdown .countdown-number span {
         display: block;
-        font-family: "Cera Pro Bold";
+         
         font-size: 30px;
         color: #88c74a;
         line-height: 0.8;
@@ -3925,7 +3905,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
       width: 60px;
       margin: 15px 0 0 0; }
     .deal-of-week_v3 .deal-of-week_block .dow-info h3 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 30px;
       color: #f79823;
       line-height: 1;
@@ -3992,7 +3972,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
     border: 2px solid #fd5f5c;
     padding: 15px; }
     .deal-of-week_slide .week-deal_bottom .deal-block .deal-discount {
-      font-family: "Cera Pro Bold";
+       
       font-size: 14px;
       color: #fff;
       line-height: 1;
@@ -4038,7 +4018,7 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
           background-color: #eaeff4; }
           .deal-of-week_slide .week-deal_bottom .deal-block .deal-countdown .event-countdown .countdown-number span {
             display: block;
-            font-family: "Cera Pro Bold";
+             
             font-size: 24px;
             color: #252525;
             line-height: 1;
@@ -4279,7 +4259,7 @@ footer .footer-quicklink {
   display: flex;
   flex-direction: column; }
   footer .footer-quicklink h5 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 16px;
     color: #252525;
     line-height: 1;
@@ -4307,7 +4287,7 @@ footer .newletter {
   padding: 30px;
   background-color: #88c74a; }
   footer .newletter .newletter_text h5 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 22px;
     color: #fff;
     line-height: 1;
@@ -4373,7 +4353,7 @@ footer .footer-v2_header {
     footer .footer-v2_header .newletter_v2 .newletter_text {
       margin-bottom: 25px; }
       footer .footer-v2_header .newletter_v2 .newletter_text h5 {
-        font-family: "Cera Pro Bold";
+         
         font-size: 16px;
         color: #252525;
         line-height: 1;
@@ -4678,7 +4658,7 @@ footer.coffee .newletter {
       max-width: 100%;
       max-height: 100%; }
   .home3-product-block .customer-satisfied .customer-satisfied_wrapper .customer-satisfied_block .customer-info .customer-name {
-    font-family: "Cera Pro Bold";
+     
     font-size: 16px;
     color: #252525;
     line-height: 1;
@@ -4719,7 +4699,7 @@ footer.coffee .newletter {
 .home5-product-block {
   margin-bottom: 40px; }
   .home5-product-block .mini-product-title {
-    font-family: "Cera Pro Bold";
+     
     font-size: 24px;
     color: #252525;
     line-height: 1;
@@ -4876,14 +4856,14 @@ footer.coffee .newletter {
   .quick-banner:hover img {
     animation: mymove 1s infinite; }
   .quick-banner .banner-text .discount-block h2 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 62px;
     color: #fd5f5c;
     line-height: 1;
     display: block;
     padding-right: 5px; }
   .quick-banner .banner-text .discount-block h3 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 24px;
     color: #252525;
     line-height: 1;
@@ -4921,7 +4901,7 @@ footer.coffee .newletter {
     margin-bottom: 5px;
     line-height: 28px; }
   .quick-banner-2 .banner-text .sale, .quick-banner-3 .banner-text .sale {
-    font-family: "Cera Pro Bold";
+     
     font-size: 24px;
     color: #252525;
     line-height: 1;
@@ -4995,7 +4975,7 @@ footer.coffee .newletter {
     .ogami-introduce .ogami-introduce_block .introduce-info .founder-confirm .founder_signature img {
       max-width: 160px; }
   .ogami-introduce .ogami-introduce_block .introduce-info .founder-confirm .founder_name h2 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 22px;
     color: #252525;
     line-height: 1;
@@ -5038,7 +5018,7 @@ footer.coffee .newletter {
       .delivery-process .delivery-process_holder .delivery-process_wrapper .delivery-process_block .process .process-icon.clear:after {
         display: none; }
     .delivery-process .delivery-process_holder .delivery-process_wrapper .delivery-process_block .process .process-text h5 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 18px;
       color: #f79823;
       line-height: 1;
@@ -5137,7 +5117,7 @@ footer.coffee .newletter {
             color: #f79823;
             margin-right: 10px; }
       .from-blog .news-blog .news-blog_text .news-title {
-        font-family: "Cera Pro Bold";
+         
         font-size: 24px;
         color: #252525;
         line-height: 30px;
@@ -5173,7 +5153,7 @@ footer.coffee .newletter {
   align-items: center;
   justify-content: space-between; }
   .shop-grid-list .shop-products .shop-products_top .product-option .view-method p {
-    font-family: "Cera Pro Bold";
+     
     font-size: 20px;
     color: #ccc;
     line-height: 1;
@@ -5559,7 +5539,7 @@ footer.coffee .newletter {
       .shop-detail .shop-detail_more-info #tab-so3 .description-block .description-item_block:last-child, #quickview .quickview-box .shop-detail_more-info #tab-so3 .description-block .description-item_block:last-child {
         margin-bottom: 0; }
       .shop-detail .shop-detail_more-info #tab-so3 .description-block .description-item_block .description-item_text h2, #quickview .quickview-box .shop-detail_more-info #tab-so3 .description-block .description-item_block .description-item_text h2 {
-        font-family: "Cera Pro Bold";
+         
         font-size: 30px;
         color: #252525;
         line-height: 38px;
@@ -5641,7 +5621,7 @@ footer.coffee .newletter {
           line-height: 24px;
           display: block; }
     .shop-detail .shop-detail_more-info #tab-so3 .customer-reviews_block .add-review .add-review_top h2, #quickview .quickview-box .shop-detail_more-info #tab-so3 .customer-reviews_block .add-review .add-review_top h2 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 1;
@@ -5972,34 +5952,24 @@ footer.coffee .newletter {
         outline: 0;
         box-shadow: 0; }
     .shopping-cart .product-table .table thead th {
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 1;
       display: block;
       text-transform: uppercase;
       display: table-cell;
-      text-align: center;
       border-bottom: 1px solid #ebebeb;
       vertical-align: middle;
       border-top: 0; }
     .shopping-cart .product-table .table tbody td {
-      text-align: center;
       vertical-align: middle;
       border-top: 0; }
-    .shopping-cart .product-table .table tbody .product-iamge .img-wrapper {
-      height: 170px;
-      width: 170px;
-      background-color: #f8f8f8;
-      padding: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
       .shopping-cart .product-table .table tbody .product-iamge .img-wrapper img {
         max-height: 100%;
         max-width: 100%; }
     .shopping-cart .product-table .table tbody .product-name, .shopping-cart .product-table .table tbody .product-price, .shopping-cart .product-table .table tbody .product-total, .shopping-cart .product-table .shop-compare .compre-table .table tbody .product-availability, .shop-compare .compre-table .shopping-cart .product-table .table tbody .product-availability, .shopping-cart .product-table .shop-compare .compre-table .table tbody .product-weight, .shop-compare .compre-table .shopping-cart .product-table .table tbody .product-weight, .shopping-cart .product-table .shop-compare .compre-table .table tbody .product-sku, .shop-compare .compre-table .shopping-cart .product-table .table tbody .product-sku {
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 1;
@@ -6016,10 +5986,8 @@ footer.coffee .newletter {
     border-width: 0 0 1px 0;
     width: auto;
     margin-right: 15px; }
-  .shopping-cart .cart-total_block {
-    margin-top: 50px; }
     .shopping-cart .cart-total_block h2 {
-      font-family: "Cera Pro Bold";
+       
       font-size: 18px;
       color: #252525;
       line-height: 1;
@@ -6030,7 +5998,7 @@ footer.coffee .newletter {
       border: 1px solid #ebebeb;
       margin-bottom: 30px; }
       .shopping-cart .cart-total_block .table tbody th {
-        font-family: "Cera Pro Bold";
+         
         font-size: 16px;
         color: #636363;
         line-height: 1;
@@ -6094,7 +6062,7 @@ footer.coffee .newletter {
 .shop-checkout {
   margin-bottom: 40px; }
   .shop-checkout .form-title {
-    font-family: "Cera Pro Bold";
+     
     font-size: 18px;
     color: #252525;
     line-height: 1;
@@ -6142,7 +6110,7 @@ footer.coffee .newletter {
 .order-complete {
   margin-bottom: 60px; }
   .order-complete h1 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 24px;
     color: #252525;
     line-height: 27px;
@@ -6165,7 +6133,7 @@ footer.coffee .newletter {
     display: table; }
     .shop-compare .compre-table .table th {
       vertical-align: middle;
-      font-family: "Cera Pro Bold";
+       
       font-size: 16px;
       color: #252525;
       line-height: 1;
@@ -6311,7 +6279,7 @@ footer.coffee .newletter {
     .blog-layout .blog-img a img {
       width: 100%; }
   .blog-layout .blog-tag {
-    font-family: "Cera Pro Bold";
+     
     font-size: 12px;
     color: #fff;
     line-height: 1;
@@ -6324,7 +6292,7 @@ footer.coffee .newletter {
     border-radius: 2px;
     margin-bottom: 10px; }
   .blog-layout .blog-title {
-    font-family: "Cera Pro Bold";
+     
     font-size: 28px;
     color: #252525;
     line-height: 38px;
@@ -6358,7 +6326,7 @@ footer.coffee .newletter {
     display: block;
     margin-bottom: 20px; }
   .blog-layout .blog-readmore {
-    font-family: "Cera Pro Bold";
+     
     font-size: 13px;
     color: #252525;
     line-height: 1;
@@ -6552,7 +6520,7 @@ footer.coffee .newletter {
         text-transform: uppercase;
         margin-bottom: 10px; }
       .blog-detail .blog-detail_comment .customer-reviews_block .customer-review .customer-comment .customer-name {
-        font-family: "Cera Pro Bold";
+         
         font-size: 18px;
         color: #252525;
         line-height: 1;
@@ -6822,7 +6790,7 @@ footer.coffee .newletter {
       .about-us .why-choose-us .wcu-wrapper .wcu-block .wcu_intro {
         flex-grow: 1; }
         .about-us .why-choose-us .wcu-wrapper .wcu-block .wcu_intro h5 {
-          font-family: "Cera Pro Bold";
+           
           font-size: 18px;
           color: #252525;
           line-height: 1;
@@ -6866,7 +6834,7 @@ footer.coffee .newletter {
           text-align: center;
           transform: translateZ(30px); }
           .about-us .our-farmer .our-farmer-block .farmer-contact_wrapper .farmer-contact h2 {
-            font-family: "Cera Pro Bold";
+             
             font-size: 22px;
             color: #fff;
             line-height: 1;
@@ -7018,7 +6986,7 @@ footer.coffee .newletter {
         .coming-soon .coming-soon_block #event-countdown .countdown-number br {
           display: none; }
         .coming-soon .coming-soon_block #event-countdown .countdown-number span {
-          font-family: "Cera Pro Bold";
+           
           font-size: 60px;
           color: #88c74a;
           line-height: 1;
@@ -7131,7 +7099,7 @@ footer.coffee .newletter {
 .error-404 {
   padding: 60px 0 80px 0; }
   .error-404 h1 {
-    font-family: "Cera Pro Bold";
+     
     font-size: 48px;
     color: #252525;
     line-height: 60px;

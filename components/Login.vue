@@ -88,16 +88,19 @@
       </div>
 </template>
 <script>
+
 export default {
   data() {
     return {
-      identifier: '',
-      password: '',
-      error: '',
     }
   },
-  methods: {
-    
+  mounted() {
+    // eslint-disable-next-line nuxt/no-env-in-hooks
+    if (process.client) {
+    const element = document.getElementById('tu')
+    console.log(111,{element})
+}},
+  components: {
   },
 }
 </script>
