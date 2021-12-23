@@ -30,7 +30,7 @@ export default {
       const params = fullPath.startsWith('/')
         ? fullPath.substring(1).split('/')
         : fullPath.split('/')
-      return params
+      return params.filter(param => param.length > 0)
     }
   },
 }
