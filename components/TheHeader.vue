@@ -146,7 +146,7 @@
                 v-model="searchString"
                 placeholder="Search products..."
               />
-              <NuxtLink :to="{ name: 'shop-slug', params: { slug: searchString }}">
+              <NuxtLink :to="{ name: 'shop-slug', params: { slug: searchString ? searchString : 'All' }}">
                 <button class="btn-search" type="submit" value="Search">
                   Search
                 </button>
