@@ -384,7 +384,7 @@
                     </ul>
                   </li>
                   <li class="dropdown menu-link">
-                    <span>Recommend Food</span>
+                    <span>Food Idea</span>
                   </li>
                   <li class="dropdown menu-link"><span>Contact</span></li>
                 </div>
@@ -392,7 +392,7 @@
               <div class="contact d-flex">
                 <div class="elementor-icon-list-item">
                   <a class="d-flex fix-ic">
-                    <span class="elementor-icon-list-icon fix-ic-item">
+                    <span class="elementor-icon-list-icon fix-ic-item" style="padding: 6px 8px;">
                       <svg
                         aria-hidden="true"
                         focusable="false"

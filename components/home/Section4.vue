@@ -2,7 +2,7 @@
   <section class="margin-page">
     <div class="mt-60">
       <div class="elementor-posts">
-        <h2 class="title-posts">Recommend Foods</h2>
+        <h2 class="title-posts">Foods Idea</h2>
         <div class="bottom-title"></div>
       </div>
       <b-container class="recommend-food-main d-flex">
