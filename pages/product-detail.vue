@@ -19,7 +19,7 @@ import SimilarProduct from '~/components/product-detail/SimilarProduct.vue'
 export default {
   data() {
     return {
-      title: 'Trang demo nè',
+      title: 'Product detail',
     }
   },
   head() {

@@ -104,7 +104,10 @@ Default sorting
 "
                 variant="ligth"
                 class="m-2 btn-sort sort-list"
-                style="
+                style="font-size: 14px !important;
+    border: 0px;
+    color: #656766 !important;
+    font-weight: 600 !important;
                  
                 "
               >
@@ -283,6 +286,13 @@ export default {
 
     font-size: 13px;
   }
+}
+
+button#__BVID__324__BV_toggle_ {
+  font-size: 14px !important;
+  border: 0px;
+  color: #656766 !important;
+  font-weight: 600 !important;
 }
 
 .fix-padding {

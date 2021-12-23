@@ -12,7 +12,7 @@
     <div class="shopping-cart">
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-8" style="padding-right: 30px;">
             <div class="product-table">
               <table class="table table-responsive">
                 <colgroup>
@@ -210,7 +210,7 @@
                           ><bdi
                             ><span class="woocommerce-Price-currencySymbol"
                               >£</span
-                            >2,558.07</bdi
+                            >850.13</bdi
                           ></span
                         >
                       </td>
@@ -229,7 +229,7 @@
                             ><bdi
                               ><span class="woocommerce-Price-currencySymbol"
                                 >£</span
-                              >2,558.07</bdi
+                              >850.13</bdi
                             ></span
                           ></strong
                         >
@@ -240,7 +240,7 @@
 
                 <div class="wc-proceed-to-checkout">
                   <a
-                    href="https://demo.leebrosus.com/organey/checkout/"
+                    href="/checkout"
                     class="checkout-button button alt wc-forward"
                   >
                     Proceed to checkout</a

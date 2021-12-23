@@ -111,7 +111,10 @@ Default sorting
 "
                 variant="ligth"
                 class="m-2 btn-sort"
-                style="font-size: 14px"
+                style="font-size: 14px !important;
+    border: 0px;
+    color: #656766 !important;
+    font-weight: 600 !important;"
               >
                 <b-dropdown-item href="#">Action</b-dropdown-item>
                 <b-dropdown-item href="#">Another action</b-dropdown-item>
@@ -364,6 +367,13 @@ li.list-group-item a,
   padding: 0.75rem 2rem;
   border-radius: 12px;
   background: #f5f5f5;
+}
+
+button#__BVID__324__BV_toggle_ {
+  font-size: 14px !important;
+  border: 0px;
+  color: #656766 !important;
+  font-weight: 600 !important;
 }
 
 .fix-padding {
