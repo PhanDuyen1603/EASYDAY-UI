@@ -610,10 +610,11 @@ input.butoon-change-pl {
   font-weight: 500;
   line-height: 1.4;
   text-transform: none;
-  font-size: 15px !important;
+  font-size: 14px !important;
   height: 45px;
   align-items: center;
   display: flex;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .coupon-input {
@@ -651,6 +652,7 @@ textarea.textarea-form-bg {
   font-size: 14px;
   border-radius: 6px;
   outline: 0;
+  font-family: 'Montserrat', sans-serif;
   transition: all ease-in-out 0.3s;
 }
 

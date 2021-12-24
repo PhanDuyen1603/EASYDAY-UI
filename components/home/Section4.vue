@@ -7,10 +7,10 @@
       </div>
       <b-container class="recommend-food-main d-flex">
         <b-col class="recommend-foods">
-          <a href="/">
+          <a href="/recipe-detail">
             <img width="275" height="275" src="~/assets/images/re-1-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Avocado Salad</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg
@@ -101,10 +101,10 @@
           </a>
         </b-col>
         <b-col class="recommend-foods">
-          <a href="/">
+          <a href="/recipe-detail">
             <img width="275" height="275" src="~/assets/images/re-2-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Steamed Crab Salad</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg
@@ -292,7 +292,7 @@
           <a href="/">
             <img width="275" height="275" src="~/assets/images/re-4-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Yangzhou fried rice</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg
@@ -388,7 +388,7 @@
           <a href="/">
             <img width="275" height="275" src="~/assets/images/re-5-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Minced meat wonton</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg
@@ -482,7 +482,7 @@
           <a href="/">
             <img width="275" height="275" src="~/assets/images/re-6-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Fried dumpling dish</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg
@@ -576,7 +576,7 @@
           <a href="/">
             <img width="275" height="275" src="~/assets/images/re-7-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Roasted Squid</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg
@@ -670,7 +670,7 @@
           <a href="/">
             <img width="275" height="275" src="~/assets/images/re-8-r.png" />
             <div class="recommend-food-content">
-              <div class="title">Humus salad</div>
+              <div class="title">Fried Crayfish in camy</div>
               <div class="d-flex combo-icon">
                 <div class="icon-shopping" style="background-color: #5c9963;">
                   <svg

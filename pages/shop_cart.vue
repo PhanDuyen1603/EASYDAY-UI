@@ -622,10 +622,11 @@ input.butoon-change-pl {
   font-weight: 500;
   line-height: 1.4;
   text-transform: none;
-  font-size: 15px !important;
+  font-size: 14px !important;
   height: 45px;
   align-items: center;
   display: flex;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .coupon-input {

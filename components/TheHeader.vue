@@ -384,7 +384,7 @@
                     </ul>
                   </li>
                   <li class="dropdown menu-link">
-                    <span>Food Idea</span>
+                    <span>Foods Idea</span>
                   </li>
                   <li class="dropdown menu-link"><span>Contact</span></li>
                 </div>
