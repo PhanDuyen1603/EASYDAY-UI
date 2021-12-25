@@ -4,6 +4,9 @@
     <b-modal id="bv-modal-example" hide-footer hide-header>
       <login></login>
     </b-modal>
+    <b-modal id="bv-modal-example2" hide-footer hide-header>
+      <signup></signup>
+    </b-modal>
     <main class="main">
       <Nuxt />
     </main>
@@ -16,7 +19,7 @@
     margin: 0;
   }
   @media (min-width: 576px) {
-    #bv-modal-example
+    #bv-modal-example, #bv-modal-example2
     {
       .modal-content {
         border-radius: 30px;
