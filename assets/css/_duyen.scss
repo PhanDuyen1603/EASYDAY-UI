@@ -39,13 +39,13 @@
 }
 
 .login-form {
-  position: absolute;
-  z-index: 99;
+  // position: absolute;
+  // z-index: 99;
   width: 452px;
   height: 687px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   border-radius: 30px;
-  margin: 40px auto;
+  // margin: 40px auto;
   .image-login {
     position: absolute;
     z-index: 99;
@@ -1365,95 +1365,95 @@ svg.qodef-svg {
   z-index: 3;
   opacity: 0.7;
 }
-.login-form.signin-form {
-  z-index: 5;
-}
+// .login-form.signin-form {
+//   z-index: 5;
+// }
 
-.login-form {
-  position: absolute;
-  z-index: 99;
-  width: 452px;
-  height: 687px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  border-radius: 30px;
-  margin: 40px auto;
-  .image-login {
-    position: absolute;
-    z-index: 99;
-    width: 452px;
-    height: 687px;
-    border-radius: 30px;
-    img {
-      border-radius: 30px;
-    }
-  }
-  .center-top {
-    margin-top: 40px;
-    z-index: 999;
-  }
-  .title-login {
-    position: relative;
-    margin-top: 20px;
-    z-index: 999;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .group-text {
-    position: relative;
-    z-index: 999;
-    margin-top: 46px;
-    text-align: center;
-    .item-input {
-      margin: 0 auto;
-      width: 372px;
-      height: 47px;
-      padding: 10px 30px;
-      border: 1px solid #f1f1f1;
-      box-sizing: border-box;
-      border-radius: 30px;
-      margin-top: 20px;
-      outline: none;
-      background: none;
-      color: #b0b0b0;
-      display: flex;
-      align-items: center;
-      .item-text-input {
-        padding: 10px 20px;
-        outline: none;
-        background: none;
-        color: #b0b0b0;
-        border: none;
-        font-size: 20px;
-        line-height: 27px;
-      }
-      .icon-eye-slash {
-        width: 20px;
-        height: 16px;
-      }
-    }
-    .forgot-container {
-      margin-top: 10px;
-      text-align: right;
-      margin-right: 40px;
-      .forgot-password {
-        font-size: 15px;
-        line-height: 20px;
-        text-align: right;
-        color: #b0b0b0;
-        margin-top: 20px;
-        position: relative;
-        cursor: pointer;
-      }
-    }
-  }
-}
+// .login-form {
+//   position: absolute;
+//   z-index: 99;
+//   width: 452px;
+//   height: 687px;
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+//   border-radius: 30px;
+//   margin: 40px auto;
+//   .image-login {
+//     position: absolute;
+//     z-index: 99;
+//     width: 452px;
+//     height: 687px;
+//     border-radius: 30px;
+//     img {
+//       border-radius: 30px;
+//     }
+//   }
+//   .center-top {
+//     margin-top: 40px;
+//     z-index: 999;
+//   }
+//   .title-login {
+//     position: relative;
+//     margin-top: 20px;
+//     z-index: 999;
+//     font-family: Nunito;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 30px;
+//     line-height: 41px;
+//     align-items: center;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//   }
+//   .group-text {
+//     position: relative;
+//     z-index: 999;
+//     margin-top: 46px;
+//     text-align: center;
+//     .item-input {
+//       margin: 0 auto;
+//       width: 372px;
+//       height: 47px;
+//       padding: 10px 30px;
+//       border: 1px solid #f1f1f1;
+//       box-sizing: border-box;
+//       border-radius: 30px;
+//       margin-top: 20px;
+//       outline: none;
+//       background: none;
+//       color: #b0b0b0;
+//       display: flex;
+//       align-items: center;
+//       .item-text-input {
+//         padding: 10px 20px;
+//         outline: none;
+//         background: none;
+//         color: #b0b0b0;
+//         border: none;
+//         font-size: 20px;
+//         line-height: 27px;
+//       }
+//       .icon-eye-slash {
+//         width: 20px;
+//         height: 16px;
+//       }
+//     }
+//     .forgot-container {
+//       margin-top: 10px;
+//       text-align: right;
+//       margin-right: 40px;
+//       .forgot-password {
+//         font-size: 15px;
+//         line-height: 20px;
+//         text-align: right;
+//         color: #b0b0b0;
+//         margin-top: 20px;
+//         position: relative;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
 
 .button-login {
   background: #d3e8d5;
