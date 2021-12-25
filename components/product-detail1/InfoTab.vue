@@ -373,128 +373,1245 @@
         <b-tab title="REVIEWS(5)">
           <b-card-text>
             <div
-              class="tab-pane"
-              id="contact"
+              class="
+                woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews
+                panel
+                wc-tab
+              "
+              id="tab-reviews"
               role="tabpanel"
-              aria-labelledby="contact-tab"
+              aria-labelledby="tab-title-reviews"
+              style=""
             >
-              <div
-                class="
-                  woocommerce-Tabs-panel woocommerce-Tabs-panel--description
-                  panel
-                  wc-tab
-                "
-                id="tab-description"
-                role="tabpanel"
-                aria-labelledby="tab-title-description"
-                style=""
-              >
-                <p>
-                  Táo rất giàu chất xơ. Một quả táo cỡ trung bình (100 gram)
-                  chứa khoảng 4 gram chất dinh dưỡng này, chiếm 17% giá trị dinh
-                  dưỡng cần thiết mỗi ngày. Một phần chất xơ của táo đến từ các
-                  chất xơ không hòa tan và chất xơ hòa tan được gọi là pectin.
-                </p>
-                <p>
-                  Táo được biết đến là loại trái cây có nhiều vitamin và khoáng
-                  chất. Táo cung cấp nhiều vitamin C cho cơ thể. Loại vitamin
-                  này là chất chống oxy hóa phổ biến trong trái cây.
-                </p>
-                <table class="woocommerce-product-attributes shop_attributes">
-                  <tbody>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--weight
-                      "
+              <div id="reviews" class="woocommerce-Reviews">
+                <div id="comments">
+                  <h2 class="woocommerce-Reviews-title">
+                    5 reviews for <span>Papaya Single</span>
+                  </h2>
+                  <div class="review-top">
+                    <div class="woocommerce-product-rating">
+                      <p class="stars">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+                      <a
+                        href="#reviews"
+                        class="woocommerce-review-link"
+                        rel="nofollow"
+                        >(<span class="count">5</span> customer reviews )</a
+                      >
+                    </div>
+                    <div class="reviews-summary">
+                      <div class="review-summery-item">
+                        <p class="stars">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text">0%</div>
+                      </div>
+                      <div class="review-summery-item">
+                        <p class="stars">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text">0%</div>
+                      </div>
+                      <div class="review-summery-item">
+                        <p class="stars">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 40%"></div>
+                        </div>
+                        <div class="progress-text">40%</div>
+                      </div>
+                      <div class="review-summery-item">
+                        <p class="stars">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#CCCCCC"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 20%"></div>
+                        </div>
+                        <div class="progress-text">20%</div>
+                      </div>
+                      <div class="review-summery-item">
+                        <p class="stars">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#f5b400"
+                              class="bi bi-star-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 40%"></div>
+                        </div>
+                        <div class="progress-text">40%</div>
+                      </div>
+                    </div>
+                    <div class="review-button-wrap">
+                      <a href="#commentform" class="review-link" rel="nofollow"
+                        >Write A Review</a
+                      >
+                    </div>
+                  </div>
+                  <ol class="commentlist">
+                    <li
+                      class="review even thread-even depth-1"
+                      id="li-comment-20"
                     >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Calo
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        52
-                      </td>
-                    </tr>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--dimensions
-                      "
+                      <div id="comment-20" class="comment_container">
+                        <img
+                          alt=""
+                          src="https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=60&amp;d=mm&amp;r=g"
+                          class="avatar avatar-60 photo lazyloaded"
+                          height="60"
+                          width="60"
+                          srcset="
+                            https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=120&amp;d=mm&amp;r=g 2x
+                          "
+                          data-ll-status="loaded"
+                        /><noscript
+                          ><img
+                            alt=""
+                            src="https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=60&#038;d=mm&#038;r=g"
+                            srcset="
+                              https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=120&#038;d=mm&#038;r=g 2x
+                            "
+                            class="avatar avatar-60 photo"
+                            height="60"
+                            width="60"
+                        /></noscript>
+                        <div class="comment-text">
+                          <p class="stars">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                            </span>
+                          </p>
+
+                          <p class="meta">
+                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                              >Michael Lee
+                            </strong>
+                            <span class="woocommerce-review__dash">–</span>
+                            <time
+                              class="woocommerce-review__published-date"
+                              datetime="2021-07-23T03:10:52+00:00"
+                              >July 23, 2021</time
+                            >
+                          </p>
+                          <div class="description">
+                            <p>
+                              I am 6 feet tall and 220 lbs. This shirt fit me
+                              perfectly in the chest and shoulders. My only
+                              complaint is that it is so long! I like to wear
+                              polo shirts untucked. This shirt goes completely
+                              past my rear end. If I wore it with ordinary
+                              shorts, you probably wouldnt be able to see the
+                              shorts at all – completely hidden by the shirt. It
+                              needs to be 4 to 5 inches shorter in terms of
+                              length to suit me. I have many RL polo shirts, and
+                              this one is by far the longest. I dont understand
+                              why.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="review odd alt thread-odd thread-alt depth-1"
+                      id="li-comment-21"
                     >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Nước
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        86%
-                      </td>
-                    </tr>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--attribute_stand-up
-                      "
+                      <div id="comment-21" class="comment_container">
+                        <img
+                          alt=""
+                          src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&amp;d=mm&amp;r=g"
+                          class="avatar avatar-60 photo lazyloaded"
+                          height="60"
+                          width="60"
+                          srcset="
+                            https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&amp;d=mm&amp;r=g 2x
+                          "
+                          data-ll-status="loaded"
+                        /><noscript
+                          ><img
+                            alt=""
+                            src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&#038;d=mm&#038;r=g"
+                            srcset="
+                              https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&#038;d=mm&#038;r=g 2x
+                            "
+                            class="avatar avatar-60 photo"
+                            height="60"
+                            width="60"
+                        /></noscript>
+                        <div class="comment-text">
+                          <p class="stars">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                            </span>
+                          </p>
+
+                          <p class="meta">
+                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                              >Kenneth R. Myers
+                            </strong>
+                            <span class="woocommerce-review__dash">–</span>
+                            <time
+                              class="woocommerce-review__published-date"
+                              datetime="2021-07-23T03:10:53+00:00"
+                              >July 23, 2021</time
+                            >
+                          </p>
+                          <div class="description">
+                            <p>
+                              The shirt was not the fabric I believed it to be.
+                              It says Classic Fit but was made like the older
+                              versions, not the soft cotton like my others. I
+                              don’t understand how the labels are the same but a
+                              completely different shirt. Oh well, stuck with it
+                              now.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="review even thread-even depth-1"
+                      id="li-comment-22"
                     >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Protein
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        <p>0,3 gram</p>
-                      </td>
-                    </tr>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--attribute_folded-wo-wheels
-                      "
+                      <div id="comment-22" class="comment_container">
+                        <img
+                          alt=""
+                          src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&amp;d=mm&amp;r=g"
+                          class="avatar avatar-60 photo lazyloaded"
+                          height="60"
+                          width="60"
+                          srcset="
+                            https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&amp;d=mm&amp;r=g 2x
+                          "
+                          data-ll-status="loaded"
+                        /><noscript
+                          ><img
+                            alt=""
+                            src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&#038;d=mm&#038;r=g"
+                            srcset="
+                              https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&#038;d=mm&#038;r=g 2x
+                            "
+                            class="avatar avatar-60 photo"
+                            height="60"
+                            width="60"
+                        /></noscript>
+                        <div class="comment-text">
+                          <p class="stars">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                            </span>
+                          </p>
+                          <p class="meta">
+                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                              >Mike Addington
+                            </strong>
+                            <span class="woocommerce-review__dash">–</span>
+                            <time
+                              class="woocommerce-review__published-date"
+                              datetime="2021-07-23T03:10:55+00:00"
+                              >July 23, 2021</time
+                            >
+                          </p>
+                          <div class="description">
+                            <p>
+                              Real authentic genuine quality however it fit me
+                              like an XL size when In fact Im L. Beware
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="review odd alt thread-odd thread-alt depth-1"
+                      id="li-comment-23"
                     >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Carbs
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        <p>13,8 gram</p>
-                      </td>
-                    </tr>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--attribute_folded-w-wheels
-                      "
+                      <div id="comment-23" class="comment_container">
+                        <img
+                          alt=""
+                          src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&amp;d=mm&amp;r=g"
+                          class="avatar avatar-60 photo lazyloaded"
+                          height="60"
+                          width="60"
+                          srcset="
+                            https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&amp;d=mm&amp;r=g 2x
+                          "
+                          data-ll-status="loaded"
+                        /><noscript
+                          ><img
+                            alt=""
+                            src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&#038;d=mm&#038;r=g"
+                            srcset="
+                              https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&#038;d=mm&#038;r=g 2x
+                            "
+                            class="avatar avatar-60 photo"
+                            height="60"
+                            width="60"
+                        /></noscript>
+                        <div class="comment-text">
+                          <p class="stars">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                            </span>
+                          </p>
+
+                          <p class="meta">
+                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                              >Ervin Arlington
+                            </strong>
+                            <span class="woocommerce-review__dash">–</span>
+                            <time
+                              class="woocommerce-review__published-date"
+                              datetime="2021-07-23T03:10:56+00:00"
+                              >July 23, 2021</time
+                            >
+                          </p>
+                          <div class="description">
+                            <p>
+                              The Ralph Lauren quaility is here in abundance. My
+                              husband always says that the Lauren polos fit
+                              better and last longer than any other brand.I love
+                              the new “heathered” color and the price is always
+                              excellent through shop
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="review even thread-even depth-1"
+                      id="li-comment-24"
                     >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Đường
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        <p>10,4 gram</p>
-                      </td>
-                    </tr>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--attribute_door-pass-through
-                      "
-                    >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Chất xơ
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        <p>2,4 gram</p>
-                      </td>
-                    </tr>
-                    <tr
-                      class="
-                        woocommerce-product-attributes-item
-                        woocommerce-product-attributes-item--attribute_frame
-                      "
-                    >
-                      <th class="woocommerce-product-attributes-item__label">
-                        Chất béo
-                      </th>
-                      <td class="woocommerce-product-attributes-item__value">
-                        <p>0,2 gram</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      <div id="comment-24" class="comment_container">
+                        <img
+                          alt=""
+                          src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&amp;d=mm&amp;r=g"
+                          class="avatar avatar-60 photo lazyloaded"
+                          height="60"
+                          width="60"
+                          srcset="
+                            https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&amp;d=mm&amp;r=g 2x
+                          "
+                          data-ll-status="loaded"
+                        /><noscript
+                          ><img
+                            alt=""
+                            src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&#038;d=mm&#038;r=g"
+                            srcset="
+                              https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&#038;d=mm&#038;r=g 2x
+                            "
+                            class="avatar avatar-60 photo"
+                            height="60"
+                            width="60"
+                        /></noscript>
+                        <div class="comment-text">
+                          <p class="stars">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#f5b400"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                            </span>
+                          </p>
+
+                          <p class="meta">
+                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                              >Patrick M. Newman
+                            </strong>
+                            <span class="woocommerce-review__dash">–</span>
+                            <time
+                              class="woocommerce-review__published-date"
+                              datetime="2021-07-23T03:10:57+00:00"
+                              >July 23, 2021</time
+                            >
+                          </p>
+                          <div class="description">
+                            <p>
+                              My son loved this Jacket for his Senior Prom… He
+                              got sooo many compliments! He is slim build 5’11
+                              and 150lbs … I ordered a large … it was a little
+                              big … but it was fine!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+                <div id="review_form_wrapper" style="margin-top: 24px">
+                  <div id="review_form">
+                    <div id="respond" class="comment-respond">
+                      <span id="reply-title" class="comment-reply-title"
+                        >Add a review
+                        <small
+                          ><a
+                            rel="nofollow"
+                            id="cancel-comment-reply-link"
+                            href="/organey/product/papaya-single/#respond"
+                            style="display: none"
+                            >Cancel reply</a
+                          ></small
+                        ></span
+                      >
+                      <form
+                        action="https://demo.leebrosus.com/organey/wp-comments-post.php"
+                        method="post"
+                        id="commentform"
+                        class="comment-form"
+                        novalidate=""
+                      >
+                        <p class="comment-notes">
+                          <span id="email-notes"
+                            >Your email address will not be published.</span
+                          >
+                          Required fields are marked
+                          <span class="required">*</span>
+                        </p>
+                        <div class="comment-form-rating">
+                          <label for="rating"
+                            >Your rating&nbsp;<span class="required"
+                              >*</span
+                            ></label
+                          >
+                          <p class="stars">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#CCCCCC"
+                                class="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                />
+                              </svg>
+                            </span>
+                          </p>
+                          <select
+                            name="rating"
+                            id="rating"
+                            required=""
+                            style="display: none"
+                          >
+                            <option value="">Rate…</option>
+                            <option value="5">Perfect</option>
+                            <option value="4">Good</option>
+                            <option value="3">Average</option>
+                            <option value="2">Not that bad</option>
+                            <option value="1">Very poor</option>
+                          </select>
+                        </div>
+                        <p class="comment-form-comment">
+                          <label for="comment" style="margin-bottom: 12px"
+                            >Your review&nbsp;<span class="required"
+                              >*</span
+                            ></label
+                          ><textarea
+                            id="comment"
+                            name="comment"
+                            cols="45"
+                            rows="8"
+                            required=""
+                            style="border: 0px"
+                          ></textarea>
+                        </p>
+
+                        <div style="display: flex; padding-left: 18px">
+                          <p
+                            class="comment-form-author"
+                            style="
+                              width: 560px;
+                              display: flex;
+                              flex-direction: column;
+                            "
+                          >
+                            <label for="author" style="margin-bottom: 12px"
+                              >Name&nbsp;<span class="required">*</span></label
+                            ><input
+                              id="author"
+                              name="author"
+                              type="text"
+                              value=""
+                              size="30"
+                              required=""
+                              style="border: 0px"
+                            />
+                          </p>
+                          <p
+                            class="comment-form-email"
+                            style="
+                              width: 560px;
+                              display: flex;
+                              flex-direction: column;
+                              margin-left: 56px;
+                            "
+                          >
+                            <label for="email" style="margin-bottom: 12px"
+                              >Email&nbsp;<span class="required">*</span></label
+                            ><input
+                              id="email"
+                              name="email"
+                              type="email"
+                              value=""
+                              size="30"
+                              required=""
+                              style="border: 0px"
+                            />
+                          </p>
+                        </div>
+
+                        <p
+                          class="comment-form-cookies-consent"
+                          style="display: flex; flex-direction: row"
+                        >
+                          <input
+                            id="wp-comment-cookies-consent"
+                            name="wp-comment-cookies-consent"
+                            type="checkbox"
+                            value="yes"
+                          />
+                          <label for="wp-comment-cookies-consent"
+                            >Save my name, email, and website in this browser
+                            for the next time I comment.</label
+                          >
+                        </p>
+
+                        <div
+                          class="form-submit"
+                          style="
+                            width: 240px;
+                            background-color: #528959;
+                            margin-left: 18px;
+                            height: 42px;
+                            border-radius: 42px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                          "
+                        >
+                          <span style="margin: 0; color: #ffffff">Submit</span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear"></div>
               </div>
             </div>
           </b-card-text>
