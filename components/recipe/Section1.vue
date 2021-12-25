@@ -197,4 +197,13 @@ export default {
     line-height: 1.4;
   }
 }
+
+.add-to-cart-wrap:hover a {
+  background: #5c9863;
+  color: white;
+}
+
+.add-to-cart-wrap:hover .qodef-svg {
+  fill: #fff;
+}
 </style>

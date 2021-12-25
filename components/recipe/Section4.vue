@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <div class="">
-        <h2 data-v-538c8a20="" class="container recom-food-more" style="color: #4f4f4f !important;">You may be interested in…</h2>
+        <h2 data-v-538c8a20="" class="recom-food-more" style="color: #4f4f4f !important;">You may be interested in…</h2>
         <div class="content-items dish">
           <slick
             ref="slick"
