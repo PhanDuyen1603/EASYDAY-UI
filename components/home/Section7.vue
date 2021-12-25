@@ -8,7 +8,7 @@
           </h2>
           <div class="bottom-title"></div>
         </div>
-        <div class="content-items dish">
+        <div class="content-items dish mt-5">
           <slick
             ref="slick"
             :options="v2slickOptions"
@@ -18,8 +18,8 @@
               <div class="image-post">
                 <a href="/">
                   <img
-                    width="650"
-                    height="450"
+                    width="410"
+                    height="284"
                     src="~/assets/images/blog-5.jpeg"
                     class=""
                     alt="image-31"
@@ -110,8 +110,8 @@
               <div class="image-post">
                 <a href="/">
                   <img
-                    width="650"
-                    height="450"
+                    width="410"
+                    height="284"
                     src="~/assets/images/blog-1.jpeg"
                     class=""
                     alt="image-31"
@@ -202,8 +202,8 @@
               <div class="image-post">
                 <a href="/">
                   <img
-                    width="650"
-                    height="450"
+                    width="410"
+                    height="284"
                     src="~/assets/images/blog-3.jpeg"
                     class=""
                     alt="image-31"
@@ -292,8 +292,8 @@
               <div class="image-post">
                 <a href="/">
                   <img
-                    width="650"
-                    height="450"
+                    width="410"
+                    height="284"
                     src="~/assets/images/blog-6.jpeg"
                     class=""
                     alt="image-31"
@@ -382,8 +382,8 @@
               <div class="image-post">
                 <a href="/">
                   <img
-                    width="650"
-                    height="450"
+                    width="410"
+                    height="284"
                     src="~/assets/images/blog-4.jpeg"
                     class=""
                     alt="image-31"
@@ -472,8 +472,8 @@
               <div class="image-post">
                 <a href="/">
                   <img
-                    width="650"
-                    height="450"
+                    width="410"
+                    height="284"
                     src="~/assets/images/blog-2.jpeg"
                     class=""
                     alt="image-31"
@@ -563,14 +563,7 @@
           </slick>
         </div>
       </div>
-      <div class="text-center">
-        <div class="center-cirlce">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-      </div>
+     
     </div>
   </section>
 </template>

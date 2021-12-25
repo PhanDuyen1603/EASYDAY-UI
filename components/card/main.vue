@@ -39,7 +39,7 @@
           ><span class="woocommerce-Price-amount amount">
             <bdi
               ><span class="woocommerce-Price-currencySymbol">£</span
-              >{{ product.price }}</bdi
+              >{{ getPromo(product.price, product.sale) }}</bdi
             ></span
           >
         </del>
@@ -47,7 +47,7 @@
           <span class="woocommerce-Price-amount amount">
             <bdi
               ><span class="woocommerce-Price-currencySymbol">£</span
-              >527.32</bdi
+              >{{ product.price }}</bdi
             >
           </span>
         </ins>
@@ -120,6 +120,13 @@ export default {
       rating: this.product.rating || 1,
     }
   },
+  methods: {
+    getPromo(price, promo) {
+      const promoPercent = parseInt(promo.replace(/[\D]/, ''))
+      const promoPrice = price - (price * promoPercent / 100)
+      return Math.round(promoPrice * 100) / 100
+    }
+  },
 }
 </script>
 
@@ -152,10 +159,10 @@ export default {
   cursor: pointer;
   .icon {
     position: absolute;
-    top: 11px;
-    left: 9px;
+    top: 13px;
+    left: 12px;
     i {
-      font-size: 1.25rem;
+      font-size: 14px;
       color: #fff;
     }
   }

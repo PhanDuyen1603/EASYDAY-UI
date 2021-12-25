@@ -35,9 +35,9 @@
   ul li {
     border: none;
     a {
-      font-size: 14px;
-      color: #2f3e30;
+      color: #656766;
       font-weight: 600;
+      font-size: 14px;
       .cat-count {
         background: $border-color;
         font-size: 0.8rem;

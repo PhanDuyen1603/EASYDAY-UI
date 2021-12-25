@@ -1,12 +1,16 @@
 <template>
   <div class="bread-crumb-wrapper">
     <b-container>
-      <h1 class="cur-page">Shop</h1>
-      <b-breadcrumb class="">
-        <b-breadcrumb-item href="#home">
+      <h1 class="cur-page">
+        <slot>
+          {{ crumbs[0] }}
+        </slot>
+      </h1>
+      <b-breadcrumb v-if="crumbs" class="">
+        <b-breadcrumb-item href="/">
           Home
         </b-breadcrumb-item>
-        <b-breadcrumb-item active>Shop</b-breadcrumb-item>
+        <b-breadcrumb-item v-for="(crumb, index) in crumbs" :key="index" :href="`/${crumbs[0]}`">{{ crumb }}</b-breadcrumb-item>
       </b-breadcrumb>
     </b-container>
   </div>
@@ -15,7 +19,19 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      title: '',
+
+    }
+  },
+  computed: {
+    crumbs() {
+      const fullPath = this.$route.fullPath
+      const params = fullPath.startsWith('/')
+        ? fullPath.substring(1).split('/')
+        : fullPath.split('/')
+      return params.filter(param => param.length > 0)
+    }
   },
 }
 </script>

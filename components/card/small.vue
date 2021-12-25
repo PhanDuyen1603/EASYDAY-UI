@@ -1,7 +1,7 @@
 <template>
   <div class="card card-horizontal mb-3" style="max-width: 540px">
     <div class="row g-0 align-items-center">
-      <div class="col-3 card-horizontal-img" style="width: 89px">
+      <div class="col-3 card-horizontal-img">
         <img height="100" width="100" src="~/assets/images/small1.jpeg" alt="">
       </div>
       <div class="col-8">
