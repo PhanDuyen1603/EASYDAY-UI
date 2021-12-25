@@ -1,10 +1,10 @@
 <template>
   <div class="summary entry-summary">
-    <h1 class="product_title entry-title">Large Queen Pineapple</h1>
+    <h1 class="product_title entry-title">{{ product.name }}</h1>
     <div class="woocommerce-product-rating">
       <div class="star-rating" role="img" aria-label="Rated 3.75 out of 5">
         <span style="width: 75%"
-          >Rated <strong class="rating">3.75</strong> out of 5 based on
+          >Rated <strong class="rating">{{ product.rating }}</strong> out of 5 based on
           <span class="rating">4</span> customer ratings</span
         >
       </div>
@@ -12,18 +12,18 @@
         >(<span class="count">5</span> customer reviews)</a
       >
     </div>
-    <p class="price">
+    <p v-if="product.sale" class="price">
       <del aria-hidden="true"
         ><span class="woocommerce-Price-amount amount"
           ><bdi
-            ><span class="woocommerce-Price-currencySymbol">£</span>149.94</bdi
+            ><span class="woocommerce-Price-currencySymbol">£</span>{{ product.price }}</bdi
           ></span
         ></del
       >
       <ins
         ><span class="woocommerce-Price-amount amount"
           ><bdi
-            ><span class="woocommerce-Price-currencySymbol">£</span>78.09</bdi
+            ><span class="woocommerce-Price-currencySymbol">£</span>{{ getPromo(product.price, product.sale) }}</bdi
           ></span
         ></ins
       >
@@ -174,3 +174,27 @@
   </div>
 </template>
 <script>
+export default {
+  props: {
+    product: {
+      type: Object,
+      default:() => ({
+        "name": "Wrapped Cabbage",
+        "id": 0,
+        "price": "782.92",
+        "rating": 3,
+        "sale": "",
+        "categories": ["Vegetables"],
+        "slug": "wrapped-cabbage",
+      })
+    }
+  },
+  methods: {
+    getPromo(price, promo) {
+      const promoPercent = parseInt(promo.replace(/[\D]/, ''))
+      const promoPrice = price - (price * promoPercent / 100)
+      return Math.round(promoPrice * 100) / 100
+    },
+  }
+}
+</script>
