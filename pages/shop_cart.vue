@@ -33,18 +33,18 @@
                     <th class="product-remove">&nbsp;</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
+                <tbody v-if="items && items.length > 0">
+                  <tr v-for="item in items" :key="item.id">
                     <td class="product-iamge">
                       <div class="img-wrapper">
                         <img
-                          src="~/assets/images/pro-cart1.jpeg"
+                          :src="buildImgUrl(item.id)"
                           alt="product image"
                         />
                       </div>
                     </td>
-                    <td class="product-name">Banana Per kg</td>
-                    <td class="product-price">£693.95</td>
+                    <td class="product-name">{{ item.name }}</td>
+                    <td class="product-price">£{{ item.price }}</td>
                     <td class="product-quantity">
                       <div class="quantity buttons_added">
                         <input
@@ -52,119 +52,32 @@
                           type="button"
                           value="-"
                           class="butoon-change-mu"
+                          @click="lessQuantity(item)"
                         />
                         <input
                           id="quantity"
                           min="1"
                           name="quantity"
                           type="text"
-                          value="1"
+                          :value="item.quantity"
                         />
                         <input
                           onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;"
                           type="button"
                           value="+"
                           class="butoon-change-pl"
+                          @click="addMoreQuantity(item)"
                         />
                       </div>
                     </td>
-                    <td class="product-total">£693.95</td>
+                    <td class="product-total">£{{ (+item.price * +item.quantity).toFixed(2) }}</td>
                     <td class="product-clear">
                       <div class="wrap-img-cart">
                         <img
                           class="clear-ic"
                           style="width: 16px"
                           src="~/assets/images/clear.png"
-                        />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="product-iamge">
-                      <div class="img-wrapper">
-                        <img
-                          src="~/assets/images/pro-cart2.jpeg"
-                          alt="product image"
-                        />
-                      </div>
-                    </td>
-                    <td class="product-name">Large Queen Pineapple</td>
-                    <td class="product-price">£78.09</td>
-                    <td class="product-quantity">
-                      <div class="quantity buttons_added">
-                        <input
-                          onclick="var result = document.getElementById('quantity2'); var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;"
-                          type="button"
-                          value="-"
-                          class="butoon-change-mu"
-                        />
-                        <input
-                          id="quantity2"
-                          min="1"
-                          name="quantity"
-                          type="text"
-                          value="1"
-                        />
-                        <input
-                          onclick="var result = document.getElementById('quantity2'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;"
-                          type="button"
-                          value="+"
-                          class="butoon-change-pl"
-                        />
-                      </div>
-                    </td>
-                    <td class="product-total">£78.09</td>
-                    <td class="product-clear">
-                      <div class="wrap-img-cart">
-                        <img
-                          class="clear-ic"
-                          style="width: 16px"
-                          src="~/assets/images/clear.png"
-                        />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="product-iamge">
-                      <div class="img-wrapper">
-                        <img
-                          src="~/assets/images/pro-cart3.jpeg"
-                          alt="product image"
-                        />
-                      </div>
-                    </td>
-                    <td class="product-name">Papaya Single</td>
-                    <td class="product-price">£78.09</td>
-                    <td class="product-quantity">
-                      <div class="quantity buttons_added">
-                        <input
-                          onclick="var result = document.getElementById('quantity3'); var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;"
-                          type="button"
-                          value="-"
-                          class="butoon-change-mu"
-                        />
-                        <input
-                          id="quantity3"
-                          min="1"
-                          name="quantity"
-                          type="text"
-                          value="1"
-                        />
-                        <input
-                          onclick="var result = document.getElementById('quantity3'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;"
-                          type="button"
-                          value="+"
-                          class="butoon-change-pl"
-                        />
-                      </div>
-                    </td>
-                    <td class="product-total">£78.09</td>
-                    <td class="product-clear">
-                      <div class="wrap-img-cart">
-                        <img
-                          class="clear-ic"
-                          style="width: 16px"
-                          src="~/assets/images/clear.png"
+                          @click="deleteItem(item)"
                         />
                       </div>
                     </td>
@@ -210,7 +123,7 @@
                           ><bdi
                             ><span class="woocommerce-Price-currencySymbol"
                               >£</span
-                            >850.13</bdi
+                            >{{ totalPrice || 0 }}</bdi
                           ></span
                         >
                       </td>
@@ -229,7 +142,7 @@
                             ><bdi
                               ><span class="woocommerce-Price-currencySymbol"
                                 >£</span
-                              >850.13</bdi
+                              >{{ totalPrice || 0 }}</bdi
                             ></span
                           ></strong
                         >
@@ -271,6 +184,9 @@
 </template>
 
 <script>
+import {
+  mapGetters
+} from 'vuex'
 export default {
   data() {
     return {
@@ -330,6 +246,24 @@ export default {
           content: 'My custom description',
         },
       ],
+    }
+  },
+  computed: {
+    ...mapGetters({ items: 'modules/cart/items' }),
+    ...mapGetters({ totalPrice: 'modules/cart/totalPrice' }),
+  },
+  methods: {
+    buildImgUrl(id) {
+      return `images/products/image${id}.png`
+    },
+    lessQuantity(product) {
+      this.$store.dispatch('modules/cart/decreaseQuantity', { product })
+    },
+    addMoreQuantity(product) {
+      this.$store.dispatch('modules/cart/increaseQuantity', { product })
+    },
+    deleteItem(item) {
+      this.$store.commit('modules/cart/DELETE_PRODUCT', item)
     }
   },
 }

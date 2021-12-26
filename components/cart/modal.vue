@@ -22,7 +22,7 @@
         </div>
         <div class="p-2 row">
           <button class="btn-checkout checked">Checkout</button>
-          <button class="btn-checkout">View Cart</button>
+          <button class="btn-checkout" @click="moveToCart()">View Cart</button>
         </div>
       </div>
     </b-modal>
@@ -56,6 +56,9 @@
       },
       toggleModal() {
         this.$refs['cart-modal'].toggle('#toggle-btn')
+      },
+      moveToCart() {
+        this.$router.push('/shop_cart')
       }
     }
   }
