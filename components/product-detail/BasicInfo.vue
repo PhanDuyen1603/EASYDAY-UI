@@ -1,87 +1,29 @@
 <template>
   <div class="summary entry-summary">
-    <h1 class="product_title entry-title">Large Queen Pineapple</h1>
+    <h1 class="product_title entry-title">{{ product.name }}</h1>
     <div class="woocommerce-product-rating">
-      <p class="stars">
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#f5b400"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#CCCCCC"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#CCCCCC"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#CCCCCC"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#CCCCCC"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-        </span>
-      </p>
+      <div class="star-rating" role="img" aria-label="Rated 3.75 out of 5">
+        <span style="width: 75%"
+          >Rated <strong class="rating">{{ product.rating }}</strong> out of 5 based on
+          <span class="rating">4</span> customer ratings</span
+        >
+      </div>
       <a href="#reviews" class="woocommerce-review-link" rel="nofollow"
         >(<span class="count">5</span> customer reviews)</a
       >
     </div>
-    <p class="price">
+    <p v-if="product.sale" class="price">
       <del aria-hidden="true"
         ><span class="woocommerce-Price-amount amount"
           ><bdi
-            ><span class="woocommerce-Price-currencySymbol">£</span>149.94</bdi
+            ><span class="woocommerce-Price-currencySymbol">£</span>{{ product.price }}</bdi
           ></span
         ></del
       >
       <ins
         ><span class="woocommerce-Price-amount amount"
           ><bdi
-            ><span class="woocommerce-Price-currencySymbol">£</span>78.09</bdi
+            ><span class="woocommerce-Price-currencySymbol">£</span>{{ getPromo(product.price, product.sale) }}</bdi
           ></span
         ></ins
       >
@@ -248,3 +190,27 @@
   </div>
 </template>
 <script>
+export default {
+  props: {
+    product: {
+      type: Object,
+      default:() => ({
+        "name": "Wrapped Cabbage",
+        "id": 0,
+        "price": "782.92",
+        "rating": 3,
+        "sale": "",
+        "categories": ["Vegetables"],
+        "slug": "wrapped-cabbage",
+      })
+    }
+  },
+  methods: {
+    getPromo(price, promo) {
+      const promoPercent = parseInt(promo.replace(/[\D]/, ''))
+      const promoPrice = price - (price * promoPercent / 100)
+      return Math.round(promoPrice * 100) / 100
+    },
+  }
+}
+</script>

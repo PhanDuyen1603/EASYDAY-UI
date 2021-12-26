@@ -1,5 +1,9 @@
 import { shopProducts, categories } from '../data'
 
+function timeout(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 export const state = () => ({
     products: [],
     curPage: [],
@@ -32,8 +36,9 @@ export const mutations = {
 }
 
 export const actions = {
-    getProducts(context, payload) {
+    async getProducts(context, payload) {
         context.commit('SET_LOADING', true)
+        await timeout(2000)
         const page = payload && payload.page ? payload.page : 1
         const offset = payload && payload.offset ? payload.offset : 16
         let data = []
@@ -47,8 +52,9 @@ export const actions = {
         context.commit('SET_LOADING', false)
     },
 
-    filterProducts(context, payload) {
+    async filterProducts(context, payload) {
         context.commit('SET_LOADING', true)
+        await timeout(2000)
         const page = 1
         const offset = 16
         const filters = payload && payload.filters ? payload.filters : {}
@@ -80,12 +86,21 @@ export const actions = {
         context.commit('SET_LOADING', false)
     },
 
-    searchProduct(context, payload) {
+    async searchProduct(context, payload) {
+        context.commit('SET_LOADING', true)
         const key = payload.keySearch
+        await timeout(2000)
         const data = shopProducts.filter(item => {
             return item.name.toLowerCase().includes(key)
         })
+        context.commit('SET_LOADING', false)
         context.commit('SET_PRODUCTS', data)
+    },
+
+    getProduct(context, payload) {
+        const product = shopProducts.find(el => el.slug === payload.slug)
+        console.log(product);
+        return product
     }
 }
 

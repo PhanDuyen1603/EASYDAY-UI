@@ -1,11 +1,11 @@
 <template>
   <b-col class="product-item">
-    <div class="product-item-bg"></div>
-    <a class="img-prod">
+    <NuxtLink :to="{ name: 'product-detail-slug', params: { slug: product.slug } }" class="product-item-bg"></NuxtLink>
+    <NuxtLink class="img-prod" :to="{ name: 'product-detail-slug', params: { slug: product.slug } }">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
-        width="210"
-        height="210"
+        width="240"
+        height="240"
         class="img-radius"
         :src="`/images/products/image${product.id}.png` || '~/assets/images/pro-2.jpeg'"
       />
@@ -26,7 +26,7 @@
           </span>
         </div>
       </div>
-    </a>
+    </NuxtLink>
     <div class="product-caption">
       <div>
         <b-form-rating v-model="rating" readonly></b-form-rating>
@@ -52,8 +52,13 @@
           </span>
         </ins>
       </span>
-      <div class="add-to-cart-wrap">
-        <a href="/" data-quantity="1" class="">
+      <div class="add-to-cart-wrap" >
+        <a v-if="loadingButton">
+          <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
+          <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
+          <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
+        </a>
+        <a v-else @click="addToCart(product)" data-quantity="1" class="">
           <span
             ><svg
               version="1.1"
@@ -118,6 +123,7 @@ export default {
   data() {
     return {
       rating: this.product.rating || 1,
+      loadingButton: false
     }
   },
   methods: {
@@ -125,6 +131,11 @@ export default {
       const promoPercent = parseInt(promo.replace(/[\D]/, ''))
       const promoPrice = price - (price * promoPercent / 100)
       return Math.round(promoPrice * 100) / 100
+    },
+    async addToCart(product) {
+      this.loadingButton = true
+      await this.$store.dispatch('modules/cart/addProductToCart', { product })
+      this.loadingButton = false
     }
   },
 }
