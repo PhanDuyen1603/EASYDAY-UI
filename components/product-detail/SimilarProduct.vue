@@ -2,7 +2,7 @@
 <template>
   <section>
     <div class="" style="margin-top: 70px">
-      <div class="elementor-posts margin-page">
+      <div class="elementor-posts">
         <h2 class="title-posts">Related products</h2>
         <div class="bottom-title"></div>
       </div>

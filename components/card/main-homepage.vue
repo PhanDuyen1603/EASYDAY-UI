@@ -1,7 +1,7 @@
 <template>
   <b-col class="product-item">
     <div class="product-item-bg"></div>
-    <a class="img-prod">
+    <a class="img-prod" href="/product-detail/kiwi-fruit-single">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
         width="234"
@@ -53,7 +53,12 @@
         </ins>
       </span>
       <div class="add-to-cart-wrap">
-        <a href="/" data-quantity="1" class="">
+        <a v-if="loadingButton">
+          <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
+          <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
+          <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
+        </a>
+        <a  v-else @click="addToCart(product)" data-quantity="1" class="">
           <span
             ><svg
               version="1.1"
@@ -118,6 +123,14 @@ export default {
   data() {
     return {
       rating: this.product.rating || 1,
+      loadingButton: false
+    }
+  },
+  methods: {
+    async addToCart(product) {
+      this.loadingButton = true
+      await this.$store.dispatch('modules/cart/addProductToCart', { product })
+      this.loadingButton = false
     }
   },
 }

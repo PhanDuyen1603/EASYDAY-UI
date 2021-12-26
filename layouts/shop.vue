@@ -1,6 +1,7 @@
 <template>
   <div class="wrap__body">
-    <TheHeader />
+    <TheHeader id="desktop_header" />
+    <TheStickyHeader id="mobile_header" />
     <main class="main">
       <div>
         <ThemeBreadcrumb></ThemeBreadcrumb>
@@ -117,6 +118,20 @@
       ...mapGetters({
         categories: 'modules/products/categories'
       }),
+    },
+    mounted() {
+      // eslint-disable-next-line nuxt/no-env-in-hooks
+      if (process.client) {
+        // eslint-disable-next-line no-undef 
+        const jQuery = $
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 1) {
+            jQuery('#mobile_header').addClass("sticky-header");
+          } else {
+            jQuery('#mobile_header').removeClass("sticky-header");
+          }
+        });
+      }
     },
     methods: {
       priceFilter($event) {

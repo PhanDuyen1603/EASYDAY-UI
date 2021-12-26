@@ -57,12 +57,11 @@ export default {
     },
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
+        vendor: ["jquery"],
         plugins: [
             new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery',
-                'window.jQuery': 'jquery',
-            })
+                $: "jquery"
+              })
         ],
         extractCSS: true,
         optimization: {

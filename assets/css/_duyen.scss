@@ -38,18 +38,24 @@
   justify-content: space-between;
 }
 
+.form-radius{
+  margin-bottom: 50px !important;
+}
+
+.form-radius-content{
+  border-radius: 30px !important;
+}
+
 .login-form {
-  // position: absolute;
-  // z-index: 99;
-  width: 452px;
-  height: 687px;
+  height: fit-content;
   border-radius: 30px;
-  // margin: 40px auto;
+  height: 680px;
   .image-login {
     position: absolute;
     z-index: 99;
     width: 452px;
-    height: 687px;
+    height: 780px;
+    height: fit-content;
     border-radius: 30px;
     img {
       border-radius: 30px;
@@ -198,8 +204,7 @@
 }
 
 .signin-form {
-  width: 484px;
-  height: 704px;
+  height: fit-content;
   .erro-message {
     color: #e5625c;
     margin-top: 50px;
@@ -324,6 +329,7 @@
 }
 
 .shopping-list {
+  cursor: pointer;
   position: relative;
   .icon-size {
     width: 23px;
@@ -1436,7 +1442,7 @@ svg.qodef-svg {
 
 .signin-form {
   width: 484px;
-  height: 704px;
+  height: 680px;
   .erro-message {
     color: #e5625c;
     margin-top: 50px;
