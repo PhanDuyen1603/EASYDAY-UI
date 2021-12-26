@@ -2,7 +2,7 @@
   <div class="wrap__body">
     <TheHeader id="desktop_header" />
     <TheStickyHeader id="mobile_header" />
-    <b-modal id="bv-modal-example" hide-footer hide-header>
+    <b-modal id="bv-modal-example" class="form-radius" hide-footer hide-header>
       <login></login>
     </b-modal>
     <b-modal id="bv-modal-example2" hide-footer hide-header>

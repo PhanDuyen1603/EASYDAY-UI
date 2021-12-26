@@ -4,8 +4,8 @@
     <NuxtLink class="img-prod" :to="{ name: 'product-detail-slug', params: { slug: product.slug } }">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
-        width="240"
-        height="240"
+        width="210"
+        height="210"
         class="img-radius"
         :src="`/images/products/image${product.id}.png` || '~/assets/images/pro-2.jpeg'"
       />

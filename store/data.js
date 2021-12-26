@@ -34,6 +34,14 @@ export const categories = [{
 ]
 
 export const shopProducts = [{
+  "name": "Kiwi Fruit Single",
+  "id": 17,
+  "price": "100.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Fruits"],
+  "slug": "kiwi-fruit-single"
+}, {
   "name": "Wrapped Cabbage",
   "id": 0,
   "price": "782.92",
@@ -169,14 +177,6 @@ export const shopProducts = [{
   "sale": "",
   "categories": ["Vegetables"],
   "slug": "east-coast-small"
-}, {
-  "name": "Kiwi Fruit Single",
-  "id": 17,
-  "price": "100.13",
-  "rating": 5,
-  "sale": "",
-  "categories": ["Fruits"],
-  "slug": "kiwi-fruit-single"
 }, {
   "name": "Kale Bunch",
   "id": 18,

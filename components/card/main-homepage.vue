@@ -1,7 +1,7 @@
 <template>
   <b-col class="product-item">
     <div class="product-item-bg"></div>
-    <a class="img-prod">
+    <a class="img-prod" href="/product-detail/kiwi-fruit-single">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
         width="234"

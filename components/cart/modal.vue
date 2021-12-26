@@ -21,7 +21,7 @@
           <h2 class="total-price">£440.40</h2>
         </div>
         <div class="p-2 row">
-          <button class="btn-checkout checked">Checkout</button>
+          <button class="btn-checkout checked"><a href="/checkout">Checkout</a></button>
           <button class="btn-checkout" @click="moveToCart()">View Cart</button>
         </div>
       </div>
@@ -77,7 +77,7 @@
   .list-group-item {
     border: none;
   }
-  .btn-checkout {
+  .btn-checkout{
     margin: .5rem 0;
     color: $text-color;
     border: 2px solid $border-color;
@@ -97,6 +97,12 @@
       background: #fff;
     }
   }
+   .btn-checkout a{
+     color: #fff;
+     &:hover{
+       color: #fff;
+     }
+   }
   .modal-body {
     display: flex;
     flex-direction: column;

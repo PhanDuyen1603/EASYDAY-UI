@@ -181,11 +181,11 @@ export default {
           sale: '',
         },
         {
-          name: 'Sweetcorn 4 Pack',
-          id: 1,
-          price: '220.20',
+          name: 'Kiwi 150g',
+          id: 17,
+          price: '946.04',
           rating: 4,
-          sale: '',
+          sale: '-25%',
         },
         {
           name: 'Mixed Chillies150g',

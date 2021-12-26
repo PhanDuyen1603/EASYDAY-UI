@@ -2,11 +2,11 @@
   <div>
     <div class="organey-sorting section-header justify-content-between">
       <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-light btn-circle active">
-          <i class="fas fa-list"></i>
+        <button type="button" class="btn mr-1 btn-light btn-circle ">
+          <i class="fas fa-list fix-ic-shop"></i>
         </button>
-        <button type="button" class="btn btn-light btn-circle">
-          <i class="fas fa-th-large"></i>
+        <button type="button" class="btn btn-light btn-circle active">
+          <i class="fas fa-th-large fix-ic-shop"></i>
         </button>
         <b-dropdown toggle-class="rounded-lg " text="Outline Danger" variant="ligth" class="m-2 btn-sort">
           <b-dropdown-item href="#">Action</b-dropdown-item>
@@ -14,20 +14,20 @@
           <b-dropdown-item href="#">Something else here</b-dropdown-item>
         </b-dropdown>
       </div>
-      <div class="">
+      <div class="count-prod-shop">
         <span>Showing {{ page === 1 ? 1 : (page - 1) * offset + 1 }}–{{
             offset * page
           }}
           of {{ productsCount }} results</span>
       </div>
     </div>
-    <div v-if="loading" class="mt-5 row">
+    <div v-if="loading" class="mt-4 row" style="margin: 0 auto;">
       <div v-for="i in 8" :key="i" class="col-3 mb-3">
         <LoadingSkeletonCard></LoadingSkeletonCard>
       </div>
     </div>
-    <div v-else class="mt-5 row">
-      <div v-for="(product, index) in products" :key="index" class="col-3">
+    <div  class="mt-4 row" style="margin: 0 auto;">
+      <div v-for="(product, index) in products" :key="index" class="col-3" style="padding: 0px; margin-bottom: 10px;">
         <CardMain :product="product"></CardMain>
       </div>
     </div>
@@ -133,6 +133,14 @@
     left: 9px;
   }
 
+  .rounded-lg{
+    color: #656766;
+    border: 0;
+    padding: 3px 15px;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+
   .btn-sort {
     background-color: #fff;
     border-radius: 30px;
@@ -172,10 +180,18 @@
     font-weight: 600;
   }
 
+  .fix-ic-shop{
+    font-size: 12px;
+    position: absolute;
+    top: 9px;
+    right: 7px;
+  }
+
   .btn-circle {
+    position: relative;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     &.active,
     &:hover {
@@ -185,6 +201,12 @@
         color: #fff;
       }
     }
+  }
+
+  .count-prod-shop{
+    font-size: 14px;
+    color: #656766;
+    font-weight: 500;
   }
 
   .card-product {
@@ -217,7 +239,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0.75rem 2rem;
+    padding: 7px 15px;
     border-radius: 12px;
     background: #f5f5f5;
   }
@@ -234,6 +256,7 @@
     font-size: 12px;
     font-weight: 600;
     border-radius: 12px;
+    cursor: pointer;
 
     &.current {
       background: $primary-hover;
@@ -249,12 +272,12 @@
   }
 
   .dropdown-toggle {
-    color: $primary-color;
-    border-color: $primary-color;
+    color: #656766;
+    border: 0;
+    padding: 3px 15px;
+    background-color: #fff;
+    border-radius: 30px;
 
-    &:hover {
-      color: $primary-color;
-    }
   }
 
   .list-group-item>div:not(:last-child) {
