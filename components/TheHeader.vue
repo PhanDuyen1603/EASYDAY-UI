@@ -100,7 +100,8 @@
               <img src="~/assets/images/heart9.png" />
               <span class="count">8</span>
             </div>
-            <div class="shopping-list">
+            <CartModal :items="items">
+                          <div class="shopping-list">
               <span class="qodef-m-icon">
                 <svg class="qodef-svg" style="width: 27px; fill: black" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
@@ -127,10 +128,10 @@
                   </g>
                 </svg>
               </span>
-              <span class="count">6</span>
-              <bdi class="ic-fix"><span class="woocommerce-Price-currencySymbol">£</span>{{ totalPrice }}</bdi>
+              <span class="count" style="bottom: -8px;">{{ items.length || 0 }}</span>
+              <bdi class="ic-fix"><span class="woocommerce-Price-currencySymbol">£</span>{{ totalPrice || 0 }}</bdi>
             </div>
-            <CartModal :items="items"></CartModal>
+            </CartModal>
           </div>
         </div>
       </div>
@@ -326,12 +327,10 @@
       ...mapGetters({
         items: 'modules/cart/items',
       }),
+      ...mapGetters({
+        totalPrice: 'modules/cart/totalPrice',
+      }),
 
-    },
-    watch: {
-      items(value) {
-        this.totalPrice()
-      },
     },
     methods: {
       switchModal(value) {
@@ -343,15 +342,6 @@
           this.showSignupModal = true
         }
       },
-      totalPrice() {
-        // eslint-disable-next-line no-unused-vars
-        let total = 0
-        // eslint-disable-next-line array-callback-return
-        this.items.map(item => {
-          total += +item.price * item.quantity
-        })
-        return total
-      }
     },
   }
 

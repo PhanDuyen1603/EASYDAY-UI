@@ -1,8 +1,12 @@
 <template>
   <div>
-    <b-button id="show-btn" @click="showModal">
-        <slot>Open Modal</slot>
-    </b-button>
+    <div @click="showModal">
+      <slot>
+        <b-button id="show-btn" @click="showModal">
+            Open Modal
+        </b-button>
+      </slot>
+    </div>
     <!-- <b-button id="toggle-btn" @click="toggleModal">Toggle Modal</b-button> -->
 
     <b-modal id="cart-modal" ref="cart-modal" hide-footer title="SHOPPING CART" content-class="modal-wrapper" title-class="modal-title">
@@ -40,12 +44,6 @@
       ...mapGetters({
         cartModal: 'modules/cart/cartModal',
       }),
-    },
-    watch: {
-      cartModal(value) {
-        if(value) this.showModal()
-        else this.hideModal()
-      }
     },
     methods: {
       showModal() {

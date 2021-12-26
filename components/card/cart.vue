@@ -13,7 +13,7 @@
             <p><span class="quantity">{{ item.quantity }}</span> x <span class="card-text price">£{{ item.price }}</span></p>
           </div>
           <div class="col-2">
-            <p class="card-icon-delete"><img class="delete" src="images/icons/icon-trash.svg" alt=""></p>
+            <p class="card-icon-delete" @click="deleteItem(item)"><img class="delete" src="images/icons/icon-trash.svg" alt=""></p>
           </div>
         </div>
       </div>
@@ -37,6 +37,9 @@
     methods: {
         buildImgUrl(id) {
             return `images/products/image${id}.png`
+        },
+        deleteItem(product) {
+          this.$store.commit('modules/cart/DELETE_PRODUCT', product)
         }
     },
   }
