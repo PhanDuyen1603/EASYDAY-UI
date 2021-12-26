@@ -3,7 +3,16 @@ function timeout(ms) {
 }
 
 export const state = () => ({
-  items: [],
+  items: [{
+    "name": "Sweetcorn 4 Pack",
+    "id": 1,
+    "price": "220.20",
+    "rating": 4,
+    "sale": "",
+    "categories": ["Vegetables"],
+    "slug": "sweetcorn-4-pack",
+    "quantity": 1
+  }],
   checkoutStatus: null,
   savedItem: [],
   totalPrice: 0,
