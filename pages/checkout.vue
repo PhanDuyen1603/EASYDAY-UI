@@ -198,21 +198,7 @@
                           >
                         </td>
                       </tr>
-                      <tr class="cart_item">
-                        <td class="product-name">
-                          Papaya Single&nbsp;
-                          <strong class="product-quantity">×&nbsp;1</strong>
-                        </td>
-                        <td class="product-total">
-                          <span class="woocommerce-Price-amount amount"
-                            ><bdi
-                              ><span class="woocommerce-Price-currencySymbol"
-                                >£</span
-                              >78.09</bdi
-                            ></span
-                          >
-                        </td>
-                      </tr>
+                      
                       <tr class="cart-subtotal">
                         <th>Subtotal</th>
                         <td data-title="Subtotal" style="text-align: right">
