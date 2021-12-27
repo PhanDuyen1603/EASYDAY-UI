@@ -11,10 +11,11 @@
     </div>
     <div class="title-login">Login</div>
     <div class="group-text">
+      <div class="show-error" id="loginError"></div>
       <div class="item-input">
         <img src="~/assets/images/user-icon.png" alt="" />
         <input
-          id=""
+          id="identifier"
           class="item-text-input"
           type="text"
           name="identifier"
@@ -25,7 +26,7 @@
       <div class="item-input">
         <img class="img-response" src="~/assets/images/lock.png" alt="" />
         <input
-          id=""
+          id="password"
           class="item-text-input"
           type="password"
           name="password"
@@ -39,7 +40,7 @@
       </div>
     </div>
 
-    <div class="button-login">
+    <div id="loginBtn" class="button-login">
       <a href="#" @click="loginUser">Login</a>
     </div>
     <div class="title-login-link d-flex">
@@ -85,16 +86,42 @@ export default {
   mounted() {
     // eslint-disable-next-line nuxt/no-env-in-hooks
     if (process.client) {
-      const element = document.getElementById('tu')
-      console.log(111, { element })
+      const loginBtn = document.getElementById('loginBtn')
+      const showErrorEl = document.getElementById('loginError')
+
+      loginBtn.addEventListener('click', () => {
+         sessionStorage.removeItem('name');
+        const identifier = document.getElementById('identifier').value
+        const password = document.getElementById('password').value
+
+        let exist = null;
+        for (let i = 0; i < localStorage.length; i++) {
+          const user = JSON.parse(localStorage.getItem(i))
+          if (user.identifier === identifier || user.password === password) {
+            exist =  JSON.parse(localStorage.getItem(i))
+          }
+        }
+        if (!exist) {
+          showErrorEl.innerText = 'Tên đăng nhập hoặc mật khẩu không chính xác.'
+           sessionStorage.removeItem('name');
+        
+        } else {
+          showErrorEl.innerText = ''     
+           sessionStorage.setItem('name', exist.name);
+          window.location.href = '/'
+        }
+      })
     }
   },
+
   components: {},
 }
 </script>
 
 <style>
-.signup-btn, .signup-btn:hover, s.ignup-btn:focus {
+.signup-btn,
+.signup-btn:hover,
+s.ignup-btn:focus {
   background: white !important;
   color: #e5625c !important;
   border: 0px !important;
