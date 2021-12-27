@@ -2,28 +2,27 @@
   <div>
     <h1>{{ title }}</h1>
     <NuxtLink to="/" no-prefetch>Trang chủ</NuxtLink>
+    <div>
+      <div id="tu">ndhdfd</div>
+</div>
+
   </div>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
-      title: 'Trang demo nè',
     }
   },
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'My custom description',
-        },
-      ],
-    }
+  mounted() {
+    // eslint-disable-next-line nuxt/no-env-in-hooks
+    if (process.client) {
+    const element = document.getElementById('tu')
+    console.log(111,{element})
+}},
+  components: {
   },
 }
 </script>
