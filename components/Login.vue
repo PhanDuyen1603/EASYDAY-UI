@@ -90,13 +90,7 @@ export default {
       const showErrorEl = document.getElementById('loginError')
 
       loginBtn.addEventListener('click', () => {
-        const defaultUser = {
-          id: 0,
-          identifier: 'nttukhtn@gmail.com',
-          password: '123456',
-          name: 'Tuấn Tú',
-        }
-        localStorage.setItem(defaultUser.id, JSON.stringify(defaultUser))
+         sessionStorage.removeItem('name');
         const identifier = document.getElementById('identifier').value
         const password = document.getElementById('password').value
 
@@ -109,10 +103,12 @@ export default {
         }
         if (!exist) {
           showErrorEl.innerText = 'Tên đăng nhập hoặc mật khẩu không chính xác.'
+           sessionStorage.removeItem('name');
+        
         } else {
           showErrorEl.innerText = ''     
            sessionStorage.setItem('name', exist.name);
-        
+          window.location.href = '/'
         }
       })
     }
