@@ -36,7 +36,7 @@
     },
     methods: {
         buildImgUrl(id) {
-            return `images/products/image${id}.png`
+            return `/images/products/image${id}.png`
         },
         deleteItem(product) {
           this.$store.commit('modules/cart/DELETE_PRODUCT', product)

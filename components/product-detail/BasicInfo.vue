@@ -36,26 +36,20 @@
       </ul>
     </div>
     <p class="stock available-on-backorder">Available on backorder</p>
-    <form
-      class="cart"
-      action="https://demo.leebrosus.com/organey/product/large-queen-pineapple/"
-      method="post"
-      enctype="multipart/form-data"
-    >
+    <div class="cart d-flex">
       <div class="quantity buttons_added">
         <button type="button" class="minus">-</button>
         <label class="screen-reader-text" for="quantity_61765142bdcce"
           >Large Queen Pineapple quantity</label
         >
         <input
+          v-model="quantity"
           type="number"
-          id="quantity_61765142bdcce"
           class="input-text qty text"
           step="1"
           min="1"
           max=""
           name="quantity"
-          value="1"
           title="Qty"
           size="4"
           placeholder=""
@@ -67,10 +61,11 @@
         name="add-to-cart"
         value="87"
         class="single_add_to_cart_button button alt"
+        @click="addToCart(product)"
       >
         Add to cart
       </button>
-    </form>
+    </div>
     <button class="woosw-btn woosw-btn-87" data-id="87">Add to wishlist</button>
     <button class="woosw-btn woosc-btn-87" data-id="87">Compare</button>
     <div class="organey-single-product-extra">
@@ -179,14 +174,20 @@ export default {
     product: {
       type: Object,
       default:() => ({
-        "name": "Wrapped Cabbage",
-        "id": 0,
-        "price": "782.92",
-        "rating": 3,
-        "sale": "",
-        "categories": ["Vegetables"],
-        "slug": "wrapped-cabbage",
+        // "name": "Wrapped Cabbage",
+        // "id": 0,
+        // "price": "782.92",
+        // "rating": 3,
+        // "sale": "",
+        // "categories": ["Vegetables"],
+        // "slug": "wrapped-cabbage",
       })
+    }
+  },
+  data() {
+    return {
+      loadingButton: false,
+      quantity: 1
     }
   },
   methods: {
@@ -195,6 +196,11 @@ export default {
       const promoPrice = price - (price * promoPercent / 100)
       return Math.round(promoPrice * 100) / 100
     },
+    async addToCart(product) {
+      this.loadingButton = true
+      await this.$store.dispatch('modules/cart/addProductToCart', { product, quantity: this.quantity })
+      this.loadingButton = false
+    }
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <b-col class="product-item">
-    <div class="product-item-bg"></div>
-    <a class="img-prod">
+    <NuxtLink :to="{ name: 'product-detail-slug', params: { slug: product.slug } }"  class="product-item-bg"></NuxtLink>
+    <NuxtLink class="img-prod" :to="{ name: 'product-detail-slug', params: { slug: product.slug } }">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
         width="234"
@@ -26,7 +26,7 @@
           </span>
         </div>
       </div>
-    </a>
+    </NuxtLink>
     <div class="product-caption">
       <div>
         <b-form-rating v-model="rating" readonly></b-form-rating>

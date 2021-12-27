@@ -100,22 +100,20 @@
 }
 </style>
 
-<script></script>
-
 <script>
 if (process.client) {
-  var countDownDate = new Date('Jan 5, 2022 15:37:25').getTime()
-  var x = setInterval(function () {
-    var now = new Date().getTime()
+  const countDownDate = new Date('Jan 5, 2022 15:37:25').getTime()
+  const x = setInterval(function () {
+    const now = new Date().getTime()
 
-    var distance = countDownDate - now
+    const distance = countDownDate - now
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24))
-    var hours = Math.floor(
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+    const hours = Math.floor(
       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     )
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
     document.getElementById('demo').innerHTML =
       days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's '
@@ -141,6 +139,7 @@ export default {
           price: '535.40',
           rating: 3,
           sale: '-23%',
+          slug: 'papaya-single'
         },
         {
           name: 'Large Queen Pineapple',
@@ -148,6 +147,8 @@ export default {
           price: '78.09',
           rating: 3,
           sale: '-48%',
+          slug: 'large-queen-pineapple'
+
         },
         {
           name: 'Mixed Chillies150g',
@@ -155,6 +156,7 @@ export default {
           price: '546.04',
           rating: 4,
           sale: '-25%',
+          slug: 'mixed Chillies150g'
         },
         {
           name: 'Beef Potjiekos Per kg',
@@ -162,6 +164,7 @@ export default {
           price: '890.96',
           rating: 3,
           sale: '-45%',
+          slug: 'beef-potjiekos-per-kg'
         },
         {
           name: 'Wrapped Red Cabbage',
@@ -169,9 +172,8 @@ export default {
           price: '500.91',
           rating: 4,
           sale: '-32%',
+          slug: 'wrapped-Red-cabbage'
         },
-        
-       
       ],
     }
   },

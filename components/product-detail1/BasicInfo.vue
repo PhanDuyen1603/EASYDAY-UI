@@ -173,4 +173,40 @@
     </div>
   </div>
 </template>
+
 <script>
+export default {
+  props: {
+    product: {
+      type: Object,
+      default:() => ({
+        // "name": "Wrapped Cabbage",
+        // "id": 0,
+        // "price": "782.92",
+        // "rating": 3,
+        // "sale": "",
+        // "categories": ["Vegetables"],
+        // "slug": "wrapped-cabbage",
+      })
+    }
+  },
+  data() {
+    return {
+      loadingButton: false,
+      quantity: 1
+    }
+  },
+  methods: {
+    getPromo(price, promo) {
+      const promoPercent = parseInt(promo.replace(/[\D]/, ''))
+      const promoPrice = price - (price * promoPercent / 100)
+      return Math.round(promoPrice * 100) / 100
+    },
+    async addToCart(product) {
+      this.loadingButton = true
+      await this.$store.dispatch('modules/cart/addProductToCart', { product, quantity: this.quantity })
+      this.loadingButton = false
+    }
+  }
+}
+</script>

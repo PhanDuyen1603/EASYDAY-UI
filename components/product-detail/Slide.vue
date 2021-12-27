@@ -9,7 +9,7 @@
         <div class="carousel-item active">
           <img
             class="d-block w-100"
-            src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/04/pro-7.jpg"
+            :src="activeImg"
             alt="First slide"
           />
         </div>
@@ -74,3 +74,14 @@
     </ol>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    activeImg: {
+      type: String,
+      default: '/images/products/image2.png'
+    }
+  }
+}
+</script>
