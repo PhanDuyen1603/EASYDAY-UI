@@ -36,6 +36,9 @@ export const mutations = {
 }
 
 export const actions = {
+    getAllProducts(context, payload) {
+        context.commit('SET_PRODUCTS', shopProducts)
+    },
     async getProducts(context, payload) {
         context.commit('SET_LOADING', true)
         await timeout(2000)
@@ -106,6 +109,7 @@ export const actions = {
 
 export const getters = {
     products: (state) => state.curPage,
+    allProducts: (state) => state.products,
     categories: (state) => state.categories,
     productsCount: (state) => state.productsCount,
     loading: (state) => state.loading,

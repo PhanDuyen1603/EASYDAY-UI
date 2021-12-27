@@ -5,13 +5,14 @@
     <Section2></Section2>
     <Section3></Section3>
     <Section4></Section4>
-    <Section5></Section5>
+    <Section5 :products="products"></Section5>
     <Section6></Section6>
     <Section7></Section7>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import Banner from '~/components/home/Banner.vue'
 import Section1 from '~/components/home/Section1.vue'
 import Section2 from '~/components/home/Section2.vue'
@@ -26,7 +27,15 @@ export default {
       title: 'HomePage',
     }
   },
-  mounted() {},
+    computed: {
+    ...mapGetters({
+      products: 'modules/products/allProducts',
+    }),
+  },
+  mounted() {
+    this.$store.dispatch('modules/products/getProducts')
+  },
+
 
   head() {
     return {
