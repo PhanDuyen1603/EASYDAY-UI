@@ -1,4 +1,4 @@
-import { shopProducts, categories } from '../data'
+import { shopProducts, categories, idesFood } from '../data'
 
 function timeout(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -40,13 +40,8 @@ export const actions = {
         context.commit('SET_PRODUCTS', shopProducts)
     },
 
-    getRandomProducts(context, payload) {
-        const numberProduct = 7
-        const shuffled = shopProducts.sort(function(){return .5 - Math.random()});
-
-        const selected=shuffled.slice(0,numberProduct);
-
-        return selected.splice(0, numberProduct)
+    getIdeasProducts(context, payload) {
+        return idesFood
     },
 
     async getProducts(context, payload) {
@@ -111,6 +106,7 @@ export const actions = {
     },
 
     getProduct(context, payload) {
+        console.log(payload.slug);
         const product = shopProducts.find(el => el.slug === payload.slug)
         console.log(product);
         return product
@@ -119,6 +115,7 @@ export const actions = {
 
 export const getters = {
     products: (state) => state.curPage,
+    ides: () => idesFood,
     allProducts: (state) => state.products,
     categories: (state) => state.categories,
     productsCount: (state) => state.productsCount,

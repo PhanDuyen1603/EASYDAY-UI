@@ -290,3 +290,77 @@ export const shopProducts = [{
   "categories": ["Bread"],
   "slug": "frozen-jumbo-hake"
 }]
+
+export const idesFood = [{
+  "name": "Avocado Salad",
+  "id": 1,
+  "price": "100.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "avocado-salad",
+  img: "avocado-salad"
+}, {
+  "name": "Steamed Crab Salad",
+  "id": 1,
+  "price": "205.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "steamed-crab-salad",
+  img: 're-2-r'
+}, {
+  "name": "Humus salad",
+  "id": 1,
+  "price": "229.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "humus-salad",
+  img: 're-3-r'
+}, {
+  "name": "Yangzhou fried rice",
+  "id": 1,
+  "price": "684.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "yangzhou-fried-rice",
+  img: 're-4-r'
+}, {
+  "name": "Minced meat wonton",
+  "id": 1,
+  "price": "180.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "minced-meat-wonton",
+  img: 're-5-r'
+}, {
+  "name": "Fried dumpling dish",
+  "id": 1,
+  "price": "200.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "fried-dumpling-dish",
+  img: 're-6-r'
+}, {
+  "name": "Roasted Squid",
+  "id": 1,
+  "price": "100.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "roasted-squid",
+  img: 're-7-r'
+}, {
+  "name": "Fried Crayfish in camy",
+  "id": 1,
+  "price": "100.13",
+  "rating": 5,
+  "sale": "",
+  "categories": ["Vegetables"],
+  "slug": "fried-crayfish-in-camy",
+  img: 're-8-r'
+}]
