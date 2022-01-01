@@ -20,7 +20,7 @@
                   width="21"
                   src="~/assets/images/flastsaleani.svg"
                 />
-                <span class="ml-1" style="color: #5c9863">Flash Sales </span>
+                <span class="ml-1" style="color: #5c9863; font-weight: 800">Flash Sales </span>
                 <img
                   class="flash-sale-ani" style="margin-left: 5px"
                   width="21"
