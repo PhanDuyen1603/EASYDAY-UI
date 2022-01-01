@@ -111,16 +111,21 @@ export default {
           }
         }
         if (!exist) {
-          showErrorEl.innerText = 'Tên đăng nhập hoặc mật khẩu không chính xác.'
+          showErrorEl.innerText = 'The username or password is incorrect'
         } else {
           showErrorEl.innerText = ''
           sessionStorage.setItem('name', exist.name)
-          Swal.fire(
-            'THÀNH CÔNG!',
-            'Đăng nhập thành công <br> Chúc bạn mua sắm vui vẻ tại EASY DAY !!',
-            'success'
-          )
-          setTimeout(()=>{location.reload();},1500)
+
+          Swal.fire({
+            title: 'SUCCESS!',
+            html: `You have logged in successfully <br> Have a nice day at <b>EASY DAY</b>`,
+            icon: 'success',
+            confirmButtonColor: '#5C9963',
+          });
+
+          setTimeout(() => {
+            location.reload()
+          }, 1500)
         }
       })
     }

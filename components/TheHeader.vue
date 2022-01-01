@@ -119,14 +119,19 @@
                 @click="$bvModal.show('bv-modal-example')"
                 >Login
               </b-button>
+              <div id="loggedIn" class="loggedIn">
+                <button id="loggedInBtn">Hello</button>
+                <div class="loggedIn-content">
+                  <a href="#">Your information</a>
+                  <a href="#">Purchase history</a>
+                  <a id="logOut-btn" href="#">Logout</a>
+                </div>
+              </div>
               <b-button
                 class="account-content"
                 id="signUp-btn"
                 @click="$bvModal.show('bv-modal-example2')"
                 >Signup
-              </b-button>
-              <b-button class="account-content" id="logOut-btn" @click="nothing"
-                >Logout
               </b-button>
             </a>
           </div>
@@ -466,21 +471,24 @@ export default {
   mounted() {
     // eslint-disable-next-line nuxt/no-env-in-hooks
     if (process.client) {
-      const showBtn = document.getElementById('logIn-btn')
+      const loginBtn = document.getElementById('logIn-btn')
       const signUpBtn = document.getElementById('signUp-btn')
       const logoutBtn = document.getElementById('logOut-btn')
+      const loggedIn = document.getElementById('loggedIn')
+      const loggedInBtn = document.getElementById('loggedInBtn')
 
-      if (showBtn && signUpBtn && logoutBtn) {
+      if (loginBtn && signUpBtn && logoutBtn) {
         const currentUsername = sessionStorage.getItem('name')
-        showBtn.innerText = currentUsername || 'Login'
-        if (showBtn.innerText === 'Login') {
-          signUpBtn.removeAttribute('hide')
-          logoutBtn.setAttribute('hidden', true)
-        } else {
-          logoutBtn.removeAttribute('hide')
+        if (currentUsername) {
+          loginBtn.setAttribute('hidden', true)
           signUpBtn.setAttribute('hidden', true)
+          loggedIn.removeAttribute('hidden')
+          loggedInBtn.innerText = currentUsername
+        } else {
+          loginBtn.removeAttribute('hidden')
+          signUpBtn.removeAttribute('hidden')
+          loggedIn.setAttribute('hidden', true)
         }
-
         logoutBtn.addEventListener('click', () => {
           sessionStorage.removeItem('name')
           location.reload()

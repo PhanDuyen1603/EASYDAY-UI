@@ -89,11 +89,11 @@ export default {
       const showErrorEl = document.getElementById('signUpError')
 
       const signUpErrors = {
-        wrongPass: 'Mật khẩu xác nhận không chính xác.',
-        exist: 'Email đã được đăng ký. \nVui lòng chọn một email khác.',
-        empty: 'Vui lòng điền đầy đủ thông tin.',
-        invalidEmail: 'Email không hợp lệ.',
-        invalidPassword: 'Mật khẩu tối đa 6 ký tự.',
+        wrongPass: 'The confirm password is not match',
+        exist: 'Email existed\nPlease choose another one',
+        empty: 'Please fill in all information to sign up',
+        invalidEmail: 'Invalid email',
+        invalidPassword: 'Use 6 characters or more for your password',
       }
 
       function validateEmail(email) {
@@ -134,14 +134,6 @@ export default {
       }
 
       signUpBtn.addEventListener('click', () => {
-        // const defaultUser = {
-        //   id: 0,
-        //   identifier: 'nttukhtn@gmail.com',
-        //   password: '123456',
-        //   name: 'Tuấn Tú',
-        // }
-        // localStorage.setItem(defaultUser.id, JSON.stringify(defaultUser))
-
         const fullNameEl = document.getElementById('fullName')
         const emailEl = document.getElementById('email-signup')
         const passwordEl = document.getElementById('password-signup')
@@ -168,11 +160,12 @@ export default {
           confirmPasswordEl.value = ''
           localStorage.setItem(signUpInfo.id, JSON.stringify(signUpInfo))
           sessionStorage.setItem('name', signUpInfo.name)
-          Swal.fire(
-            'THÀNH CÔNG!',
-            'Đăng ký thành công <br> Chúc bạn mua sắm vui vẻ tại EASY DAY !!',
-            'success'
-          )
+          Swal.fire({
+            title: 'SUCCESS!',
+            html: `You have signed up successfully <br> Have a nice day at <b>EASY DAY</b>`,
+            icon: 'success',
+            confirmButtonColor: '#5C9963',
+          })
           setTimeout(() => {
             location.reload()
           }, 1500)
