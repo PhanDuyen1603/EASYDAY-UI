@@ -115,9 +115,18 @@
               </span>
               <b-button
                 class="account-content"
-                id="show-btn"
+                id="logIn-btn"
                 @click="$bvModal.show('bv-modal-example')"
                 >Login
+              </b-button>
+              <b-button
+                class="account-content"
+                id="signUp-btn"
+                @click="$bvModal.show('bv-modal-example2')"
+                >Signup
+              </b-button>
+              <b-button class="account-content" id="logOut-btn" @click="nothing"
+                >Logout
               </b-button>
             </a>
           </div>
@@ -457,9 +466,26 @@ export default {
   mounted() {
     // eslint-disable-next-line nuxt/no-env-in-hooks
     if (process.client) {
-      const showBtn = document.getElementById('show-btn')
-      const currentUsername = sessionStorage.getItem('name')
-      showBtn.innerText = currentUsername || 'Login'
+      const showBtn = document.getElementById('logIn-btn')
+      const signUpBtn = document.getElementById('signUp-btn')
+      const logoutBtn = document.getElementById('logOut-btn')
+
+      if (showBtn && signUpBtn && logoutBtn) {
+        const currentUsername = sessionStorage.getItem('name')
+        showBtn.innerText = currentUsername || 'Login'
+        if (showBtn.innerText === 'Login') {
+          signUpBtn.removeAttribute('hide')
+          logoutBtn.setAttribute('hidden', true)
+        } else {
+          logoutBtn.removeAttribute('hide')
+          signUpBtn.setAttribute('hidden', true)
+        }
+
+        logoutBtn.addEventListener('click', () => {
+          sessionStorage.removeItem('name')
+          location.reload()
+        })
+      }
     }
   },
   computed: {
