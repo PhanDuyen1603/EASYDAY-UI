@@ -84,15 +84,16 @@ export default {
   mounted() {
     // eslint-disable-next-line nuxt/no-env-in-hooks
     if (process.client) {
+      const Swal = require('sweetalert2')
       const signUpBtn = document.getElementById('signUpBtn')
       const showErrorEl = document.getElementById('signUpError')
 
       const signUpErrors = {
-        wrongPass: 'Mật khẩu xác nhận không chính xác.',
-        exist: 'Email đã được đăng ký. \nVui lòng chọn một email khác.',
-        empty: 'Vui lòng điền đầy đủ thông tin.',
-        invalidEmail: 'Email không hợp lệ.',
-        invalidPassword: 'Mật khẩu tối đa 6 ký tự.',
+        wrongPass: 'The confirm password is not match',
+        exist: 'Email existed\nPlease choose another one',
+        empty: 'Please fill in all information to sign up',
+        invalidEmail: 'Invalid email',
+        invalidPassword: 'Use 6 characters or more for your password',
       }
 
       function validateEmail(email) {
@@ -104,13 +105,7 @@ export default {
       }
 
       function signUpValidation(data = {}, userList = []) {
-        console.log({ data })
-        if (
-          !data?.identifier ||
-          !data?.name ||
-          !data?.password ||
-          !data?.confirmPassword
-        ) {
+        if (Object.values(data).includes('')) {
           showErrorEl.innerText = signUpErrors.empty
           return false
         }
@@ -134,40 +129,46 @@ export default {
           showErrorEl.innerText = signUpErrors.wrongPass
           return false
         }
+        showErrorEl.innerText = ''
         return true
       }
 
       signUpBtn.addEventListener('click', () => {
-        const defaultUser = {
-          id: 0,
-          identifier: 'nttukhtn@gmail.com',
-          password: '123456',
-          name: 'Tuấn Tú',
-        }
-        localStorage.setItem(defaultUser.id, JSON.stringify(defaultUser))
-
-        const fullName = document.getElementById('fullName').value
-        const email = document.getElementById('email-signup').value
-        const password = document.getElementById('password-signup').value
-        const confirmPassword = document.getElementById('confirmPassword').value
+        const fullNameEl = document.getElementById('fullName')
+        const emailEl = document.getElementById('email-signup')
+        const passwordEl = document.getElementById('password-signup')
+        const confirmPasswordEl = document.getElementById('confirmPassword')
 
         const id = localStorage.length
 
         const signUpInfo = {
           id,
-          name: fullName,
-          identifier: email,
-          password,
-          confirmPassword,
+          name: fullNameEl.value,
+          identifier: emailEl.value,
+          password: passwordEl.value,
+          confirmPassword: confirmPasswordEl.value,
         }
         const userList = []
         for (let i = 0; i < localStorage.length; i++) {
           userList.push(JSON.parse(localStorage.getItem(i)))
         }
-        console.log({ userList })
+
         if (signUpValidation(signUpInfo, userList)) {
-          showErrorEl.innerText = ''
+          fullNameEl.value = ''
+          emailEl.value = ''
+          passwordEl.value = ''
+          confirmPasswordEl.value = ''
           localStorage.setItem(signUpInfo.id, JSON.stringify(signUpInfo))
+          sessionStorage.setItem('name', signUpInfo.name)
+          Swal.fire({
+            title: 'SUCCESS!',
+            html: `You have signed up successfully <br> Have a nice day at <b>EASY DAY</b>`,
+            icon: 'success',
+            confirmButtonColor: '#5C9963',
+          })
+          setTimeout(() => {
+            location.reload()
+          }, 1500)
         }
       })
     }
