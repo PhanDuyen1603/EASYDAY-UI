@@ -4,9 +4,7 @@
     <NuxtLink class="img-prod" :to="{ name: 'product-detail-slug', params: { slug: product.slug } }">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
-        :width="imgWidth"
-        :height="imgHeight"
-        class="img-radius"
+        class="img-radius card-main-img"
         :src="`/images/products/image${product.id}.png` || '~/assets/images/pro-2.jpeg'"
       />
       <div class="product-reactions">
@@ -145,6 +143,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card-main-img {
+  height: calc(100vw / 5 - 60px);
+}
 .add-to-cart-wrap {
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -161,7 +162,6 @@ export default {
   display: flex;
   transition: all 0.3s ease-in-out;
   justify-content: center;
-  background: rgba(205, 206, 255, 0.1);
 }
 .reaction {
   width: 40px;
