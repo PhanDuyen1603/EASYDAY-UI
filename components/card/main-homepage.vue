@@ -1,11 +1,11 @@
 <template>
-  <b-col class="product-item">
-    <div class="product-item-bg"></div>
-    <a class="img-prod" href="/product-detail/kiwi-fruit-single">
+  <b-col v-if="product" class="product-item">
+    <NuxtLink :to="{ name: 'product-detail-slug', params: { slug: product.slug } }"  class="product-item-bg"></NuxtLink>
+    <NuxtLink class="img-prod" :to="{ name: 'product-detail-slug', params: { slug: product.slug } }">
       <span v-if="product.sale && product.sale.length > 0" class="onsale">{{ product.sale }}</span>
       <img
-        width="234"
-        height="234"
+        :width="imgWidth"
+        :height="imgHeight"
         class="img-radius"
         :src="`/images/products/image${product.id}.png` || '~/assets/images/pro-2.jpeg'"
       />
@@ -26,7 +26,7 @@
           </span>
         </div>
       </div>
-    </a>
+    </NuxtLink>
     <div class="product-caption">
       <div>
         <b-form-rating v-model="rating" readonly></b-form-rating>
@@ -119,6 +119,14 @@ export default {
       type: Object,
       required: true,
     },
+    imgHeight: {
+      type: Number,
+      default: 234
+    },
+    imgWidth: {
+      type: Number,
+      default: 234
+    }
   },
   data() {
     return {

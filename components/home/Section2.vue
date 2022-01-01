@@ -171,6 +171,7 @@ export default {
           price: '546.04',
           rating: 4,
           sale: '-25%',
+          "slug": "mixed-chillies",
         },
         {
           name: 'Beef Potjiekos Per kg',
@@ -178,6 +179,7 @@ export default {
           price: '890.96',
           rating: 3,
           sale: '-45%',
+          slug: 'beef-potjiekos'
         },
         {
           name: 'Wrapped Red Cabbage',
@@ -185,6 +187,7 @@ export default {
           price: '500.91',
           rating: 4,
           sale: '-32%',
+          slug: 'wrapped-red-cabbage'
         },
         
        

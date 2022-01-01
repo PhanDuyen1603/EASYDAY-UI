@@ -175,7 +175,7 @@ export const shopProducts = [{
   "price": "168.22",
   "rating": 4,
   "sale": "",
-  "categories": ["Vegetables"],
+  "categories": ["Vegetables", "Bread"],
   "slug": "east-coast-small"
 }, {
   "name": "Kale Bunch",
@@ -183,7 +183,7 @@ export const shopProducts = [{
   "price": "391.96",
   "rating": 3,
   "sale": "",
-  "categories": [],
+  "categories": ["Bread"],
   "slug": "kale-bunch"
 }, {
   "name": "Cara-Cara Oranges",
@@ -215,7 +215,7 @@ export const shopProducts = [{
   "price": "323.00",
   "rating": 4,
   "sale": "-40%",
-  "categories": [],
+  "categories": ["Bread"],
   "slug": "soup-&-stew-mix"
 }, {
   "name": "Loose Medium Onions",
@@ -223,7 +223,7 @@ export const shopProducts = [{
   "price": "216.81",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Vegetables"],
   "slug": "loose-medium-onions"
 }, {
   "name": "Beef Goulash Per kg",
@@ -231,7 +231,7 @@ export const shopProducts = [{
   "price": "563.72",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Meat"],
   "slug": "beef-goulash-per-kg"
 }, {
   "name": "Pork Pack Per kg",
@@ -239,7 +239,7 @@ export const shopProducts = [{
   "price": "496.64",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Meat", "Bread"],
   "slug": "pork-pack-per-kg"
 }, {
   "name": "Pumpkin Cubes 500g",
@@ -247,7 +247,7 @@ export const shopProducts = [{
   "price": "319.83",
   "rating": 3,
   "sale": "",
-  "categories": [],
+  "categories": ["Vegetables"],
   "slug": "pumpkin-cubes-500g"
 }, {
   "name": "Equatorial Banana",
@@ -255,7 +255,7 @@ export const shopProducts = [{
   "price": "693.95",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Fruits"],
   "slug": "equatorial-banana"
 }, {
   "name": "Green Beans 350g",
@@ -263,7 +263,7 @@ export const shopProducts = [{
   "price": "609.73",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Vegetables"],
   "slug": "green-beans-350g"
 }, {
   "name": "Extra Large Eggs",
@@ -271,7 +271,7 @@ export const shopProducts = [{
   "price": "723.67",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Vegetables", "Bread"],
   "slug": "extra-large-eggs"
 }, {
   "name": "Gourmet Beef Per",
@@ -279,7 +279,7 @@ export const shopProducts = [{
   "price": "646.97",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Meat"],
   "slug": "gourmet-beef-per"
 }, {
   "name": "Frozen Jumbo Hake",
@@ -287,6 +287,6 @@ export const shopProducts = [{
   "price": "224.76",
   "rating": 4,
   "sale": "",
-  "categories": [],
+  "categories": ["Bread"],
   "slug": "frozen-jumbo-hake"
 }]
