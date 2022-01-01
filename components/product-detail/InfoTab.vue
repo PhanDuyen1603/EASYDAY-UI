@@ -519,75 +519,75 @@
                   </h2>
                   <div class="review-top">
                     <div class="woocommerce-product-rating">
-                      <p class="stars">
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="#f5b400"
-                              class="bi bi-star-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="#CCCCCC"
-                              class="bi bi-star-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="#CCCCCC"
-                              class="bi bi-star-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="#CCCCCC"
-                              class="bi bi-star-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="#CCCCCC"
-                              class="bi bi-star-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                              />
-                            </svg>
-                          </span>
-                        </p>
+                      <p class="stars mb-3">
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#f5b400"
+                            class="bi bi-star-fill star-fix-detail"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#CCCCCC"
+                            class="bi bi-star-fill star-fix-detail"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#CCCCCC"
+                            class="bi bi-star-fill star-fix-detail"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#CCCCCC"
+                            class="bi bi-star-fill star-fix-detail"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#CCCCCC"
+                            class="bi bi-star-fill star-fix-detail"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                        </span>
+                      </p>
                       <a
                         href="#reviews"
                         class="woocommerce-review-link"
                         rel="nofollow"
-                        >(<span class="count">5</span> customer reviews )</a
+                        >(<span class="count">5</span> customer reviews)</a
                       >
                     </div>
                     <div class="reviews-summary">
@@ -599,7 +599,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -611,7 +611,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -623,7 +623,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -635,7 +635,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -647,7 +647,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -670,7 +670,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -682,7 +682,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -694,7 +694,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -706,7 +706,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -718,7 +718,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -741,7 +741,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -753,7 +753,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -765,7 +765,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -777,7 +777,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -789,7 +789,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -812,7 +812,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -824,7 +824,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -836,7 +836,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -848,7 +848,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -860,7 +860,7 @@
                               width="16"
                               height="16"
                               fill="#CCCCCC"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -883,7 +883,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -895,7 +895,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -907,7 +907,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -919,7 +919,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -931,7 +931,7 @@
                               width="16"
                               height="16"
                               fill="#f5b400"
-                              class="bi bi-star-fill"
+                              class="bi bi-star-fill fix-icon-start"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -954,243 +954,6 @@
                     </div>
                   </div>
                   <ol class="commentlist">
-                    <li
-                      class="review even thread-even depth-1"
-                      id="li-comment-20"
-                    >
-                      <div id="comment-20" class="comment_container">
-                        <img
-                          alt=""
-                          src="https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=60&amp;d=mm&amp;r=g"
-                          class="avatar avatar-60 photo lazyloaded"
-                          height="60"
-                          width="60"
-                          srcset="
-                            https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=120&amp;d=mm&amp;r=g 2x
-                          "
-                          data-ll-status="loaded"
-                        /><noscript
-                          ><img
-                            alt=""
-                            src="https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=60&#038;d=mm&#038;r=g"
-                            srcset="
-                              https://secure.gravatar.com/avatar/626442e221c0c5cae557490cee754ba5?s=120&#038;d=mm&#038;r=g 2x
-                            "
-                            class="avatar avatar-60 photo"
-                            height="60"
-                            width="60"
-                        /></noscript>
-                        <div class="comment-text">
-                          <p class="stars">
-                            <span>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                            </span>
-                          </p>
-
-                          <p class="meta">
-                            <strong style="font-weight: 700;" class="woocommerce-review__author"
-                              >Michael Lee
-                            </strong>
-                            <span class="woocommerce-review__dash">–</span>
-                            <time
-                              class="woocommerce-review__published-date"
-                              datetime="2021-07-23T03:10:52+00:00"
-                              >July 23, 2021</time
-                            >
-                          </p>
-                          <div class="description">
-                            <p>
-                              I am 6 feet tall and 220 lbs. This shirt fit me
-                              perfectly in the chest and shoulders. My only
-                              complaint is that it is so long! I like to wear
-                              polo shirts untucked. This shirt goes completely
-                              past my rear end. If I wore it with ordinary
-                              shorts, you probably wouldnt be able to see the
-                              shorts at all – completely hidden by the shirt. It
-                              needs to be 4 to 5 inches shorter in terms of
-                              length to suit me. I have many RL polo shirts, and
-                              this one is by far the longest. I dont understand
-                              why.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="review odd alt thread-odd thread-alt depth-1"
-                      id="li-comment-21"
-                    >
-                      <div id="comment-21" class="comment_container">
-                        <img
-                          alt=""
-                          src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&amp;d=mm&amp;r=g"
-                          class="avatar avatar-60 photo lazyloaded"
-                          height="60"
-                          width="60"
-                          srcset="
-                            https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&amp;d=mm&amp;r=g 2x
-                          "
-                          data-ll-status="loaded"
-                        /><noscript
-                          ><img
-                            alt=""
-                            src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&#038;d=mm&#038;r=g"
-                            srcset="
-                              https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&#038;d=mm&#038;r=g 2x
-                            "
-                            class="avatar avatar-60 photo"
-                            height="60"
-                            width="60"
-                        /></noscript>
-                        <div class="comment-text">
-                          <p class="stars">
-                            <span>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                            </span>
-                          </p>
-
-                          <p class="meta">
-                            <strong style="font-weight: 700;" class="woocommerce-review__author"
-                              >Kenneth R. Myers
-                            </strong>
-                            <span class="woocommerce-review__dash">–</span>
-                            <time
-                              class="woocommerce-review__published-date"
-                              datetime="2021-07-23T03:10:53+00:00"
-                              >July 23, 2021</time
-                            >
-                          </p>
-                          <div class="description">
-                            <p>
-                              The shirt was not the fabric I believed it to be.
-                              It says Classic Fit but was made like the older
-                              versions, not the soft cotton like my others. I
-                              don’t understand how the labels are the same but a
-                              completely different shirt. Oh well, stuck with it
-                              now.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
                     <li
                       class="review even thread-even depth-1"
                       id="li-comment-22"
@@ -1225,7 +988,7 @@
                                 width="16"
                                 height="16"
                                 fill="#f5b400"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1237,7 +1000,7 @@
                                 width="16"
                                 height="16"
                                 fill="#f5b400"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1249,7 +1012,7 @@
                                 width="16"
                                 height="16"
                                 fill="#f5b400"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1261,7 +1024,7 @@
                                 width="16"
                                 height="16"
                                 fill="#f5b400"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1273,7 +1036,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1283,7 +1046,9 @@
                             </span>
                           </p>
                           <p class="meta">
-                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                            <strong
+                              style="font-weight: 700"
+                              class="woocommerce-review__author"
                               >Mike Addington
                             </strong>
                             <span class="woocommerce-review__dash">–</span>
@@ -1336,7 +1101,7 @@
                                 width="16"
                                 height="16"
                                 fill="#f5b400"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1348,7 +1113,7 @@
                                 width="16"
                                 height="16"
                                 fill="#f5b400"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1360,7 +1125,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1372,7 +1137,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1384,7 +1149,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1395,7 +1160,9 @@
                           </p>
 
                           <p class="meta">
-                            <strong style="font-weight: 700;" class="woocommerce-review__author"
+                            <strong
+                              style="font-weight: 700"
+                              class="woocommerce-review__author"
                               >Ervin Arlington
                             </strong>
                             <span class="woocommerce-review__dash">–</span>
@@ -1420,117 +1187,7 @@
                     <li
                       class="review even thread-even depth-1"
                       id="li-comment-24"
-                    >
-                      <div id="comment-24" class="comment_container">
-                        <img
-                          alt=""
-                          src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&amp;d=mm&amp;r=g"
-                          class="avatar avatar-60 photo lazyloaded"
-                          height="60"
-                          width="60"
-                          srcset="
-                            https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&amp;d=mm&amp;r=g 2x
-                          "
-                          data-ll-status="loaded"
-                        /><noscript
-                          ><img
-                            alt=""
-                            src="https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=60&#038;d=mm&#038;r=g"
-                            srcset="
-                              https://secure.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8?s=120&#038;d=mm&#038;r=g 2x
-                            "
-                            class="avatar avatar-60 photo"
-                            height="60"
-                            width="60"
-                        /></noscript>
-                        <div class="comment-text">
-                          <p class="stars">
-                            <span>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#f5b400"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="#CCCCCC"
-                                class="bi bi-star-fill"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                                />
-                              </svg>
-                            </span>
-                          </p>
-
-                          <p class="meta">
-                            <strong style="font-weight: 700;" class="woocommerce-review__author"
-                              >Patrick M. Newman
-                            </strong>
-                            <span class="woocommerce-review__dash">–</span>
-                            <time
-                              class="woocommerce-review__published-date"
-                              datetime="2021-07-23T03:10:57+00:00"
-                              >July 23, 2021</time
-                            >
-                          </p>
-                          <div class="description">
-                            <p>
-                              My son loved this Jacket for his Senior Prom… He
-                              got sooo many compliments! He is slim build 5’11
-                              and 150lbs … I ordered a large … it was a little
-                              big … but it was fine!
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
+                    ></li>
                   </ol>
                 </div>
                 <div id="review_form_wrapper" style="margin-top: 24px">
@@ -1555,12 +1212,10 @@
                         class="comment-form"
                         novalidate=""
                       >
-                        <p class="comment-notes">
+                        <p class="comment-notes d-flex">
                           <span id="email-notes"
-                            >Your email address will not be published.</span
+                            >Your email address will not be published *</span
                           >
-                          Required fields are marked
-                          <span class="required">*</span>
                         </p>
                         <div class="comment-form-rating">
                           <label for="rating"
@@ -1575,7 +1230,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1587,7 +1242,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1599,7 +1254,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1611,7 +1266,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1623,7 +1278,7 @@
                                 width="16"
                                 height="16"
                                 fill="#CCCCCC"
-                                class="bi bi-star-fill"
+                                class="bi bi-star-fill fix-icon-start"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1705,22 +1360,6 @@
                           </p>
                         </div>
 
-                        <p
-                          class="comment-form-cookies-consent"
-                          style="display: flex; flex-direction: row"
-                        >
-                          <input
-                            id="wp-comment-cookies-consent"
-                            name="wp-comment-cookies-consent"
-                            type="checkbox"
-                            value="yes"
-                          />
-                          <label for="wp-comment-cookies-consent"
-                            >Save my name, email, and website in this browser
-                            for the next time I comment.</label
-                          >
-                        </p>
-
                         <div
                           class="form-submit"
                           style="
@@ -1749,3 +1388,67 @@
     </b-card>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.woocommerce-review-link {
+  text-transform: capitalize;
+  color: #9f9f9f;
+  font-weight: 600;
+}
+
+.woocommerce-review-link:hover {
+  color: #5c9963;
+  text-decoration: underline;
+}
+
+.star-fix-detail {
+  width: 24px;
+  height: 24px;
+}
+
+.fix-icon-start {
+  width: 12px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #656766;
+  margin-bottom: 40px;
+}
+
+.meta {
+  margin: 0 0 1em;
+}
+
+.woocommerce-review__published-date {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.email-notes,
+.comment-form-rating,
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.wp-comment-cookies-consent {
+  margin-bottom: 1.41575em;
+  color: #656766;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.wp-comment-cookies-consent {
+  margin-left: 10px;
+}
+
+#email-notes {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.woocommerce-Reviews{
+  padding: 15px;
+}
+</style>

@@ -747,7 +747,7 @@
                         <div class="progress-text">20%</div>
                       </div>
                       <div class="review-summery-item">
-                        <p class="stars">
+                        <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
