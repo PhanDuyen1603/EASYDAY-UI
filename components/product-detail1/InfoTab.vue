@@ -462,7 +462,7 @@
                       >
                     </div>
                     <div class="reviews-summary">
-                      <div class="review-summery-item">
+                      <div class="review-summery-item mr-2">
                         <p class="stars">
                           <span>
                             <svg
@@ -533,7 +533,7 @@
                         </div>
                         <div class="progress-text">0%</div>
                       </div>
-                      <div class="review-summery-item">
+                      <div class="review-summery-item mr-2">
                         <p class="stars">
                           <span>
                             <svg
@@ -604,7 +604,7 @@
                         </div>
                         <div class="progress-text">0%</div>
                       </div>
-                      <div class="review-summery-item">
+                      <div class="review-summery-item mr-2">
                         <p class="stars">
                           <span>
                             <svg
@@ -675,7 +675,7 @@
                         </div>
                         <div class="progress-text">40%</div>
                       </div>
-                      <div class="review-summery-item">
+                      <div class="review-summery-item mr-2">
                         <p class="stars">
                           <span>
                             <svg
@@ -746,8 +746,8 @@
                         </div>
                         <div class="progress-text">20%</div>
                       </div>
-                      <div class="review-summery-item">
-                        <p class="stars mr-2">
+                      <div class="review-summery-item mr-2">
+                        <p class="stars">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
