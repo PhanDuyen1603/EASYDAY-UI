@@ -4,8 +4,9 @@
     <div>
       <div class="margin-page">
       <div class="d-flex prod-flash">
-        <div class="no-border">
-          <h2 class="title-posts text-left">Today Flash Sales</h2>
+        <div class="no-border d-flex">
+          <h2 class="title-posts text-left mr-2">Today Flash Sales</h2>
+          <img class="flash-sale-ani" width="25" src="~/assets/images/flastsaleani.svg"> 
         </div>
         <div>
           <div class="d-flex flash-time">
@@ -97,6 +98,23 @@
 .no-pad {
   padding-left: 62px !important;
   padding-right: 62px !important;
+}
+
+@keyframes example {
+  0% {background-color: crimson;}
+  25% {background-color: lightsalmon;}
+  50% {background-color: pink;}
+  100% {background-color: indigo;}
+}
+
+.flash-sale-ani {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 </style>
 

@@ -78,6 +78,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -86,29 +87,45 @@ export default {
   mounted() {
     // eslint-disable-next-line nuxt/no-env-in-hooks
     if (process.client) {
+      const Swal = require('sweetalert2')
+      // window.Swal = swal
       const loginBtn = document.getElementById('loginBtn')
       const showErrorEl = document.getElementById('loginError')
 
       loginBtn.addEventListener('click', () => {
-         sessionStorage.removeItem('name');
         const identifier = document.getElementById('identifier').value
         const password = document.getElementById('password').value
+        let exist = null
 
-        let exist = null;
-        for (let i = 0; i < localStorage.length; i++) {
-          const user = JSON.parse(localStorage.getItem(i))
-          if (user.identifier === identifier || user.password === password) {
-            exist =  JSON.parse(localStorage.getItem(i))
+        if (localStorage.length) {
+          for (let i = 0; i < localStorage.length; i++) {
+            // if(typeof localStorage.getItem(i) !== 'object') continue;
+
+            const user = JSON.parse(localStorage.getItem(i))
+            if (
+              user.identifier === identifier &&
+              String(user.password) === password
+            ) {
+              exist = JSON.parse(localStorage.getItem(i))
+            }
           }
         }
         if (!exist) {
-          showErrorEl.innerText = 'Tên đăng nhập hoặc mật khẩu không chính xác.'
-           sessionStorage.removeItem('name');
-        
+          showErrorEl.innerText = 'The username or password is incorrect'
         } else {
-          showErrorEl.innerText = ''     
-           sessionStorage.setItem('name', exist.name);
-          window.location.href = '/'
+          showErrorEl.innerText = ''
+          sessionStorage.setItem('name', exist.name)
+
+          Swal.fire({
+            title: 'SUCCESS!',
+            html: `You have logged in successfully <br> Have a nice day at <b>EASY DAY</b>`,
+            icon: 'success',
+            confirmButtonColor: '#5C9963',
+          });
+
+          setTimeout(() => {
+            location.reload()
+          }, 1500)
         }
       })
     }

@@ -115,9 +115,23 @@
               </span>
               <b-button
                 class="account-content"
-                id="show-btn"
+                id="logIn-btn"
                 @click="$bvModal.show('bv-modal-example')"
                 >Login
+              </b-button>
+              <div id="loggedIn" class="loggedIn">
+                <button id="loggedInBtn">Hello</button>
+                <div class="loggedIn-content">
+                  <a href="#">Your information</a>
+                  <a href="#">Purchase history</a>
+                  <a id="logOut-btn" href="#">Logout</a>
+                </div>
+              </div>
+              <b-button
+                class="account-content"
+                id="signUp-btn"
+                @click="$bvModal.show('bv-modal-example2')"
+                >Signup
               </b-button>
             </a>
           </div>
@@ -457,9 +471,29 @@ export default {
   mounted() {
     // eslint-disable-next-line nuxt/no-env-in-hooks
     if (process.client) {
-      const showBtn = document.getElementById('show-btn')
-      const currentUsername = sessionStorage.getItem('name')
-      showBtn.innerText = currentUsername || 'Login'
+      const loginBtn = document.getElementById('logIn-btn')
+      const signUpBtn = document.getElementById('signUp-btn')
+      const logoutBtn = document.getElementById('logOut-btn')
+      const loggedIn = document.getElementById('loggedIn')
+      const loggedInBtn = document.getElementById('loggedInBtn')
+
+      if (loginBtn && signUpBtn && logoutBtn) {
+        const currentUsername = sessionStorage.getItem('name')
+        if (currentUsername) {
+          loginBtn.setAttribute('hidden', true)
+          signUpBtn.setAttribute('hidden', true)
+          loggedIn.removeAttribute('hidden')
+          loggedInBtn.innerText = currentUsername
+        } else {
+          loginBtn.removeAttribute('hidden')
+          signUpBtn.removeAttribute('hidden')
+          loggedIn.setAttribute('hidden', true)
+        }
+        logoutBtn.addEventListener('click', () => {
+          sessionStorage.removeItem('name')
+          location.reload()
+        })
+      }
     }
   },
   computed: {

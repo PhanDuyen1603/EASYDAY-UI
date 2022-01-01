@@ -1,8 +1,50 @@
 .show-error{
     color:red;
-    margin: 20px 0px;
+    margin-bottom: 20px;
     line-height: 30px;
 }
-#signUpBtn{
+#loginBtn, #signUpBtn{
 cursor: pointer;
 }
+
+#loggedInBtn {
+    background-color: #F2F7F3;
+    color: #656766;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border: none;
+  }
+  
+  #loggedIn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .loggedIn-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .loggedIn-content a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #656766;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .loggedIn-content a:hover {
+      color:#5C9963;
+      background-color: white;
+    }
+  
+  #loggedIn:hover .loggedIn-content {display: block;}
+  
+//   .dropdown:hover .dropbtn {background-color: #3e8e41;}

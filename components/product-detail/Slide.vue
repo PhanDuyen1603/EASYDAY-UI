@@ -8,7 +8,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            class="d-block w-100"
+            class="d-block w-100" width="600"
             src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/04/pro-7.jpg"
             alt="First slide"
           />
