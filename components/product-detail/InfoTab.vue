@@ -519,7 +519,7 @@
                   </h2>
                   <div class="review-top">
                     <div class="woocommerce-product-rating">
-                      <p class="stars">
+                      <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -592,7 +592,7 @@
                     </div>
                     <div class="reviews-summary">
                       <div class="review-summery-item">
-                        <p class="stars">
+                        <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -663,7 +663,7 @@
                         <div class="progress-text">0%</div>
                       </div>
                       <div class="review-summery-item">
-                        <p class="stars">
+                        <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -734,7 +734,7 @@
                         <div class="progress-text">0%</div>
                       </div>
                       <div class="review-summery-item">
-                        <p class="stars">
+                        <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -805,7 +805,7 @@
                         <div class="progress-text">40%</div>
                       </div>
                       <div class="review-summery-item">
-                        <p class="stars">
+                        <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -876,7 +876,7 @@
                         <div class="progress-text">20%</div>
                       </div>
                       <div class="review-summery-item">
-                        <p class="stars">
+                        <p class="stars mr-2">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -981,7 +981,7 @@
                             width="60"
                         /></noscript>
                         <div class="comment-text">
-                          <p class="stars">
+                          <p class="stars mr-2">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1102,7 +1102,7 @@
                             width="60"
                         /></noscript>
                         <div class="comment-text">
-                          <p class="stars">
+                          <p class="stars mr-2">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1218,7 +1218,7 @@
                             width="60"
                         /></noscript>
                         <div class="comment-text">
-                          <p class="stars">
+                          <p class="stars mr-2">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1329,7 +1329,7 @@
                             width="60"
                         /></noscript>
                         <div class="comment-text">
-                          <p class="stars">
+                          <p class="stars mr-2">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1444,7 +1444,7 @@
                             width="60"
                         /></noscript>
                         <div class="comment-text">
-                          <p class="stars">
+                          <p class="stars mr-2">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1568,7 +1568,7 @@
                               >*</span
                             ></label
                           >
-                          <p class="stars">
+                          <p class="stars mr-2">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"

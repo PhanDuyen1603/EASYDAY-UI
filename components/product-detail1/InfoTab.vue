@@ -1,8 +1,8 @@
 <template>
   <div>
-    <b-card no-body>
-      <b-tabs card>
-        <b-tab title="DESCRIPTION" active>
+    <b-card class="fix-tabs-detail" no-body>
+      <b-tabs class="" card>
+        <b-tab class="fix-tabs-detail" title="DESCRIPTION" active>
           <b-card-text>
             <div
               class="tab-pane"
@@ -1620,3 +1620,6 @@
     </b-card>
   </div>
 </template>
+
+<style lang="scss" scoped>
+</style>

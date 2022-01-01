@@ -9,6 +9,8 @@
 
         <ul class="mb-0">
           <div class="d-flex">
+            <li class="dropdown menu-link"><a href="/"><span>Flash Sales
+</span></a></li>
             <li class="dropdown menu-link"><a href="/"><span>Home</span></a></li>
             <li class="dropdown2 menu-link"><a href="/shop"><span>Shop</span></a></li>
             <li class="dropdown3 menu-link"><span>Category</span> <span class="ml-2"><svg aria-hidden="true"
