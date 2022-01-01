@@ -19,6 +19,7 @@ import InfoTab from '~/components/product-detail/InfoTab.vue'
 import Slide from '~/components/product-detail/Slide.vue'
 import SimilarProduct from '~/components/product-detail/SimilarProduct.vue'
 export default {
+  scrollToTop: true,
   data() {
     return {
       title: 'Product detail',

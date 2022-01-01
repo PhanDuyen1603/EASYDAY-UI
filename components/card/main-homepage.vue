@@ -58,7 +58,7 @@
           <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
           <b-spinner style="width: 1.25rem; height: 1.25rem; margin: 0 .3rem" label="medium Spinner" type="grow"></b-spinner>
         </a>
-        <a  v-else @click="addToCart(product)" data-quantity="1" class="">
+        <a v-else data-quantity="1" class="" @click="addToCart(product)">
           <span
             ><svg
               version="1.1"
@@ -120,12 +120,12 @@ export default {
       required: true,
     },
     imgHeight: {
-      type: Number,
-      default: 234
+      type: String,
+      default: '234'
     },
     imgWidth: {
-      type: Number,
-      default: 234
+      type: String,
+      default: '234'
     }
   },
   data() {
