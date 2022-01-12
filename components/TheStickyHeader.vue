@@ -14,7 +14,7 @@
         <ul class="mb-0">
           <div class="d-flex" style="align-items: center; display: flex">
             <li class="dropdown">
-              <a href="/" style="align-items: center; display: flex">
+              <a href="#top-flash-sales" style="align-items: center; display: flex">
                 <img
                   class="flash-sale-ani mr-1"
                   width="21"
