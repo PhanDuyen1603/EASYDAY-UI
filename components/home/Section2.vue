@@ -5,7 +5,7 @@
       <div class="margin-page">
       <div class="d-flex prod-flash">
         <div class="no-border d-flex">
-          <h2 class="title-posts text-left mr-2">Today Flash Sales</h2>
+          <h2  class="title-posts text-left mr-2">Today Flash Sales</h2>
           <img class="flash-sale-ani" width="25" src="~/assets/images/flastsaleani.svg"> 
         </div>
         <div>
