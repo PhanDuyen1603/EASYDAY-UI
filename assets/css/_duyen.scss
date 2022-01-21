@@ -38,11 +38,11 @@
   justify-content: space-between;
 }
 
-.form-radius{
+.form-radius {
   margin-bottom: 50px !important;
 }
 
-.form-radius-content{
+.form-radius-content {
   border-radius: 30px !important;
 }
 
@@ -197,7 +197,7 @@
   }
 }
 
-.title-idea{
+.title-idea {
   font-size: 19px;
   font-weight: 600;
   text-align: center;
@@ -303,6 +303,8 @@
     cursor: pointer;
   }
 
+ 
+
   svg.qodef-svg {
     cursor: pointer;
   }
@@ -322,7 +324,7 @@
     display: inline-block;
     position: absolute;
     bottom: 19px;
-    left: 13px;
+    left: 15px;
     color: #fff;
     background-color: #5c9963;
   }
@@ -462,6 +464,10 @@
 ul,
 li {
   list-style: none;
+}
+
+.elementor-brand-image {
+  box-shadow: 0 4px 24px 0 rgb(173 167 167 / 10%);
 }
 
 .vertical-navigation-title {
@@ -1928,7 +1934,7 @@ h3.title-blog.color-title {
   color: #65a06b;
 }
 
-.center-height{
+.center-height {
   align-items: center;
   display: flex;
   cursor: pointer;

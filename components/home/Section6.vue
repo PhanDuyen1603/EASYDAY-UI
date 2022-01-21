@@ -54,7 +54,7 @@
                 ><img
                   width="190"
                   height="131"
-                  src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/08/brand-8.png"
+                  src="~/assets/images/dl1.png"
                   class="attachment-full size-full lazyloaded"
               /></a>
             </div>
@@ -65,7 +65,7 @@
                 ><img
                   width="190"
                   height="131"
-                  src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/08/brand-9.png"
+                  src="~/assets/images/dl13.png"
                   class="attachment-full size-full lazyloaded"
               /></a>
             </div>
@@ -76,7 +76,7 @@
                 ><img
                   width="190"
                   height="131"
-                  src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/08/brand-10.png"
+                  src="~/assets/images/dl7.png"
                   class="attachment-full size-full lazyloaded"
               /></a>
             </div>
@@ -87,7 +87,7 @@
                 ><img
                   width="190"
                   height="131"
-                  src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/08/brand-11.png"
+                  src="~/assets/images/dl14.jpeg"
                   class="attachment-full size-full lazyloaded"
               /></a>
             </div>
@@ -98,7 +98,7 @@
                 ><img
                   width="190"
                   height="131"
-                  src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/08/brand-12.png"
+                  src="~/assets/images/dl17.jpeg"
                   class="attachment-full size-full lazyloaded"
               /></a>
             </div>
@@ -109,7 +109,7 @@
                 ><img
                   width="190"
                   height="131"
-                  src="https://demothemedh.b-cdn.net/organey/wp-content/uploads/2021/08/brand-7.png"
+                  src="~/assets/images/dl20.jpeg"
                   class="attachment-full size-full lazyloaded"
               /></a>
             </div>

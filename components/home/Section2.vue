@@ -1,6 +1,6 @@
 /* eslint-disable vue/component-tags-order */
 <template>
-  <section class="join-now section-2">
+  <section id="top-flash-sales" class="join-now section-2">
     <div>
       <div class="margin-page">
       <div class="d-flex prod-flash">
@@ -122,7 +122,7 @@
 
 <script>
 if (process.client) {
-  var countDownDate = new Date('Jan 5, 2022 15:37:25').getTime()
+  var countDownDate = new Date('Jan 30, 2022 15:37:25').getTime()
   var x = setInterval(function () {
     var now = new Date().getTime()
 

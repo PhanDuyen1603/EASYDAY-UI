@@ -57,9 +57,7 @@
                 <input class="no-round-input-bg" type="text" required />
               </div>
               <div class="form-group">
-                <label for="inputPhone"
-                  >Email (optional)</label
-                >
+                <label for="inputPhone">Email (optional)</label>
                 <input class="no-round-input-bg" type="text" required />
               </div>
               <h2 class="form-title">ADDITIONAL INFORMATION</h2>
@@ -74,160 +72,8 @@
                   placeholder="Notes about your order, e.g. special notes for delivery."
                 ></textarea>
               </div>
-              
             </div>
             <div class="col-12 col-md-6 col-lg-5">
-<div class="tab_container">
-                <input id="tab4" type="radio" name="tabs" checked />
-                <section id="content4" class="tab-content">
-                  <h4 class="payment-title">Choose your payment method</h4>
-                  <form action="" method="post">
-                    <div class="pymt-radio">
-                      <div class="row-payment-method payment-row">
-                        <div class="select-icon">
-                          <input
-                            type="radio"
-                            id="radio1"
-                            name="radios"
-                            value="pp"
-                          />
-                          <label
-                            for="radio1"
-                            style="border-bottom: 2px solid #eeee"
-                          ></label>
-                        </div>
-                        <div class="select-txt">
-                          <p class="pymt-type-name">COD</p>
-                          <p class="pymt-type-desc">
-                            Cash on delivery (COD) is when a recipient pays for a good or service at the time of delivery
-                          </p>
-                        </div>
-                        <div class="select-logo">
-                          <img
-                            src="~/assets/images/cod2.jpeg"
-                            alt="PayPal"
-                            width="80"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="pymt-radio">
-                      <div class="row-payment-method payment-row-last">
-                        <div class="select-icon hr">
-                          <input
-                            type="radio"
-                            id="radio2"
-                            name="radios"
-                            value="pp"
-                            checked
-                          />
-                          <label
-                            for="radio2"
-                            style="border-bottom: 2px solid #eeee"
-                          ></label>
-                        </div>
-                        <div class="select-txt hr">
-                          <p class="pymt-type-name">Credit Card</p>
-                          <p class="pymt-type-desc">
-                            Safe money transfer using your bank account. Safe
-                            payment online. Credit card needed. Visa, Maestro,
-                            Discover, American Express
-                          </p>
-                        </div>
-                        <div class="select-logo">
-                          <div class="select-logo-sub logo-spacer">
-                            <img
-                              src="https://www.dropbox.com/s/by52qpmkmcro92l/logo-visa.png?raw=1"
-                              alt="Visa"
-                            />
-                          </div>
-                          <div class="select-logo-sub">
-                            <img
-                              src="https://www.dropbox.com/s/6f5dorw54xomw7p/logo-mastercard.png?raw=1"
-                              alt="MasterCard"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-cc">
-      <div class="row-cc">
-        <div class="cc-field">
-          <div class="cc-title">Credit Card Number
-          </div>
-          <input type="text" class="input cc-txt text-validated" value="4542 9931 9292 2293" />
-        </div>
-      </div>
-      <div class="row-cc">
-        <div class="cc-field">
-          <div class="cc-title">Expiry Date
-          </div>
-          <select class="input cc-ddl">
-            <option selected>01</option>
-            <option>02</option>
-            <option>03</option>
-            <option>04</option>
-            <option>05</option>
-            <option>06</option>
-            <option>07</option>
-            <option>08</option>
-            <option>09</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>          
-          </select>
-          <select class="input cc-ddl">
-            <option>01</option>
-            <option>02</option>
-            <option>03</option>
-            <option>04</option>
-            <option>05</option>
-            <option>06</option>
-            <option>07</option>
-            <option>08</option>
-            <option>09</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option selected>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-            <option>25</option>
-            <option>26</option>
-            <option>27</option>
-            <option>28</option>
-            <option>29</option>
-            <option>30</option>
-            <option>31</option>            
-          </select>
-        </div>
-        <div class="cc-field">
-          <div class="cc-title">CVV Code<span class="numberCircle">?</span>
-          </div>
-          <input type="text" class="input cc-txt"/>
-        </div>
-      </div>
-      <div class="row-cc">
-        <div class="cc-field">
-          <div class="cc-title">Name on Card
-          </div>
-          <input type="text" class="input cc-txt"/>
-        </div>
-      </div>    
-            
-    </div>
-                  </form>
-                </section>
-              </div>
               <div class="cart-collaterals">
                 <div class="cart_totals">
                   <div
@@ -273,7 +119,7 @@
                           >
                         </td>
                       </tr>
-                      
+
                       <tr class="cart-subtotal">
                         <th>Subtotal</th>
                         <td data-title="Subtotal" style="text-align: right">
@@ -308,16 +154,170 @@
                       </tr>
                     </tbody>
                   </table>
-
-                  <div class="wc-proceed-to-checkout">
-                    <a
-                      href="/order_complete"
-                      class="checkout-button button alt wc-forward"
-                    >
-                      Place order</a
-                    >
-                  </div>
                 </div>
+              </div>
+              <div class="tab_container">
+                <input id="tab4" type="radio" name="tabs" checked />
+                <section id="content4" class="tab-content">
+                  <h4 class="payment-title">Choose your payment method</h4>
+                  <form action="" method="post">
+                    <div class="pymt-radio" style="    background-color: #f5f6fa;">
+                      <div class="row-payment-method payment-row-last">
+                        <div class="select-icon hr">
+                          <input
+                            type="radio"
+                            id="radio2"
+                            name="radios"
+                            value="pp"
+                            checked
+                          />
+                          <label
+                            for="radio2"
+                            style="border-bottom: 2px solid #eeee"
+                          ></label>
+                        </div>
+                        <div class="select-txt hr">
+                          <p class="pymt-type-name">Credit Card</p>
+                          <p class="pymt-type-desc">
+                            Safe money transfer using your bank account. Safe
+                            payment online. Credit card needed. Visa, Maestro,
+                            Discover, American Express
+                          </p>
+                        </div>
+                        <div class="select-logo">
+                          <div class="select-logo-sub logo-spacer">
+                            <img
+                              src="https://www.dropbox.com/s/by52qpmkmcro92l/logo-visa.png?raw=1"
+                              alt="Visa"
+                            />
+                          </div>
+                          <div class="select-logo-sub">
+                            <img
+                              src="https://www.dropbox.com/s/6f5dorw54xomw7p/logo-mastercard.png?raw=1"
+                              alt="MasterCard"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-cc">
+                      <div class="row-cc">
+                        <div class="cc-field">
+                          <div class="cc-title">Credit Card Number</div>
+                          <input
+                            type="text"
+                            class="input cc-txt text-validated"
+                            value="4542 9931 9292 2293"
+                          />
+                        </div>
+                      </div>
+                      <div class="row-cc">
+                        <div class="cc-field">
+                          <div class="cc-title">Expiry Date</div>
+                          <select class="input cc-ddl">
+                            <option selected>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                          </select>
+                          <select class="input cc-ddl">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option selected>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select>
+                        </div>
+                        <div class="cc-field">
+                          <div class="cc-title">
+                            CVV Code<span class="numberCircle">?</span>
+                          </div>
+                          <input type="text" class="input cc-txt" />
+                        </div>
+                      </div>
+                      <div class="row-cc">
+                        <div class="cc-field">
+                          <div class="cc-title">Name on Card</div>
+                          <input type="text" class="input cc-txt" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pymt-radio">
+                      <div class="row-payment-method payment-row">
+                        <div class="select-icon">
+                          <input
+                            type="radio"
+                            id="radio1"
+                            name="radios"
+                            value="pp"
+                          />
+                          <label
+                            for="radio1"
+                            style="border-bottom: 2px solid #eeee"
+                          ></label>
+                        </div>
+                        <div class="select-txt">
+                          <p class="pymt-type-name">COD</p>
+                          <p class="pymt-type-desc">
+                            Cash on delivery (COD) is when a recipient pays for
+                            a good or service at the time of delivery
+                          </p>
+                        </div>
+                        <div class="select-logo">
+                          <img
+                            src="~/assets/images/cod2.jpeg"
+                            alt="PayPal"
+                            width="80"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 30px 25px;">
+                    <div class="wc-proceed-to-checkout">
+                        <a
+                          href="/order_complete"
+                          class="checkout-button button alt wc-forward"
+                        >
+                          Place order</a
+                        >
+                      </div>
+                      </div>
+                  </form>
+                </section>
               </div>
             </div>
           </div>
@@ -463,7 +463,6 @@ input.no-round-input-bg {
   font-size: 14px;
   width: 100%;
   text-align: center;
-  margin-top: 20px;
 }
 
 .wc-proceed-to-checkout > a {
@@ -807,7 +806,7 @@ a {
   outline: none;
 }
 
-.tab_container { 
+.tab_container {
   margin: 50px auto;
   position: relative;
   border: 1px solid #eee;

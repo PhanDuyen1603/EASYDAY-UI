@@ -97,11 +97,11 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <!-- <div class="col-6 d-flex justify-content-end">
                   <button class="no-round-btn black cart-update">
                     Update cart
                   </button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
